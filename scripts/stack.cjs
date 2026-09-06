@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('node:child_process');
 const root=path.resolve(__dirname,'..');const engine=process.env.CONTAINER_ENGINE||'podman';
-const prefix='sit314-hvac-';const network=prefix+'edge';const cert=path.join(root,'.private/certs');
+const prefix='sit314-hvac-';const network=prefix+'edge';const ingress=prefix+'ingress';const cert=path.join(root,'.private/certs');
 const command=process.argv[2]||'up';const shards=Number(process.argv[3]||2);
 if(![1,2].includes(shards))throw Error('Supported shard counts: 1 or 2');
 const run=(args,quiet=false)=>execFileSync(engine,args,{cwd:root,encoding:'utf8',stdio:quiet?['ignore','pipe','pipe']:'inherit'});
@@ -16,11 +16,13 @@ if(command==='status'){run(['ps','--filter','name='+prefix,'--format','{{.Names}
 if(!['up','shards'].includes(command))throw Error('Use build/up/shards/status/down');
 if(command==='up') {
   try{run(['network','inspect',network],true);}catch{run(['network','create','--internal',network]);}
+  try{run(['network','inspect',ingress],true);}catch{run(['network','create',ingress]);}
   remove(prefix+'mosquitto');volume(prefix+'broker-data');
-  run(['run','-d','--name',prefix+'mosquitto','--network',network,'--network-alias','mosquitto','-p','127.0.0.1:8883:8883',
+  run(['run','-d','--name',prefix+'mosquitto','--network',ingress,'-p','127.0.0.1:8883:8883',
     '-v',root+'/infra/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro','-v',root+'/infra/acl.conf:/mosquitto/config/acl.conf:ro',
     ...['ca.crt','mosquitto.crt','mosquitto.key'].flatMap(f=>['-v',`${cert}/${f}:/mosquitto/certs/${f}:ro`]),
     '-v',prefix+'broker-data:/mosquitto/data','docker.io/eclipse-mosquitto:2.0.22']);
+  run(['network','connect','--alias','mosquitto',network,prefix+'mosquitto']);
 }
 if(command==='shards'){
   execFileSync(process.execPath,['-e',"fetch('http://127.0.0.1:3140/api/status?pipeline=main').then(r=>r.json()).then(s=>{if((s.counts['sensor.reading']||0)!==(s.counts['actuator.command.applied']||0))throw Error('Refusing topology change: accepted readings still await actuator acknowledgements');}).catch(e=>{console.error(e.message);process.exit(1)});"],{cwd:root,stdio:'inherit'});
@@ -35,13 +37,16 @@ for(const [id,role] of roles) {
   volume(prefix+id+'-data');
   const extra=role==='aggregator'?['-e','SHARD_INDEX='+(id.endsWith('a')?0:1),'-e','SHARD_COUNT='+shards]:[];
   if(role==='storage')extra.push('-p','127.0.0.1:3140:8080');
-  run(['run','-d','--name',prefix+id,'--network',network,'--cap-drop','ALL','--security-opt','no-new-privileges',
+  run(['run','-d','--name',prefix+id,'--network',role==='storage'?ingress:network,'--cap-drop','ALL','--security-opt','no-new-privileges',
     '-e','ROLE='+role,'-e','IDENTITY='+id,'-e','MQTT_URL=mqtts://mosquitto:8883','-e','CERT_DIR=/certs','-e','DATA_DIR=/data',
     ...extra,...mounts(id),'-v',prefix+id+'-data:/data',prefix+'service:0.8.0']);
+  if(role==='storage')run(['network','connect',network,prefix+id]);
 }
 if(command==='up') {
   remove(prefix+'node-red');
-  run(['run','-d','--name',prefix+'node-red','--network',network,'--cap-drop','ALL','--security-opt','no-new-privileges',
+  run(['run','-d','--name',prefix+'node-red','--network',ingress,'--cap-drop','ALL','--security-opt','no-new-privileges',
     '-e','MQTT_HOST=mosquitto','-p','127.0.0.1:3180:1880',...mounts('node-red'),prefix+'node-red:0.8.0']);
+  run(['network','connect',network,prefix+'node-red']);
+  execFileSync(process.execPath,['-e',"(async()=>{for(let i=0;i<60;i++){try{const a=await(await fetch('http://127.0.0.1:3140/health')).json();const b=await(await fetch('http://127.0.0.1:3180/api/status')).json();if(a.connected&&b.broker.connected)return;}catch{}await new Promise(r=>setTimeout(r,500));}throw Error('Stack readiness timeout');})().catch(e=>{console.error(e);process.exit(1)});"],{stdio:'inherit'});
 }
-console.log(JSON.stringify({network,internalOnly:true,aggregatorInstances:shards,dashboard:'http://localhost:3140',nodeRed:'http://localhost:3180/dashboard'}));
+console.log(JSON.stringify({network,ingress,controlNetworkInternal:true,loopbackPortsOnly:true,aggregatorInstances:shards,dashboard:'http://localhost:3140',nodeRed:'http://localhost:3180/dashboard'}));

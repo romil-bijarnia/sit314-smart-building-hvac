@@ -13,7 +13,7 @@ x-service: &service
 services:
   mosquitto:
     image: eclipse-mosquitto:2.0.22
-    networks: [edge]
+    networks: [edge, ingress]
     ports: ["127.0.0.1:8883:8883"]
     volumes:
       - ./infra/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
@@ -70,6 +70,7 @@ services:
     volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/cep.crt:/certs/cep.crt:ro", "./.private/certs/cep.key:/certs/cep.key:ro", "cep-data:/data"]
   storage:
     <<: *service
+    networks: [edge, ingress]
     environment:
       <<: *environment
       ROLE: storage
@@ -81,13 +82,14 @@ services:
       context: .
       dockerfile: node-red/Dockerfile
     image: sit314-hvac-node-red:0.8.0
-    networks: [edge]
+    networks: [edge, ingress]
     ports: ["127.0.0.1:3180:1880"]
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
     volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/node-red.crt:/certs/node-red.crt:ro", "./.private/certs/node-red.key:/certs/node-red.key:ro"]
     depends_on: [mosquitto]
 networks:
+  ingress:
   edge:
     internal: true
 volumes:

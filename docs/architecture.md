@@ -41,6 +41,6 @@ The window is the last10readings, not10seconds. As device density grows, those10
 
 ## Security and deployment scope
 
-All MQTT device/service traffic uses TLS with client certificates and topic ACLs. Services use unprivileged image users, dropped capabilities, read-only certificate mounts and an internal-only container network. Only loopback ports are published.
+All MQTT device/service traffic uses TLS with client certificates and topic ACLs. Services use unprivileged image users, dropped capabilities, read-only certificate mounts and an internal-only control network. Broker, storage dashboard and Node-RED additionally join a dedicated ingress bridge for host access; only loopback ports are published. Gateway, aggregation, controller, actuator and CEP remain on the internal control network only.
 
 The dashboards and Node-RED editor intentionally use loopback HTTP during local development. They must not be exposed remotely without authenticated HTTPS. AWS identity, IAM, private subnets, SSM secrets, hosted HTTPS and billing guardrails remain Week9–11 work. No cloud deployment, automatic scaling, measured energy saving or physical comfort validation is claimed here.
