@@ -72,3 +72,13 @@ The store keeps an fsynced JSON document journal, atomically checkpointed state,
 This is the local Week 8 progress milestone. Sensor readings and actuator actions are simulated. A real Tinkercad/physical circuit, AWS IoT Core/Lambda/ECS/DynamoDB/CloudWatch, cloud auto-scaling, hosted authenticated HTTPS and measured building energy savings are not claimed as complete. See `hardware/README.md` for the corrected DHT22, PIR and CO2 assumptions before physical integration.
 
 AI assistance was used for implementation, tests and documentation. Results are retained from executed experiments rather than invented measurements. Personal assessment PDFs and credentials are intentionally excluded from the public repository.
+
+## Recorded status evidence — 6 September 2026
+
+- **59 unit/regression tests and 10 real functional scenarios passed.** The public workflow also built and tested the stack on Docker Engine in Ubuntu.
+- **12 normal trials:** 12, 60 and 180 devices at 1 Hz, one/two aggregation owners, two 20-second repetitions. All 20,160 readings reached simulated actuator application within the offering window. Worst latency was 505 ms.
+- **60-second soak:** 24 devices, 1,440 readings, maximum 146 ms.
+- **Accelerated 10 Hz follow-up:** the 180-device case exposed a limit, with 14.344 s maximum latency. It is not presented as meeting the 2 s target.
+- Backlog in these results means missing control acknowledgements. Broker queue depth and pending durable writes were not directly instrumented; post-offer journal observations can lag application.
+
+See [verified measurements](evidence/campaign-summary.json), [CSV](evidence/campaign-summary.csv), [functional proof](evidence/functional-tests.json), [unit log](evidence/unit-tests.log), [storage arithmetic](evidence/storage-growth.json), and [verified Docker CI](https://github.com/romil-bijarnia/sit314-smart-building-hvac/actions/runs/34005255874). Earlier OOM and latency failures are separately retained as development evidence, not mixed into the final statistics.

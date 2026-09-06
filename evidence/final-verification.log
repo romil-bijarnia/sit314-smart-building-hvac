@@ -1,0 +1,79 @@
+{
+  "normalGroups": [
+    {
+      "devices": 12,
+      "shards": 1,
+      "repetitions": 2,
+      "offered": 480,
+      "applied": 480,
+      "p95MinMs": 107,
+      "p95MaxMs": 109,
+      "maxLatencyMs": 113,
+      "allInWindowProven": true,
+      "finalBacklog": 0
+    },
+    {
+      "devices": 12,
+      "shards": 2,
+      "repetitions": 2,
+      "offered": 480,
+      "applied": 480,
+      "p95MinMs": 112,
+      "p95MaxMs": 141,
+      "maxLatencyMs": 188,
+      "allInWindowProven": true,
+      "finalBacklog": 0
+    },
+    {
+      "devices": 60,
+      "shards": 1,
+      "repetitions": 2,
+      "offered": 2400,
+      "applied": 2400,
+      "p95MinMs": 162,
+      "p95MaxMs": 187,
+      "maxLatencyMs": 280,
+      "allInWindowProven": true,
+      "finalBacklog": 0
+    },
+    {
+      "devices": 60,
+      "shards": 2,
+      "repetitions": 2,
+      "offered": 2400,
+      "applied": 2400,
+      "p95MinMs": 184,
+      "p95MaxMs": 209,
+      "maxLatencyMs": 240,
+      "allInWindowProven": true,
+      "finalBacklog": 0
+    },
+    {
+      "devices": 180,
+      "shards": 1,
+      "repetitions": 2,
+      "offered": 7200,
+      "applied": 7200,
+      "p95MinMs": 372,
+      "p95MaxMs": 402,
+      "maxLatencyMs": 489,
+      "allInWindowProven": true,
+      "finalBacklog": 0
+    },
+    {
+      "devices": 180,
+      "shards": 2,
+      "repetitions": 2,
+      "offered": 7200,
+      "applied": 7200,
+      "p95MinMs": 411,
+      "p95MaxMs": 439,
+      "maxLatencyMs": 505,
+      "allInWindowProven": true,
+      "finalBacklog": 0
+    }
+  ],
+  "shortTargets": true,
+  "overall1HzLatencyTarget": true,
+  "eventuallyAccounted": true
+}

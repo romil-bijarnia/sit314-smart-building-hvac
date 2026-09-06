@@ -1,0 +1,9 @@
+sit314-hvac-gateway
+sit314-hvac-aggregator-a
+sit314-hvac-aggregator-b
+sit314-hvac-controller
+sit314-hvac-actuator
+sit314-hvac-cep
+sit314-hvac-storage
+sit314-hvac-node-red
+sit314-hvac-mosquitto

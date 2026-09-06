@@ -1,0 +1,30 @@
+STEP 1/10: FROM nodered/node-red:4.1.14-22
+STEP 2/10: USER root
+--> Using cache 8582af966be639de87845a369d6e92a466319ce2454b73e3120d1a2b3486229d
+--> 8582af966be6
+STEP 3/10: RUN mkdir -p /app/src && chown -R node-red:node-red /app /data
+--> Using cache 14d90d1273f6af9e8ae2131cf1ec30f3269920d5c54dfafb85ccaaf3c4275ea7
+--> 14d90d1273f6
+STEP 4/10: COPY --chown=node-red:node-red src/domain.cjs /app/src/domain.cjs
+--> Using cache f148668ac3063ad77d3a63f9fcba47ed4133060c6ed633a20e5dd669079aad30
+--> f148668ac306
+STEP 5/10: COPY --chown=node-red:node-red node-red/settings.cjs /data/settings.cjs
+--> Using cache 1bd3a948acb154ef92de83abb94847f47fb66d2bb388193836c46a42a541cff8
+--> 1bd3a948acb1
+STEP 6/10: COPY --chown=node-red:node-red node-red/flows.json /data/flows.json
+--> Using cache 97e62087e0c71a2917ede48d6560892554430bb0141c46d4dd9cd1249eebf2fc
+--> 97e62087e0c7
+STEP 7/10: USER node-red
+--> Using cache 73c61d10eddb3ccd0d36c37fa7596408df73a42ef817af8e6d855b2ddc8f9b57
+--> 73c61d10eddb
+STEP 8/10: ENV MQTT_HOST=mosquitto
+--> Using cache 80388f84027994437639711d8ee03a907f3f77694a3488179505bb877a5ab0a4
+--> 80388f840279
+STEP 9/10: EXPOSE 1880
+--> Using cache c490743fea07f40492c6162a7ce86cdf1a130fa333cbebae9d5dcaa360fdea8e
+--> c490743fea07
+STEP 10/10: CMD ["--settings", "/data/settings.cjs", "/data/flows.json"]
+COMMIT sit314-hvac-node-red:0.8.0
+--> 814cd5538c27
+Successfully tagged localhost/sit314-hvac-node-red:0.8.0
+814cd5538c2703f6e169a41f1952653a9306de611aedd2fdda5051740d633427

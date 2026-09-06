@@ -1,0 +1,25 @@
+sit314-hvac-aggregator-a
+sit314-hvac-aggregator-b
+6af00820cd983eed9a4c62ac598476d79db0b5d1666fc52496324ece4d92b61f
+{"network":"sit314-hvac-edge","internalOnly":true,"aggregatorInstances":1,"dashboard":"http://localhost:3140","nodeRed":"http://localhost:3180/dashboard"}
+{"runId":"normal-r0-12-1-1788658353252","devices":12,"shards":1,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":131,"maxMs":135,"lateMs":2}
+{"runId":"normal-r0-60-1-1788658373448","devices":60,"shards":1,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":216,"maxMs":232,"lateMs":2}
+{"runId":"normal-r0-180-1-1788658393710","devices":180,"shards":1,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":425,"maxMs":497,"lateMs":2}
+{"runId":"normal-r1-180-1-1788658414410","devices":180,"shards":1,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":442,"maxMs":484,"lateMs":2}
+{"runId":"normal-r1-60-1-1788658435090","devices":60,"shards":1,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":212,"maxMs":226,"lateMs":2}
+{"runId":"normal-r1-12-1-1788658455351","devices":12,"shards":1,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":140,"maxMs":144,"lateMs":2}
+sit314-hvac-aggregator-a
+d2ab812d64754d53563203f3dff69314ba7e4d76d07beae0b0d550725045f079
+04b06c075ad5a2f9ba267beade881b145299d4006c823252986c83bfb969ed29
+{"network":"sit314-hvac-edge","internalOnly":true,"aggregatorInstances":2,"dashboard":"http://localhost:3140","nodeRed":"http://localhost:3180/dashboard"}
+{"runId":"normal-r0-12-2-1788658478542","devices":12,"shards":2,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":135,"maxMs":138,"lateMs":2}
+{"runId":"normal-r0-60-2-1788658498674","devices":60,"shards":2,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":251,"maxMs":377,"lateMs":2}
+{"runId":"normal-r0-180-2-1788658518951","devices":180,"shards":2,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":588,"maxMs":653,"lateMs":2}
+{"runId":"normal-r1-180-2-1788658539693","devices":180,"shards":2,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":562,"maxMs":611,"lateMs":2}
+{"runId":"normal-r1-60-2-1788658560392","devices":60,"shards":2,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":264,"maxMs":290,"lateMs":2}
+{"runId":"normal-r1-12-2-1788658580661","devices":12,"shards":2,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":130,"maxMs":137,"lateMs":2}
+{"runId":"legacy-rate-12-2-1788658600784","devices":12,"shards":2,"pipeline":"main","offered":720,"applied":720,"backlog":0,"p95Ms":137,"maxMs":162,"lateMs":2}
+{"runId":"legacy-rate-60-2-1788658608020","devices":60,"shards":2,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":1779,"maxMs":1862,"lateMs":2}
+{"runId":"legacy-rate-180-2-1788658618827","devices":180,"shards":2,"pipeline":"main","offered":10800,"applied":10800,"backlog":0,"p95Ms":20965,"maxMs":21139,"lateMs":2}
+{"runId":"soak-24-2-1788658653631","devices":24,"shards":2,"pipeline":"main","offered":1440,"applied":1440,"backlog":0,"p95Ms":1047,"maxMs":5217,"lateMs":6}
+CAMPAIGN_COMPLETE 16

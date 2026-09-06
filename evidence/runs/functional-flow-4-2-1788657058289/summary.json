@@ -1,0 +1,248 @@
+{
+  "runId": "functional-flow-4-2-1788657058289",
+  "observedAt": "2026-09-06T01:12:02.519Z",
+  "config": {
+    "devices": 4,
+    "zones": 4,
+    "ticks": 4,
+    "intervalMs": 1000,
+    "shards": 2,
+    "pipeline": "flow",
+    "scenario": "modes",
+    "duplicate": false
+  },
+  "setupMs": 49,
+  "startedAt": "2026-09-06T01:10:58.338Z",
+  "offeringEndedAt": "2026-09-06T01:11:02.339Z",
+  "offeringDurationMs": 4001,
+  "nominalRawPerSecond": 4,
+  "uniqueRawOffered": 16,
+  "mqttPublishes": 16,
+  "maximumSchedulingLatenessMs": 2,
+  "appliedAtOfferEnd": 0,
+  "backlogAtOfferEnd": 16,
+  "completionFractionAtOfferEnd": 0,
+  "drainMs": 60180,
+  "finalBacklog": 16,
+  "actualRawPerSecond": 3.9990002499375157,
+  "final": {
+    "observedAt": "2026-09-06T01:12:02.515Z",
+    "runId": "functional-flow-4-2-1788657058289",
+    "pipeline": "flow",
+    "totalEvents": 16,
+    "counts": {
+      "device.telemetry.raw": 16
+    },
+    "zones": {},
+    "aggregators": {},
+    "duplicateDeliveries": 0,
+    "latencyMs": {
+      "count": 0,
+      "min": null,
+      "p50": null,
+      "p95": null,
+      "p99": null,
+      "max": null
+    },
+    "alerts": [],
+    "rollups": [],
+    "recent": [
+      {
+        "schemaVersion": 1,
+        "id": "functional-flow-4-2-1788657058289:sensor-0002:2",
+        "type": "device.telemetry.raw",
+        "timestamp": "2026-09-06T01:11:00.337Z",
+        "runId": "functional-flow-4-2-1788657058289",
+        "correlationId": "functional-flow-4-2-1788657058289:sensor-0002:2",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0002",
+          "zoneId": "zone-2",
+          "room": "F1-R02",
+          "board": "simulated ESP32",
+          "sequence": 2,
+          "temperatureC": 22,
+          "humidityPercent": 52.98,
+          "occupancyCount": 6,
+          "co2Ppm": 1200,
+          "batteryPercent": 99.97
+        },
+        "pipeline": "flow"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "functional-flow-4-2-1788657058289:sensor-0003:2",
+        "type": "device.telemetry.raw",
+        "timestamp": "2026-09-06T01:11:00.338Z",
+        "runId": "functional-flow-4-2-1788657058289",
+        "correlationId": "functional-flow-4-2-1788657058289:sensor-0003:2",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0003",
+          "zoneId": "zone-3",
+          "room": "F1-R03",
+          "board": "simulated ESP32",
+          "sequence": 2,
+          "temperatureC": 26,
+          "humidityPercent": 53.16,
+          "occupancyCount": 0,
+          "co2Ppm": 1200,
+          "batteryPercent": 99.97
+        },
+        "pipeline": "flow"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "functional-flow-4-2-1788657058289:sensor-0004:2",
+        "type": "device.telemetry.raw",
+        "timestamp": "2026-09-06T01:11:00.338Z",
+        "runId": "functional-flow-4-2-1788657058289",
+        "correlationId": "functional-flow-4-2-1788657058289:sensor-0004:2",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0004",
+          "zoneId": "zone-4",
+          "room": "F1-R04",
+          "board": "simulated ESP32",
+          "sequence": 2,
+          "temperatureC": 25,
+          "humidityPercent": 54.25,
+          "occupancyCount": 6,
+          "co2Ppm": 700,
+          "batteryPercent": 99.97
+        },
+        "pipeline": "flow"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "functional-flow-4-2-1788657058289:sensor-0001:2",
+        "type": "device.telemetry.raw",
+        "timestamp": "2026-09-06T01:11:00.337Z",
+        "runId": "functional-flow-4-2-1788657058289",
+        "correlationId": "functional-flow-4-2-1788657058289:sensor-0001:2",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0001",
+          "zoneId": "zone-1",
+          "room": "F1-R01",
+          "board": "simulated ESP32",
+          "sequence": 2,
+          "temperatureC": 26,
+          "humidityPercent": 52.14,
+          "occupancyCount": 6,
+          "co2Ppm": 1200,
+          "batteryPercent": 99.97
+        },
+        "pipeline": "flow"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "functional-flow-4-2-1788657058289:sensor-0004:3",
+        "type": "device.telemetry.raw",
+        "timestamp": "2026-09-06T01:11:01.338Z",
+        "runId": "functional-flow-4-2-1788657058289",
+        "correlationId": "functional-flow-4-2-1788657058289:sensor-0004:3",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0004",
+          "zoneId": "zone-4",
+          "room": "F1-R04",
+          "board": "simulated ESP32",
+          "sequence": 3,
+          "temperatureC": 25,
+          "humidityPercent": 54.44,
+          "occupancyCount": 6,
+          "co2Ppm": 700,
+          "batteryPercent": 99.96
+        },
+        "pipeline": "flow"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "functional-flow-4-2-1788657058289:sensor-0001:3",
+        "type": "device.telemetry.raw",
+        "timestamp": "2026-09-06T01:11:01.338Z",
+        "runId": "functional-flow-4-2-1788657058289",
+        "correlationId": "functional-flow-4-2-1788657058289:sensor-0001:3",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0001",
+          "zoneId": "zone-1",
+          "room": "F1-R01",
+          "board": "simulated ESP32",
+          "sequence": 3,
+          "temperatureC": 26,
+          "humidityPercent": 52.69,
+          "occupancyCount": 6,
+          "co2Ppm": 1200,
+          "batteryPercent": 99.96
+        },
+        "pipeline": "flow"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "functional-flow-4-2-1788657058289:sensor-0002:3",
+        "type": "device.telemetry.raw",
+        "timestamp": "2026-09-06T01:11:01.338Z",
+        "runId": "functional-flow-4-2-1788657058289",
+        "correlationId": "functional-flow-4-2-1788657058289:sensor-0002:3",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0002",
+          "zoneId": "zone-2",
+          "room": "F1-R02",
+          "board": "simulated ESP32",
+          "sequence": 3,
+          "temperatureC": 22,
+          "humidityPercent": 53.76,
+          "occupancyCount": 6,
+          "co2Ppm": 1200,
+          "batteryPercent": 99.96
+        },
+        "pipeline": "flow"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "functional-flow-4-2-1788657058289:sensor-0003:3",
+        "type": "device.telemetry.raw",
+        "timestamp": "2026-09-06T01:11:01.338Z",
+        "runId": "functional-flow-4-2-1788657058289",
+        "correlationId": "functional-flow-4-2-1788657058289:sensor-0003:3",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0003",
+          "zoneId": "zone-3",
+          "room": "F1-R03",
+          "board": "simulated ESP32",
+          "sequence": 3,
+          "temperatureC": 26,
+          "humidityPercent": 53.84,
+          "occupancyCount": 0,
+          "co2Ppm": 1200,
+          "batteryPercent": 99.96
+        },
+        "pipeline": "flow"
+      }
+    ],
+    "runs": [
+      "smoke-4-2-1788656600073",
+      "smoke-4-2-1788656732988",
+      "pilot-12-2-1788656840192",
+      "pilot-180-2-1788656850460",
+      "functional-main-4-2-1788657054138",
+      "functional-flow-4-2-1788657058289"
+    ],
+    "retention": {
+      "days": 30,
+      "rawEventsExpire": true,
+      "rollupsExpire": false
+    }
+  },
+  "transport": {
+    "protocol": "MQTT5",
+    "qos": 1,
+    "tlsVerified": true,
+    "perDeviceCertificate": true
+  },
+  "clock": "Host and local VM wall clocks; no cross-region clock synchronization claim"
+}

@@ -1,0 +1,98 @@
+[
+ {
+  "id": "894cfbe6bf11",
+  "name": "sit314-hvac-mosquitto",
+  "cpu_time": "10.960496s",
+  "cpu_percent": "0.96%",
+  "avg_cpu": "0.96%",
+  "mem_usage": "18.45MB / 2.036GB",
+  "mem_percent": "0.91%",
+  "net_io": "135.7MB / 311.7MB",
+  "block_io": "44.86MB / 0B",
+  "pids": "1"
+ },
+ {
+  "id": "ac4230b062e2",
+  "name": "sit314-hvac-gateway",
+  "cpu_time": "27.209206s",
+  "cpu_percent": "2.38%",
+  "avg_cpu": "2.38%",
+  "mem_usage": "124.1MB / 2.036GB",
+  "mem_percent": "6.09%",
+  "net_io": "26.02MB / 31.82MB",
+  "block_io": "13.81MB / 651.4MB",
+  "pids": "11"
+ },
+ {
+  "id": "efd1efdf28ed",
+  "name": "sit314-hvac-controller",
+  "cpu_time": "37.028487s",
+  "cpu_percent": "5.35%",
+  "avg_cpu": "5.35%",
+  "mem_usage": "105.3MB / 2.036GB",
+  "mem_percent": "5.17%",
+  "net_io": "32.01MB / 27.54MB",
+  "block_io": "76.95MB / 611.3MB",
+  "pids": "11"
+ },
+ {
+  "id": "35fc97408354",
+  "name": "sit314-hvac-actuator",
+  "cpu_time": "33.433501s",
+  "cpu_percent": "2.93%",
+  "avg_cpu": "2.93%",
+  "mem_usage": "114.8MB / 2.036GB",
+  "mem_percent": "5.64%",
+  "net_io": "28.87MB / 33.72MB",
+  "block_io": "111.8MB / 651.9MB",
+  "pids": "11"
+ },
+ {
+  "id": "aae35114a9bd",
+  "name": "sit314-hvac-cep",
+  "cpu_time": "1m9.178501s",
+  "cpu_percent": "6.07%",
+  "avg_cpu": "6.07%",
+  "mem_usage": "141.3MB / 2.036GB",
+  "mem_percent": "6.94%",
+  "net_io": "29.4MB / 2.142MB",
+  "block_io": "334.1MB / 655.6MB",
+  "pids": "11"
+ },
+ {
+  "id": "dfa329b55435",
+  "name": "sit314-hvac-node-red",
+  "cpu_time": "1.626863s",
+  "cpu_percent": "0.22%",
+  "avg_cpu": "0.22%",
+  "mem_usage": "87.18MB / 2.036GB",
+  "mem_percent": "4.28%",
+  "net_io": "26.81kB / 42.89kB",
+  "block_io": "130.1MB / 54.78kB",
+  "pids": "12"
+ },
+ {
+  "id": "a273d51434a0",
+  "name": "sit314-hvac-aggregator-a",
+  "cpu_time": "27.4412s",
+  "cpu_percent": "6.44%",
+  "avg_cpu": "6.44%",
+  "mem_usage": "124.2MB / 2.036GB",
+  "mem_percent": "6.10%",
+  "net_io": "21.87MB / 10.81MB",
+  "block_io": "44.6MB / 437.3MB",
+  "pids": "11"
+ },
+ {
+  "id": "4768ec33710d",
+  "name": "sit314-hvac-aggregator-b",
+  "cpu_time": "27.030008s",
+  "cpu_percent": "6.34%",
+  "avg_cpu": "6.34%",
+  "mem_usage": "112.1MB / 2.036GB",
+  "mem_percent": "5.51%",
+  "net_io": "29.92MB / 14.09MB",
+  "block_io": "11.27MB / 608.4MB",
+  "pids": "11"
+ }
+]

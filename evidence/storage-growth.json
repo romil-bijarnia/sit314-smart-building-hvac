@@ -1,0 +1,9 @@
+{
+  "observedAt": "2026-09-06T02:04:00.136Z",
+  "collection": "telemetry.jsonl",
+  "documents": 112481,
+  "bytes": 56109584,
+  "meanBytesPerDocument": 498.8361056533992,
+  "rawBytesPerDayAt24Devices1Hz": 1034386548.6828886,
+  "excludes": "other event types, WAL/checkpoint copies, indexes and filesystem overhead"
+}

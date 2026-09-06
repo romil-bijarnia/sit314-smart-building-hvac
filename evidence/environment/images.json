@@ -1,0 +1,71 @@
+[
+    {
+        "Id": "814cd5538c2703f6e169a41f1952653a9306de611aedd2fdda5051740d633427",
+        "ParentId": "c490743fea07f40492c6162a7ce86cdf1a130fa333cbebae9d5dcaa360fdea8e",
+        "RepoDigests": [
+            "localhost/sit314-hvac-node-red@sha256:f3a6320ebd72c1142d1ebcdc0fe333b137999a540335bb1d2fa4737095bbbc7f"
+        ],
+        "Size": 697565302,
+        "SharedSize": 0,
+        "VirtualSize": 697565302,
+        "Labels": {
+            "authors": "Dave Conway-Jones, Nick O'Leary, James Thomas, Raymond Mouthaan",
+            "io.buildah.version": "1.45.0",
+            "org.label-schema.arch": "",
+            "org.label-schema.build-date": "2026-09-01T14:51:23Z",
+            "org.label-schema.description": "Low-code programming for event-driven applications.",
+            "org.label-schema.docker.dockerfile": ".docker/Dockerfile.alpine",
+            "org.label-schema.license": "Apache-2.0",
+            "org.label-schema.name": "Node-RED",
+            "org.label-schema.url": "https://nodered.org",
+            "org.label-schema.vcs-ref": "",
+            "org.label-schema.vcs-type": "Git",
+            "org.label-schema.vcs-url": "https://github.com/node-red/node-red-docker",
+            "org.label-schema.version": "4.1.14",
+            "org.opencontainers.image.source": "https://github.com/node-red/node-red-docker"
+        },
+        "Containers": 1,
+        "Arch": "arm64",
+        "Digest": "sha256:f3a6320ebd72c1142d1ebcdc0fe333b137999a540335bb1d2fa4737095bbbc7f",
+        "History": [
+            "localhost/sit314-hvac-node-red:0.8.0"
+        ],
+        "IsManifestList": false,
+        "Names": [
+            "localhost/sit314-hvac-node-red:0.8.0"
+        ],
+        "Os": "linux",
+        "Created": 1788657245,
+        "CreatedAt": "2026-09-06T01:14:05Z",
+        "Repository": "localhost/sit314-hvac-node-red",
+        "Tag": "0.8.0"
+    },
+    {
+        "Id": "d34a5f61b875bd681cbf088326845f4b437922827cf9bb3799d0bd2e3a05b785",
+        "ParentId": "79a63a0437a5629a9a4801dba0fb235e9c89b138728d7543dd0ce9437ba2a4a3",
+        "RepoDigests": [
+            "localhost/sit314-hvac-service@sha256:952bd6612198b8055ef71f47ab4960d362edfbea36043eac290f939735917a17"
+        ],
+        "Size": 175976409,
+        "SharedSize": 0,
+        "VirtualSize": 175976409,
+        "Labels": {
+            "io.buildah.version": "1.45.0"
+        },
+        "Containers": 6,
+        "Arch": "arm64",
+        "Digest": "sha256:952bd6612198b8055ef71f47ab4960d362edfbea36043eac290f939735917a17",
+        "History": [
+            "localhost/sit314-hvac-service:0.8.0"
+        ],
+        "IsManifestList": false,
+        "Names": [
+            "localhost/sit314-hvac-service:0.8.0"
+        ],
+        "Os": "linux",
+        "Created": 1788656830,
+        "CreatedAt": "2026-09-06T01:07:10Z",
+        "Repository": "localhost/sit314-hvac-service",
+        "Tag": "0.8.0"
+    }
+]

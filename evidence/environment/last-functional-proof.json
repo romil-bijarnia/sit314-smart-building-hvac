@@ -1,0 +1,203 @@
+{
+  "observedAt": "2026-09-06T01:14:51.656Z",
+  "tests": [
+    {
+      "name": "main pipeline reaches all three control modes and both aggregation shards",
+      "passed": true,
+      "durationMs": 4134,
+      "evidence": {
+        "runId": "functional-main-4-2-1788657248071",
+        "modes": [
+          "cool",
+          "cool",
+          "ventilate",
+          "idle"
+        ],
+        "counts": {
+          "device.telemetry.raw": 16,
+          "sensor.reading": 16,
+          "zone.metrics.updated": 16,
+          "actuator.command.created": 16,
+          "actuator.command.applied": 16
+        },
+        "latency": {
+          "count": 16,
+          "min": 8,
+          "p50": 52,
+          "p95": 95,
+          "p99": 95,
+          "max": 95
+        }
+      }
+    },
+    {
+      "name": "independent Node-RED MQTT pipeline matches main control outputs",
+      "passed": true,
+      "durationMs": 4081,
+      "evidence": {
+        "runId": "functional-flow-4-2-1788657252205",
+        "counts": {
+          "device.telemetry.raw": 16,
+          "sensor.reading": 16,
+          "zone.metrics.updated": 16,
+          "actuator.command.created": 16,
+          "actuator.command.applied": 16
+        },
+        "nodeRedCounts": {
+          "received": 16,
+          "accepted": 16,
+          "rejected": 0,
+          "duplicates": 0,
+          "readings": 16,
+          "metrics": 16,
+          "commands": 16,
+          "errors": 0
+        }
+      }
+    },
+    {
+      "name": "duplicate MQTT deliveries do not duplicate logical outputs",
+      "passed": true,
+      "durationMs": 3063,
+      "evidence": {
+        "runId": "duplicates-4-2-1788657256287",
+        "publishes": 16,
+        "unique": 12,
+        "counts": {
+          "device.telemetry.raw": 12,
+          "sensor.reading": 12,
+          "zone.metrics.updated": 12,
+          "actuator.command.created": 12,
+          "actuator.command.applied": 12
+        }
+      }
+    },
+    {
+      "name": "gateway rejects bad sensor data and topic identity mismatch",
+      "passed": true,
+      "durationMs": 316,
+      "evidence": {
+        "runId": "invalid-1788657259350",
+        "counts": {
+          "device.telemetry.raw": 7,
+          "gateway.telemetry.rejected": 7
+        }
+      }
+    },
+    {
+      "name": "MQTT mutual TLS rejects a client without a certificate",
+      "passed": true,
+      "durationMs": 4,
+      "evidence": {
+        "rejected": true,
+        "code": "ERR_SSL_TLSV13_ALERT_CERTIFICATE_REQUIRED",
+        "message": "40B5F8E801000000:error:0A00045C:SSL routines:ssl3_read_bytes:tlsv13 alert certificate required:ssl/record/rec_layer_s3.c:918:SSL alert number 116"
+      }
+    },
+    {
+      "name": "certificate-bound ACL denies another device topic",
+      "passed": true,
+      "durationMs": 48,
+      "evidence": {
+        "rejected": true,
+        "reason": "Publish error: Not authorized"
+      }
+    },
+    {
+      "name": "CEP detects sustained high CO2 and subsequent silence",
+      "passed": true,
+      "durationMs": 18078,
+      "evidence": {
+        "runId": "cep-1-2-1788657259719",
+        "alerts": [
+          {
+            "kind": "sustained_co2",
+            "runId": "cep-1-2-1788657259719",
+            "deviceId": "sensor-0001",
+            "zoneId": "zone-1",
+            "sourceEventId": "cep-1-2-1788657259719:sensor-0001:10:reading",
+            "correlationId": "cep-1-2-1788657259719:sensor-0001:10",
+            "sourceTimestamp": "2026-09-06T01:14:29.769Z",
+            "detectedAt": "2026-09-06T01:14:29.777Z",
+            "co2Ppm": 1200,
+            "occupancyCount": 6,
+            "durationMs": 10001,
+            "thresholdCo2Ppm": 900
+          },
+          {
+            "kind": "silent_device",
+            "runId": "cep-1-2-1788657259719",
+            "deviceId": "sensor-0001",
+            "zoneId": "zone-1",
+            "sourceEventId": "cep-1-2-1788657259719:sensor-0001:11:reading",
+            "correlationId": "cep-1-2-1788657259719:sensor-0001:11",
+            "sourceTimestamp": "2026-09-06T01:14:30.767Z",
+            "detectedAt": "2026-09-06T01:14:36.202Z",
+            "silentForMs": 5429,
+            "lastSeenAt": "2026-09-06T01:14:30.773Z"
+          }
+        ]
+      }
+    },
+    {
+      "name": "controller restart drains persistent MQTT backlog without missing commands",
+      "passed": true,
+      "durationMs": 10061,
+      "evidence": {
+        "runId": "restart-4-2-1788657277797",
+        "stoppedAt": 1788657280053,
+        "restartedAt": 1788657282963,
+        "counts": {
+          "device.telemetry.raw": 40,
+          "sensor.reading": 40,
+          "zone.metrics.updated": 40,
+          "actuator.command.created": 40,
+          "actuator.command.applied": 40
+        },
+        "latency": {
+          "count": 40,
+          "min": 8,
+          "p50": 95,
+          "p95": 3131,
+          "p99": 3132,
+          "max": 3132
+        },
+        "normalLatencySLAExcludedDuringInjectedOutage": true
+      }
+    },
+    {
+      "name": "storage restart preserves accepted event and rollup state",
+      "passed": true,
+      "durationMs": 588,
+      "evidence": {
+        "runId": "functional-main-4-2-1788657248071",
+        "counts": {
+          "device.telemetry.raw": 16,
+          "sensor.reading": 16,
+          "zone.metrics.updated": 16,
+          "actuator.command.created": 16,
+          "actuator.command.applied": 16,
+          "cep.alert.created": 4
+        },
+        "rollups": 4
+      }
+    },
+    {
+      "name": "local control operates with no container WAN egress",
+      "passed": true,
+      "durationMs": 3210,
+      "evidence": {
+        "network": "internal-only",
+        "externalProbe": "ENOTFOUND",
+        "runId": "offline-4-2-1788657288597",
+        "counts": {
+          "device.telemetry.raw": 12,
+          "sensor.reading": 12,
+          "zone.metrics.updated": 12,
+          "actuator.command.created": 12,
+          "actuator.command.applied": 12
+        }
+      }
+    }
+  ]
+}

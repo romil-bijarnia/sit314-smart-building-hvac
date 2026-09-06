@@ -1,0 +1,17 @@
+{
+  "capturedOn": "2026-09-06",
+  "browser": "Codex built-in Browser",
+  "method": "Native Page.captureScreenshot, captureBeyondViewport=false, viewport clips only; no image editing or reconstructed output",
+  "mainRun": "functional-main-4-2-1788659657181",
+  "nodeRedRun": "functional-flow-4-2-1788659661446",
+  "captures": [
+    {
+      "file": "main-dashboard.png",
+      "sha256": "e38f8c043fb6142186a3b9eb26aff17de6867b740fd86333387d61f429f5167a"
+    },
+    {
+      "file": "node-red-dashboard.png",
+      "sha256": "973d7a770755c2209caea2c523d49de924e8179c1e99774a8f849022ace9ae4c"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "runId": "cep-1-2-1788658316393",
+  "observedAt": "2026-09-06T01:32:08.492Z",
+  "config": {
+    "devices": 1,
+    "zones": 1,
+    "ticks": 12,
+    "intervalMs": 1000,
+    "shards": 2,
+    "pipeline": "main",
+    "scenario": "co2",
+    "duplicate": false
+  },
+  "setupMs": 50,
+  "startedAt": "2026-09-06T01:31:56.443Z",
+  "offeringEndedAt": "2026-09-06T01:32:08.444Z",
+  "offeringDurationMs": 12001,
+  "nominalRawPerSecond": 1,
+  "uniqueRawOffered": 12,
+  "mqttPublishes": 12,
+  "maximumSchedulingLatenessMs": 2,
+  "appliedAtOfferEnd": 12,
+  "backlogAtOfferEnd": 0,
+  "completionFractionAtOfferEnd": 1,
+  "drainMs": 48,
+  "finalBacklog": 0,
+  "actualRawPerSecond": 0.9999166736105325,
+  "final": {
+    "observedAt": "2026-09-06T01:32:08.452Z",
+    "runId": "cep-1-2-1788658316393",
+    "pipeline": "main",
+    "totalEvents": 61,
+    "counts": {
+      "device.telemetry.raw": 12,
+      "sensor.reading": 12,
+      "zone.metrics.updated": 12,
+      "actuator.command.created": 12,
+      "actuator.command.applied": 12,
+      "cep.alert.created": 1
+    },
+    "zones": {
+      "zone-1": {
+        "metrics": {
+          "zoneId": "zone-1",
+          "sampleCount": 10,
+          "averageTemperatureC": 22,
+          "averageHumidityPercent": 54.58,
+          "averageOccupancyCount": 6,
+          "averageCo2Ppm": 1200,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:32:07.444Z"
+        },
+        "actuator": {
+          "zoneId": "zone-1",
+          "mode": "ventilate",
+          "fanSpeed": "high",
+          "reason": "Occupied zone exceeds CO2 threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:32:07.444Z",
+          "sourceCommandId": "cep-1-2-1788658316393:sensor-0001:11:command",
+          "appliedAt": "2026-09-06T01:32:07.475Z",
+          "simulated": true
+        }
+      }
+    },
+    "aggregators": {
+      "aggregator-a": 12
+    },
+    "duplicateDeliveries": 4968,
+    "rollingThroughput": {
+      "windowMs": 10000,
+      "rawPerSecond": 0.9,
+      "appliedPerSecond": 1
+    },
+    "latencyMs": {
+      "count": 12,
+      "min": 19,
+      "p50": 27,
+      "p95": 39,
+      "p99": 39,
+      "max": 39
+    },
+    "alerts": [
+      {
+        "kind": "sustained_co2",
+        "runId": "cep-1-2-1788658316393",
+        "deviceId": "sensor-0001",
+        "zoneId": "zone-1",
+        "sourceEventId": "cep-1-2-1788658316393:sensor-0001:10:reading",
+        "correlationId": "cep-1-2-1788658316393:sensor-0001:10",
+        "sourceTimestamp": "2026-09-06T01:32:06.444Z",
+        "detectedAt": "2026-09-06T01:32:06.458Z",
+        "co2Ppm": 1200,
+        "occupancyCount": 6,
+        "durationMs": 10000,
+        "thresholdCo2Ppm": 900
+      }
+    ],
+    "rollups": [
+      {
+        "id": "[\"main\",\"cep-1-2-1788658316393\",\"zone-1\",\"2026-09-06T01:31:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "cep-1-2-1788658316393",
+        "zoneId": "zone-1",
+        "minute": "2026-09-06T01:31:00.000Z",
+        "count": 4,
+        "temperatureSum": 88,
+        "humiditySum": 206.39,
+        "occupancySum": 24,
+        "co2Sum": 4800,
+        "averageTemperatureC": 22,
+        "averageCo2Ppm": 1200
+      },
+      {
+        "id": "[\"main\",\"cep-1-2-1788658316393\",\"zone-1\",\"2026-09-06T01:32:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "cep-1-2-1788658316393",
+        "zoneId": "zone-1",
+        "minute": "2026-09-06T01:32:00.000Z",
+        "count": 8,
+        "temperatureSum": 176,
+        "humiditySum": 440.99999999999994,
+        "occupancySum": 48,
+        "co2Sum": 9600,
+        "averageTemperatureC": 22,
+        "averageCo2Ppm": 1200
+      }
+    ],
+    "recent": [
+      {
+        "schemaVersion": 1,
+        "id": "cep-1-2-1788658316393:sensor-0001:sustained_co2:cep-1-2-1788658316393:sensor-0001:10:reading",
+        "type": "cep.alert.created",
+        "timestamp": "2026-09-06T01:32:06.462Z",
+        "runId": "cep-1-2-1788658316393",
+        "correlationId": "cep-1-2-1788658316393:sensor-0001:10",
+        "sourceEventId": "cep-1-2-1788658316393:sensor-0001:10:reading",
+        "payload": {
+          "kind": "sustained_co2",
+          "runId": "cep-1-2-1788658316393",
+          "deviceId": "sensor-0001",
+          "zoneId": "zone-1",
+          "sourceEventId": "cep-1-2-1788658316393:sensor-0001:10:reading",
+          "correlationId": "cep-1-2-1788658316393:sensor-0001:10",
+          "sourceTimestamp": "2026-09-06T01:32:06.444Z",
+          "detectedAt": "2026-09-06T01:32:06.458Z",
+          "co2Ppm": 1200,
+          "occupancyCount": 6,
+          "durationMs": 10000,
+          "thresholdCo2Ppm": 900
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "cep-1-2-1788658316393:sensor-0001:10:command",
+        "type": "actuator.command.created",
+        "timestamp": "2026-09-06T01:32:06.467Z",
+        "runId": "cep-1-2-1788658316393",
+        "correlationId": "cep-1-2-1788658316393:sensor-0001:10",
+        "sourceEventId": "cep-1-2-1788658316393:sensor-0001:10:metrics",
+        "payload": {
+          "zoneId": "zone-1",
+          "mode": "ventilate",
+          "fanSpeed": "high",
+          "reason": "Occupied zone exceeds CO2 threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:32:06.444Z"
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "cep-1-2-1788658316393:sensor-0001:10:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:32:06.471Z",
+        "runId": "cep-1-2-1788658316393",
+        "correlationId": "cep-1-2-1788658316393:sensor-0001:10",
+        "sourceEventId": "cep-1-2-1788658316393:sensor-0001:10:command",
+        "payload": {
+          "zoneId": "zone-1",
+          "mode": "ventilate",
+          "fanSpeed": "high",
+          "reason": "Occupied zone exceeds CO2 threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:32:06.444Z",
+          "sourceCommandId": "cep-1-2-1788658316393:sensor-0001:10:command",
+          "appliedAt": "2026-09-06T01:32:06.471Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "cep-1-2-1788658316393:sensor-0001:11",
+        "type": "device.telemetry.raw",
+        "timestamp": "2026-09-06T01:32:07.444Z",
+        "runId": "cep-1-2-1788658316393",
+        "correlationId": "cep-1-2-1788658316393:sensor-0001:11",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0001",
+          "zoneId": "zone-1",
+          "room": "F1-R01",
+          "board": "simulated ESP32",
+          "sequence": 11,
+          "temperatureC": 22,
+          "humidityPercent": 56.25,
+          "occupancyCount": 6,
+          "co2Ppm": 1200,
+          "batteryPercent": 99.88
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "cep-1-2-1788658316393:sensor-0001:11:reading",
+        "type": "sensor.reading",
+        "timestamp": "2026-09-06T01:32:07.456Z",
+        "runId": "cep-1-2-1788658316393",
+        "correlationId": "cep-1-2-1788658316393:sensor-0001:11",
+        "sourceEventId": "cep-1-2-1788658316393:sensor-0001:11",
+        "payload": {
+          "buildingId": "building-a",
+          "deviceId": "sensor-0001",
+          "zoneId": "zone-1",
+          "room": "F1-R01",
+          "board": "simulated ESP32",
+          "sequence": 11,
+          "temperatureC": 22,
+          "humidityPercent": 56.25,
+          "occupancyCount": 6,
+          "co2Ppm": 1200,
+          "batteryPercent": 99.88,
+          "receivedAt": "2026-09-06T01:32:07.449Z",
+          "normalizedBy": "gateway",
+          "sourceTimestamp": "2026-09-06T01:32:07.444Z"
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "cep-1-2-1788658316393:sensor-0001:11:metrics",
+        "type": "zone.metrics.updated",
+        "timestamp": "2026-09-06T01:32:07.466Z",
+        "runId": "cep-1-2-1788658316393",
+        "correlationId": "cep-1-2-1788658316393:sensor-0001:11",
+        "sourceEventId": "cep-1-2-1788658316393:sensor-0001:11:reading",
+        "payload": {
+          "zoneId": "zone-1",
+          "sampleCount": 10,
+          "averageTemperatureC": 22,
+          "averageHumidityPercent": 54.58,
+          "averageOccupancyCount": 6,
+          "averageCo2Ppm": 1200,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:32:07.444Z"
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "cep-1-2-1788658316393:sensor-0001:11:command",
+        "type": "actuator.command.created",
+        "timestamp": "2026-09-06T01:32:07.471Z",
+        "runId": "cep-1-2-1788658316393",
+        "correlationId": "cep-1-2-1788658316393:sensor-0001:11",
+        "sourceEventId": "cep-1-2-1788658316393:sensor-0001:11:metrics",
+        "payload": {
+          "zoneId": "zone-1",
+          "mode": "ventilate",
+          "fanSpeed": "high",
+          "reason": "Occupied zone exceeds CO2 threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:32:07.444Z"
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "cep-1-2-1788658316393:sensor-0001:11:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:32:07.475Z",
+        "runId": "cep-1-2-1788658316393",
+        "correlationId": "cep-1-2-1788658316393:sensor-0001:11",
+        "sourceEventId": "cep-1-2-1788658316393:sensor-0001:11:command",
+        "payload": {
+          "zoneId": "zone-1",
+          "mode": "ventilate",
+          "fanSpeed": "high",
+          "reason": "Occupied zone exceeds CO2 threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:32:07.444Z",
+          "sourceCommandId": "cep-1-2-1788658316393:sensor-0001:11:command",
+          "appliedAt": "2026-09-06T01:32:07.475Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      }
+    ],
+    "runs": [
+      "functional-main-4-2-1788657054138",
+      "functional-flow-4-2-1788657058289",
+      "functional-main-4-2-1788657248071",
+      "functional-flow-4-2-1788657252205",
+      "duplicates-4-2-1788657256287",
+      "invalid-1788657259350",
+      "cep-1-2-1788657259719",
+      "restart-4-2-1788657277797",
+      "offline-4-2-1788657288597",
+      "normal-r0-12-1-1788657425934",
+      "normal-r0-60-1-1788657446103",
+      "normal-r0-180-1-1788657466336",
+      "normal-r1-180-1-1788657486990",
+      "normal-r1-60-1-1788657507648",
+      "normal-r1-12-1-1788657527866",
+      "normal-r0-12-2-1788657550294",
+      "normal-r0-60-2-1788657570384",
+      "normal-r0-180-2-1788657590628",
+      "normal-r1-180-2-1788657611289",
+      "normal-r1-60-2-1788657631931",
+      "normal-r1-12-2-1788657652169",
+      "legacy-rate-12-2-1788657672253",
+      "legacy-rate-60-2-1788657678338",
+      "legacy-rate-180-2-1788657687774",
+      "soak-24-2-1788657716840",
+      "functional-main-4-2-1788658303982",
+      "functional-flow-4-2-1788658308156",
+      "duplicates-4-2-1788658312275",
+      "invalid-1788658315377",
+      "cep-1-2-1788658316393"
+    ],
+    "retention": {
+      "days": 30,
+      "rawEventsExpire": true,
+      "rollupsExpire": false
+    }
+  },
+  "transport": {
+    "protocol": "MQTT5",
+    "qos": 1,
+    "tlsVerified": true,
+    "perDeviceCertificate": true
+  },
+  "clock": "Host and local VM wall clocks; no cross-region clock synchronization claim"
+}

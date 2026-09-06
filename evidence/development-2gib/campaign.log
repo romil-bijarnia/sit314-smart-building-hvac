@@ -1,0 +1,33 @@
+sit314-hvac-aggregator-a
+d3c6edd2707b006e13ceeaeaf6d2c392dbfb6bd81cf255322b106cab7cc94290
+sit314-hvac-aggregator-b
+{"network":"sit314-hvac-edge","internalOnly":true,"aggregatorInstances":1,"dashboard":"http://localhost:3140","nodeRed":"http://localhost:3180/dashboard"}
+{"runId":"normal-r0-12-1-1788657425934","devices":12,"shards":1,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":116,"maxMs":119,"lateMs":23}
+{"runId":"normal-r0-60-1-1788657446103","devices":60,"shards":1,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":188,"maxMs":218,"lateMs":2}
+{"runId":"normal-r0-180-1-1788657466336","devices":180,"shards":1,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":420,"maxMs":505,"lateMs":2}
+{"runId":"normal-r1-180-1-1788657486990","devices":180,"shards":1,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":394,"maxMs":445,"lateMs":2}
+{"runId":"normal-r1-60-1-1788657507648","devices":60,"shards":1,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":170,"maxMs":185,"lateMs":2}
+{"runId":"normal-r1-12-1-1788657527866","devices":12,"shards":1,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":116,"maxMs":119,"lateMs":2}
+sit314-hvac-aggregator-a
+a273d51434a05537e8b21bfe610898f466ad7bcbc7322bf3e00ecc50b0877fc1
+4768ec33710db86e596164a6046f558d613b7eda77afcd4fc09270a923ac21ef
+{"network":"sit314-hvac-edge","internalOnly":true,"aggregatorInstances":2,"dashboard":"http://localhost:3140","nodeRed":"http://localhost:3180/dashboard"}
+{"runId":"normal-r0-12-2-1788657550294","devices":12,"shards":2,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":3414,"maxMs":6408,"lateMs":2}
+{"runId":"normal-r0-60-2-1788657570384","devices":60,"shards":2,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":196,"maxMs":238,"lateMs":2}
+{"runId":"normal-r0-180-2-1788657590628","devices":180,"shards":2,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":420,"maxMs":443,"lateMs":2}
+{"runId":"normal-r1-180-2-1788657611289","devices":180,"shards":2,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":446,"maxMs":521,"lateMs":2}
+{"runId":"normal-r1-60-2-1788657631931","devices":60,"shards":2,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":179,"maxMs":216,"lateMs":3}
+{"runId":"normal-r1-12-2-1788657652169","devices":12,"shards":2,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":113,"maxMs":118,"lateMs":1}
+{"runId":"legacy-rate-12-2-1788657672253","devices":12,"shards":2,"pipeline":"main","offered":720,"applied":720,"backlog":0,"p95Ms":107,"maxMs":120,"lateMs":2}
+{"runId":"legacy-rate-60-2-1788657678338","devices":60,"shards":2,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":1370,"maxMs":1468,"lateMs":1}
+{"runId":"legacy-rate-180-2-1788657687774","devices":180,"shards":2,"pipeline":"main","offered":10800,"applied":10800,"backlog":0,"p95Ms":17984,"maxMs":18096,"lateMs":1}
+[TypeError: fetch failed] {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:3140
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1705:16) {
+    errno: -61,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3140
+  }
+}

@@ -1,0 +1,870 @@
+{
+  "runId": "normal-r0-180-1-1788657466336",
+  "observedAt": "2026-09-06T01:18:06.977Z",
+  "config": {
+    "devices": 180,
+    "zones": 12,
+    "ticks": 20,
+    "intervalMs": 1000,
+    "shards": 1,
+    "pipeline": "main",
+    "scenario": "wave",
+    "duplicate": false
+  },
+  "setupMs": 610,
+  "startedAt": "2026-09-06T01:17:46.946Z",
+  "offeringEndedAt": "2026-09-06T01:18:06.947Z",
+  "offeringDurationMs": 20001,
+  "nominalRawPerSecond": 180,
+  "uniqueRawOffered": 3600,
+  "mqttPublishes": 3600,
+  "maximumSchedulingLatenessMs": 2,
+  "appliedAtOfferEnd": 3600,
+  "backlogAtOfferEnd": 0,
+  "completionFractionAtOfferEnd": 1,
+  "drainMs": 30,
+  "finalBacklog": 0,
+  "actualRawPerSecond": 179.9910004499775,
+  "final": {
+    "observedAt": "2026-09-06T01:18:06.972Z",
+    "runId": "normal-r0-180-1-1788657466336",
+    "pipeline": "main",
+    "totalEvents": 18000,
+    "counts": {
+      "device.telemetry.raw": 3600,
+      "sensor.reading": 3600,
+      "zone.metrics.updated": 3600,
+      "actuator.command.created": 3600,
+      "actuator.command.applied": 3600
+    },
+    "zones": {
+      "zone-2": {
+        "metrics": {
+          "zoneId": "zone-2",
+          "sampleCount": 10,
+          "averageTemperatureC": 22.99,
+          "averageHumidityPercent": 47.26,
+          "averageOccupancyCount": 7,
+          "averageCo2Ppm": 686,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-2",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0170:19:command",
+          "appliedAt": "2026-09-06T01:18:06.327Z",
+          "simulated": true
+        }
+      },
+      "zone-10": {
+        "metrics": {
+          "zoneId": "zone-10",
+          "sampleCount": 10,
+          "averageTemperatureC": 22.97,
+          "averageHumidityPercent": 46.74,
+          "averageOccupancyCount": 8.5,
+          "averageCo2Ppm": 743,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-10",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0178:19:command",
+          "appliedAt": "2026-09-06T01:18:06.327Z",
+          "simulated": true
+        }
+      },
+      "zone-5": {
+        "metrics": {
+          "zoneId": "zone-5",
+          "sampleCount": 10,
+          "averageTemperatureC": 23.8,
+          "averageHumidityPercent": 48.9,
+          "averageOccupancyCount": 8.2,
+          "averageCo2Ppm": 734,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-5",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0173:19:command",
+          "appliedAt": "2026-09-06T01:18:06.328Z",
+          "simulated": true
+        }
+      },
+      "zone-1": {
+        "metrics": {
+          "zoneId": "zone-1",
+          "sampleCount": 10,
+          "averageTemperatureC": 23.52,
+          "averageHumidityPercent": 48.21,
+          "averageOccupancyCount": 7.8,
+          "averageCo2Ppm": 719,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-1",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0157:19:command",
+          "appliedAt": "2026-09-06T01:18:06.323Z",
+          "simulated": true
+        }
+      },
+      "zone-4": {
+        "metrics": {
+          "zoneId": "zone-4",
+          "sampleCount": 10,
+          "averageTemperatureC": 23.41,
+          "averageHumidityPercent": 47.88,
+          "averageOccupancyCount": 9,
+          "averageCo2Ppm": 761,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-4",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0172:19:command",
+          "appliedAt": "2026-09-06T01:18:06.329Z",
+          "simulated": true
+        }
+      },
+      "zone-6": {
+        "metrics": {
+          "zoneId": "zone-6",
+          "sampleCount": 10,
+          "averageTemperatureC": 22.85,
+          "averageHumidityPercent": 46.77,
+          "averageOccupancyCount": 7,
+          "averageCo2Ppm": 687,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-6",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0174:19:command",
+          "appliedAt": "2026-09-06T01:18:06.327Z",
+          "simulated": true
+        }
+      },
+      "zone-8": {
+        "metrics": {
+          "zoneId": "zone-8",
+          "sampleCount": 10,
+          "averageTemperatureC": 23.01,
+          "averageHumidityPercent": 47.03,
+          "averageOccupancyCount": 7.9,
+          "averageCo2Ppm": 721,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-8",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0176:19:command",
+          "appliedAt": "2026-09-06T01:18:06.326Z",
+          "simulated": true
+        }
+      },
+      "zone-7": {
+        "metrics": {
+          "zoneId": "zone-7",
+          "sampleCount": 10,
+          "averageTemperatureC": 23.47,
+          "averageHumidityPercent": 47.84,
+          "averageOccupancyCount": 9.1,
+          "averageCo2Ppm": 767,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-7",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0175:19:command",
+          "appliedAt": "2026-09-06T01:18:06.330Z",
+          "simulated": true
+        }
+      },
+      "zone-3": {
+        "metrics": {
+          "zoneId": "zone-3",
+          "sampleCount": 10,
+          "averageTemperatureC": 23.12,
+          "averageHumidityPercent": 47.03,
+          "averageOccupancyCount": 8.4,
+          "averageCo2Ppm": 741,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-3",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0159:19:command",
+          "appliedAt": "2026-09-06T01:18:06.322Z",
+          "simulated": true
+        }
+      },
+      "zone-11": {
+        "metrics": {
+          "zoneId": "zone-11",
+          "sampleCount": 10,
+          "averageTemperatureC": 23.1,
+          "averageHumidityPercent": 47.57,
+          "averageOccupancyCount": 7.8,
+          "averageCo2Ppm": 713,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-11",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0179:19:command",
+          "appliedAt": "2026-09-06T01:18:06.330Z",
+          "simulated": true
+        }
+      },
+      "zone-9": {
+        "metrics": {
+          "zoneId": "zone-9",
+          "sampleCount": 10,
+          "averageTemperatureC": 23.42,
+          "averageHumidityPercent": 48.07,
+          "averageOccupancyCount": 8.5,
+          "averageCo2Ppm": 742,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-9",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0177:19:command",
+          "appliedAt": "2026-09-06T01:18:06.329Z",
+          "simulated": true
+        }
+      },
+      "zone-12": {
+        "metrics": {
+          "zoneId": "zone-12",
+          "sampleCount": 10,
+          "averageTemperatureC": 23.65,
+          "averageHumidityPercent": 48.23,
+          "averageOccupancyCount": 9.3,
+          "averageCo2Ppm": 775,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z"
+        },
+        "actuator": {
+          "zoneId": "zone-12",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0180:19:command",
+          "appliedAt": "2026-09-06T01:18:06.331Z",
+          "simulated": true
+        }
+      }
+    },
+    "aggregators": {
+      "aggregator-a": 3600
+    },
+    "duplicateDeliveries": 4,
+    "latencyMs": {
+      "count": 3600,
+      "min": 11,
+      "p50": 308,
+      "p95": 420,
+      "p99": 472,
+      "max": 505
+    },
+    "alerts": [],
+    "rollups": [
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-2\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-2",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4952.69,
+        "humiditySum": 10189.459999999995,
+        "occupancySum": 1685,
+        "co2Sum": 152264,
+        "averageTemperatureC": 23.584238095238092,
+        "averageCo2Ppm": 725.0666666666667
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-10\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-10",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4905.0700000000015,
+        "humiditySum": 10070.059999999996,
+        "occupancySum": 1632,
+        "co2Sum": 150350,
+        "averageTemperatureC": 23.3574761904762,
+        "averageCo2Ppm": 715.952380952381
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-5\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-5",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4930.190000000002,
+        "humiditySum": 10144.989999999994,
+        "occupancySum": 1657,
+        "co2Sum": 151113,
+        "averageTemperatureC": 23.47709523809525,
+        "averageCo2Ppm": 719.5857142857143
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-1\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-1",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4956.18,
+        "humiditySum": 10198.260000000002,
+        "occupancySum": 1696,
+        "co2Sum": 152659,
+        "averageTemperatureC": 23.600857142857144,
+        "averageCo2Ppm": 726.947619047619
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-4\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-4",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4936.819999999997,
+        "humiditySum": 10159.659999999998,
+        "occupancySum": 1668,
+        "co2Sum": 151533,
+        "averageTemperatureC": 23.508666666666652,
+        "averageCo2Ppm": 721.5857142857143
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-6\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-6",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4926.450000000002,
+        "humiditySum": 10132.39,
+        "occupancySum": 1648,
+        "co2Sum": 150839,
+        "averageTemperatureC": 23.459285714285723,
+        "averageCo2Ppm": 718.2809523809524
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-8\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-8",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4918.689999999996,
+        "humiditySum": 10104.75,
+        "occupancySum": 1638,
+        "co2Sum": 150578,
+        "averageTemperatureC": 23.422333333333313,
+        "averageCo2Ppm": 717.0380952380953
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-7\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-7",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4923.119999999997,
+        "humiditySum": 10119.270000000006,
+        "occupancySum": 1643,
+        "co2Sum": 150715,
+        "averageTemperatureC": 23.44342857142856,
+        "averageCo2Ppm": 717.6904761904761
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-3\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-3",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4943.26,
+        "humiditySum": 10173.620000000003,
+        "occupancySum": 1676,
+        "co2Sum": 151848,
+        "averageTemperatureC": 23.539333333333335,
+        "averageCo2Ppm": 723.0857142857143
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-11\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-11",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4889.349999999999,
+        "humiditySum": 10043.480000000001,
+        "occupancySum": 1632,
+        "co2Sum": 150164,
+        "averageTemperatureC": 23.282619047619043,
+        "averageCo2Ppm": 715.0666666666667
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-9\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-9",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4905.960000000001,
+        "humiditySum": 10081.870000000008,
+        "occupancySum": 1632,
+        "co2Sum": 150239,
+        "averageTemperatureC": 23.36171428571429,
+        "averageCo2Ppm": 715.4238095238095
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-12\",\"2026-09-06T01:17:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-12",
+        "minute": "2026-09-06T01:17:00.000Z",
+        "count": 210,
+        "temperatureSum": 4890.489999999999,
+        "humiditySum": 10034.280000000013,
+        "occupancySum": 1632,
+        "co2Sum": 150319,
+        "averageTemperatureC": 23.288047619047614,
+        "averageCo2Ppm": 715.8047619047619
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-6\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-6",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2083.2400000000002,
+        "humiditySum": 4268.539999999999,
+        "occupancySum": 708,
+        "co2Sum": 64691,
+        "averageTemperatureC": 23.147111111111112,
+        "averageCo2Ppm": 718.7888888888889
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-5\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-5",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2085.44,
+        "humiditySum": 4274.8499999999985,
+        "occupancySum": 703,
+        "co2Sum": 64515,
+        "averageTemperatureC": 23.171555555555557,
+        "averageCo2Ppm": 716.8333333333334
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-7\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-7",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2082.250000000001,
+        "humiditySum": 4263.87,
+        "occupancySum": 713,
+        "co2Sum": 64887,
+        "averageTemperatureC": 23.13611111111112,
+        "averageCo2Ppm": 720.9666666666667
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-2\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-2",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2092.91,
+        "humiditySum": 4296.4299999999985,
+        "occupancySum": 694,
+        "co2Sum": 64183,
+        "averageTemperatureC": 23.254555555555555,
+        "averageCo2Ppm": 713.1444444444444
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-3\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-3",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2089.979999999999,
+        "humiditySum": 4288.839999999999,
+        "occupancySum": 694,
+        "co2Sum": 64181,
+        "averageTemperatureC": 23.22199999999999,
+        "averageCo2Ppm": 713.1222222222223
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-1\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-1",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2099.3199999999993,
+        "humiditySum": 4308.150000000001,
+        "occupancySum": 691,
+        "co2Sum": 64147,
+        "averageTemperatureC": 23.32577777777777,
+        "averageCo2Ppm": 712.7444444444444
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-4\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-4",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2087.11,
+        "humiditySum": 4280.959999999998,
+        "occupancySum": 699,
+        "co2Sum": 64353,
+        "averageTemperatureC": 23.19011111111111,
+        "averageCo2Ppm": 715.0333333333333
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-9\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-9",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2080.1500000000005,
+        "humiditySum": 4256.089999999998,
+        "occupancySum": 724,
+        "co2Sum": 65297,
+        "averageTemperatureC": 23.112777777777783,
+        "averageCo2Ppm": 725.5222222222222
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-11\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-11",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2073.9599999999996,
+        "humiditySum": 4246.7599999999975,
+        "occupancySum": 733,
+        "co2Sum": 65516,
+        "averageTemperatureC": 23.043999999999997,
+        "averageCo2Ppm": 727.9555555555555
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-12\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-12",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2080.7499999999995,
+        "humiditySum": 4253.12,
+        "occupancySum": 737,
+        "co2Sum": 65799,
+        "averageTemperatureC": 23.11944444444444,
+        "averageCo2Ppm": 731.1
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-8\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-8",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2081.029999999999,
+        "humiditySum": 4259.85,
+        "occupancySum": 716,
+        "co2Sum": 65002,
+        "averageTemperatureC": 23.122555555555543,
+        "averageCo2Ppm": 722.2444444444444
+      },
+      {
+        "id": "[\"main\",\"normal-r0-180-1-1788657466336\",\"zone-10\",\"2026-09-06T01:18:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "normal-r0-180-1-1788657466336",
+        "zoneId": "zone-10",
+        "minute": "2026-09-06T01:18:00.000Z",
+        "count": 90,
+        "temperatureSum": 2084.7999999999997,
+        "humiditySum": 4258.94,
+        "occupancySum": 728,
+        "co2Sum": 65545,
+        "averageTemperatureC": 23.16444444444444,
+        "averageCo2Ppm": 728.2777777777778
+      }
+    ],
+    "recent": [
+      {
+        "schemaVersion": 1,
+        "id": "normal-r0-180-1-1788657466336:sensor-0178:19:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:18:06.327Z",
+        "runId": "normal-r0-180-1-1788657466336",
+        "correlationId": "normal-r0-180-1-1788657466336:sensor-0178:19",
+        "sourceEventId": "normal-r0-180-1-1788657466336:sensor-0178:19:command",
+        "payload": {
+          "zoneId": "zone-10",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0178:19:command",
+          "appliedAt": "2026-09-06T01:18:06.327Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "normal-r0-180-1-1788657466336:sensor-0174:19:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:18:06.327Z",
+        "runId": "normal-r0-180-1-1788657466336",
+        "correlationId": "normal-r0-180-1-1788657466336:sensor-0174:19",
+        "sourceEventId": "normal-r0-180-1-1788657466336:sensor-0174:19:command",
+        "payload": {
+          "zoneId": "zone-6",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0174:19:command",
+          "appliedAt": "2026-09-06T01:18:06.327Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "normal-r0-180-1-1788657466336:sensor-0173:19:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:18:06.328Z",
+        "runId": "normal-r0-180-1-1788657466336",
+        "correlationId": "normal-r0-180-1-1788657466336:sensor-0173:19",
+        "sourceEventId": "normal-r0-180-1-1788657466336:sensor-0173:19:command",
+        "payload": {
+          "zoneId": "zone-5",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0173:19:command",
+          "appliedAt": "2026-09-06T01:18:06.328Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "normal-r0-180-1-1788657466336:sensor-0172:19:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:18:06.329Z",
+        "runId": "normal-r0-180-1-1788657466336",
+        "correlationId": "normal-r0-180-1-1788657466336:sensor-0172:19",
+        "sourceEventId": "normal-r0-180-1-1788657466336:sensor-0172:19:command",
+        "payload": {
+          "zoneId": "zone-4",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0172:19:command",
+          "appliedAt": "2026-09-06T01:18:06.329Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "normal-r0-180-1-1788657466336:sensor-0177:19:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:18:06.329Z",
+        "runId": "normal-r0-180-1-1788657466336",
+        "correlationId": "normal-r0-180-1-1788657466336:sensor-0177:19",
+        "sourceEventId": "normal-r0-180-1-1788657466336:sensor-0177:19:command",
+        "payload": {
+          "zoneId": "zone-9",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0177:19:command",
+          "appliedAt": "2026-09-06T01:18:06.329Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "normal-r0-180-1-1788657466336:sensor-0175:19:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:18:06.330Z",
+        "runId": "normal-r0-180-1-1788657466336",
+        "correlationId": "normal-r0-180-1-1788657466336:sensor-0175:19",
+        "sourceEventId": "normal-r0-180-1-1788657466336:sensor-0175:19:command",
+        "payload": {
+          "zoneId": "zone-7",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0175:19:command",
+          "appliedAt": "2026-09-06T01:18:06.330Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "normal-r0-180-1-1788657466336:sensor-0179:19:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:18:06.330Z",
+        "runId": "normal-r0-180-1-1788657466336",
+        "correlationId": "normal-r0-180-1-1788657466336:sensor-0179:19",
+        "sourceEventId": "normal-r0-180-1-1788657466336:sensor-0179:19:command",
+        "payload": {
+          "zoneId": "zone-11",
+          "mode": "idle",
+          "fanSpeed": "low",
+          "reason": "Temperature and CO2 are within control thresholds",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0179:19:command",
+          "appliedAt": "2026-09-06T01:18:06.330Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "normal-r0-180-1-1788657466336:sensor-0180:19:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-06T01:18:06.331Z",
+        "runId": "normal-r0-180-1-1788657466336",
+        "correlationId": "normal-r0-180-1-1788657466336:sensor-0180:19",
+        "sourceEventId": "normal-r0-180-1-1788657466336:sensor-0180:19:command",
+        "payload": {
+          "zoneId": "zone-12",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-06T01:18:05.948Z",
+          "sourceCommandId": "normal-r0-180-1-1788657466336:sensor-0180:19:command",
+          "appliedAt": "2026-09-06T01:18:06.331Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      }
+    ],
+    "runs": [
+      "smoke-4-2-1788656600073",
+      "smoke-4-2-1788656732988",
+      "pilot-12-2-1788656840192",
+      "pilot-180-2-1788656850460",
+      "functional-main-4-2-1788657054138",
+      "functional-flow-4-2-1788657058289",
+      "functional-main-4-2-1788657248071",
+      "functional-flow-4-2-1788657252205",
+      "duplicates-4-2-1788657256287",
+      "invalid-1788657259350",
+      "cep-1-2-1788657259719",
+      "restart-4-2-1788657277797",
+      "offline-4-2-1788657288597",
+      "normal-r0-12-1-1788657425934",
+      "normal-r0-60-1-1788657446103",
+      "normal-r0-180-1-1788657466336"
+    ],
+    "retention": {
+      "days": 30,
+      "rawEventsExpire": true,
+      "rollupsExpire": false
+    }
+  },
+  "transport": {
+    "protocol": "MQTT5",
+    "qos": 1,
+    "tlsVerified": true,
+    "perDeviceCertificate": true
+  },
+  "clock": "Host and local VM wall clocks; no cross-region clock synchronization claim"
+}

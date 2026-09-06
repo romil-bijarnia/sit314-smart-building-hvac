@@ -1,0 +1,25 @@
+sit314-hvac-aggregator-a
+sit314-hvac-aggregator-b
+f2fb5936a58ead133be24713b1023118ae621187399e806ca740306187f9309a
+{"network":"sit314-hvac-edge","internalOnly":true,"aggregatorInstances":1,"dashboard":"http://localhost:3140","nodeRed":"http://localhost:3180/dashboard"}
+{"runId":"normal-r0-12-1-1788659708443","devices":12,"shards":1,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":109,"maxMs":113,"lateMs":2}
+{"runId":"normal-r0-60-1-1788659728659","devices":60,"shards":1,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":187,"maxMs":280,"lateMs":2}
+{"runId":"normal-r0-180-1-1788659748927","devices":180,"shards":1,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":402,"maxMs":489,"lateMs":2}
+{"runId":"normal-r1-180-1-1788659769621","devices":180,"shards":1,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":372,"maxMs":414,"lateMs":2}
+{"runId":"normal-r1-60-1-1788659790567","devices":60,"shards":1,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":162,"maxMs":187,"lateMs":2}
+{"runId":"normal-r1-12-1-1788659810872","devices":12,"shards":1,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":107,"maxMs":111,"lateMs":2}
+sit314-hvac-aggregator-a
+1977e76a2423195ae88fc5294b0310c2dbf0964e4226af1300209b573b41780c
+6b4cd5d897f019156340733e39217183d01820a87bd2394b2a13396895c5b226
+{"network":"sit314-hvac-edge","internalOnly":true,"aggregatorInstances":2,"dashboard":"http://localhost:3140","nodeRed":"http://localhost:3180/dashboard"}
+{"runId":"normal-r0-12-2-1788659834225","devices":12,"shards":2,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":141,"maxMs":188,"lateMs":2}
+{"runId":"normal-r0-60-2-1788659854543","devices":60,"shards":2,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":184,"maxMs":211,"lateMs":2}
+{"runId":"normal-r0-180-2-1788659874841","devices":180,"shards":2,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":411,"maxMs":481,"lateMs":2}
+{"runId":"normal-r1-180-2-1788659895538","devices":180,"shards":2,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":439,"maxMs":505,"lateMs":2}
+{"runId":"normal-r1-60-2-1788659916221","devices":60,"shards":2,"pipeline":"main","offered":1200,"applied":1200,"backlog":0,"p95Ms":209,"maxMs":240,"lateMs":1}
+{"runId":"normal-r1-12-2-1788659936715","devices":12,"shards":2,"pipeline":"main","offered":240,"applied":240,"backlog":0,"p95Ms":112,"maxMs":151,"lateMs":2}
+{"runId":"legacy-rate-12-2-1788659956900","devices":12,"shards":2,"pipeline":"main","offered":720,"applied":720,"backlog":0,"p95Ms":124,"maxMs":153,"lateMs":2}
+{"runId":"legacy-rate-60-2-1788659963422","devices":60,"shards":2,"pipeline":"main","offered":3600,"applied":3600,"backlog":0,"p95Ms":409,"maxMs":439,"lateMs":2}
+{"runId":"legacy-rate-180-2-1788659973217","devices":180,"shards":2,"pipeline":"main","offered":10800,"applied":10800,"backlog":0,"p95Ms":14279,"maxMs":14344,"lateMs":2}
+{"runId":"soak-24-2-1788659999800","devices":24,"shards":2,"pipeline":"main","offered":1440,"applied":1440,"backlog":0,"p95Ms":93,"maxMs":146,"lateMs":2}
+CAMPAIGN_COMPLETE 16

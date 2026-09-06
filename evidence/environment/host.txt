@@ -1,0 +1,9 @@
+ProductName:		macOS
+ProductVersion:		27.0
+BuildVersion:		26A5421a
+Apple M3 Max
+14
+14
+38654705664
+v25.8.1
+6.1.0 / 6.1.0

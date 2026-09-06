@@ -1,0 +1,9 @@
+{
+  "observedAt": "2026-09-06T01:17:04.804Z",
+  "node": "v22.23.2",
+  "platform": "linux",
+  "release": "7.1.4-200.fc44.aarch64",
+  "arch": "arm64",
+  "cpuCount": 7,
+  "totalMemoryBytes": 2036039680
+}
