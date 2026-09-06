@@ -1,0 +1,74 @@
+# Smart Building HVAC — SIT314
+
+An executable local progression from an in-process IoT prototype to MQTT-connected services, a full Node-RED pipeline, and measured zone-partitioned processing.
+
+## What runs
+
+Nine local containers: Mosquitto, gateway, two aggregation owners, HVAC controller, simulated actuators, complex-event processing, document storage/dashboard, and Node-RED. Each simulated device connects with its own client certificate. MQTT transport uses QoS 1 and verified mutual TLS; topic ACLs prevent a device publishing as another device.
+
+The main path is `raw telemetry → validated reading → zone metrics → command → applied acknowledgement`. Node-RED independently implements validation, aggregation and control in a separate topic namespace. The two paths share tested control rules, not an injected display feed.
+
+## Quick start with Docker
+
+Requirements: Node.js 22 or newer, npm, OpenSSL, Docker Engine with Compose. No AWS account or paid cloud resource is used.
+
+```sh
+npm ci --ignore-scripts
+node scripts/generate-certs.cjs 180
+docker compose up --build -d
+node scripts/experiment.cjs --devices 24 --zones 4 --ticks 20 --interval 1000
+```
+
+Open the evidence dashboard at **http://localhost:3140** and the independent Node-RED dashboard at **http://localhost:3180/dashboard**. The Node-RED editor is **http://localhost:3180/admin/**. These ports are bound to loopback; do not expose the development HTTP interfaces remotely.
+
+Run only one fleet experiment/campaign at a time because per-device MQTT client identities are stable. A normal experiment ends after its configured ticks and preserves source events plus its result summary under `evidence/runs/`.
+
+## Podman option used for the recorded Mac experiments
+
+The Dockerfiles also build Docker-format images with Podman. The recorded local host is an Apple M3 Max; final container experiments use a rootless Linux VM with 7 vCPUs and 4 GiB configured RAM. The GitHub workflow independently exercises Docker.
+
+```sh
+podman machine start
+npm ci --ignore-scripts
+node scripts/generate-certs.cjs 180
+node scripts/stack.cjs build
+node scripts/stack.cjs up 2
+npm run test:integration
+node scripts/campaign.cjs
+```
+
+If the stopped Podman VM has less memory, configure it before starting: `podman machine set --memory 4096`. This project does not install a system-wide trusted CA. Generated certificate keys stay under ignored `.private/` and are never required from this repository.
+
+## Verification
+
+```sh
+npm test
+npm run test:integration
+node scripts/verify-experiments.cjs
+```
+
+Unit tests cover validation, count-based windows, controller boundaries, elapsed-time CEP, ownership, durable inbox/outbox recovery, transactional document storage and TTL/rollup recovery. Integration tests require the running stack and exercise real MQTT traffic, all modes, Node-RED equivalence, duplicates, malformed measurements, TLS and ACL rejection, controller/storage restarts and blocked WAN egress. Set `CONTAINER_ENGINE=docker` when using `scripts/stack.cjs` with Docker rather than Podman.
+
+`campaign.cjs` runs two 20-second repetitions for each of 12/60/180 devices at 1 Hz with one and two aggregation owners, then the original plan's accelerated 10 Hz load shape and a 24-device soak. It preserves all final results; the earlier 2 GiB development campaign and its observed storage OOM remain separately labelled in `evidence/development-2gib/`.
+
+Static owner changes are only allowed between fully drained experiments with publishers stopped and a fresh run ID. They are not automatic scaling or live state migration. Normal process restarts retain persistent sessions.
+
+## Data and evidence
+
+- `contracts/event.schema.json`: versioned envelopes and telemetry constraints.
+- `src/`: broker adapters, domain logic, services and durable storage.
+- `node-red/`: importable full flow, dashboard, settings and container image.
+- `compose.yaml`, `Dockerfile`, `infra/`: repeatable local deployment.
+- `scripts/`: certificate setup, deployment, experiments and verification.
+- `evidence/`: actual test logs, raw synthetic inputs and machine-readable measurements.
+- `baseline/`: the preserved July EventEmitter prototype and historical measurements.
+- `docs/architecture.md`: layers, ownership, recovery semantics and deployment boundaries.
+- `hardware/`: corrected proposed pin/sample mapping; not completed circuit evidence.
+
+The store keeps an fsynced JSON document journal, atomically checkpointed state, logical collection exports, 30-day raw retention and one-minute rollups. Its in-memory indexes and local synchronous I/O remain capacity considerations; it is not represented as a production DynamoDB deployment.
+
+## Current project scope
+
+This is the local Week 8 progress milestone. Sensor readings and actuator actions are simulated. A real Tinkercad/physical circuit, AWS IoT Core/Lambda/ECS/DynamoDB/CloudWatch, cloud auto-scaling, hosted authenticated HTTPS and measured building energy savings are not claimed as complete. See `hardware/README.md` for the corrected DHT22, PIR and CO2 assumptions before physical integration.
+
+AI assistance was used for implementation, tests and documentation. Results are retained from executed experiments rather than invented measurements. Personal assessment PDFs and credentials are intentionally excluded from the public repository.

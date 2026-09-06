@@ -1,0 +1,101 @@
+name: sit314-hvac
+x-service: &service
+  build: .
+  image: sit314-hvac-service:0.8.0
+  networks: [edge]
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  environment: &environment
+    MQTT_URL: mqtts://mosquitto:8883
+    CERT_DIR: /certs
+    DATA_DIR: /data
+  depends_on: [mosquitto]
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2.0.22
+    networks: [edge]
+    ports: ["127.0.0.1:8883:8883"]
+    volumes:
+      - ./infra/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./infra/acl.conf:/mosquitto/config/acl.conf:ro
+      - ./.private/certs/ca.crt:/mosquitto/certs/ca.crt:ro
+      - ./.private/certs/mosquitto.crt:/mosquitto/certs/mosquitto.crt:ro
+      - ./.private/certs/mosquitto.key:/mosquitto/certs/mosquitto.key:ro
+      - broker-data:/mosquitto/data
+  gateway:
+    <<: *service
+    environment:
+      <<: *environment
+      ROLE: gateway
+      IDENTITY: gateway
+    volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/gateway.crt:/certs/gateway.crt:ro", "./.private/certs/gateway.key:/certs/gateway.key:ro", "gateway-data:/data"]
+  aggregator-a:
+    <<: *service
+    environment:
+      <<: *environment
+      ROLE: aggregator
+      IDENTITY: aggregator-a
+      SHARD_INDEX: 0
+      SHARD_COUNT: 2
+    volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/aggregator-a.crt:/certs/aggregator-a.crt:ro", "./.private/certs/aggregator-a.key:/certs/aggregator-a.key:ro", "aggregator-a-data:/data"]
+  aggregator-b:
+    <<: *service
+    environment:
+      <<: *environment
+      ROLE: aggregator
+      IDENTITY: aggregator-b
+      SHARD_INDEX: 1
+      SHARD_COUNT: 2
+    volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/aggregator-b.crt:/certs/aggregator-b.crt:ro", "./.private/certs/aggregator-b.key:/certs/aggregator-b.key:ro", "aggregator-b-data:/data"]
+  controller:
+    <<: *service
+    environment:
+      <<: *environment
+      ROLE: controller
+      IDENTITY: controller
+    volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/controller.crt:/certs/controller.crt:ro", "./.private/certs/controller.key:/certs/controller.key:ro", "controller-data:/data"]
+  actuator:
+    <<: *service
+    environment:
+      <<: *environment
+      ROLE: actuator
+      IDENTITY: actuator
+    volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/actuator.crt:/certs/actuator.crt:ro", "./.private/certs/actuator.key:/certs/actuator.key:ro", "actuator-data:/data"]
+  cep:
+    <<: *service
+    environment:
+      <<: *environment
+      ROLE: cep
+      IDENTITY: cep
+    volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/cep.crt:/certs/cep.crt:ro", "./.private/certs/cep.key:/certs/cep.key:ro", "cep-data:/data"]
+  storage:
+    <<: *service
+    environment:
+      <<: *environment
+      ROLE: storage
+      IDENTITY: storage
+    ports: ["127.0.0.1:3140:8080"]
+    volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/storage.crt:/certs/storage.crt:ro", "./.private/certs/storage.key:/certs/storage.key:ro", "storage-data:/data"]
+  node-red:
+    build:
+      context: .
+      dockerfile: node-red/Dockerfile
+    image: sit314-hvac-node-red:0.8.0
+    networks: [edge]
+    ports: ["127.0.0.1:3180:1880"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    volumes: ["./.private/certs/ca.crt:/certs/ca.crt:ro", "./.private/certs/node-red.crt:/certs/node-red.crt:ro", "./.private/certs/node-red.key:/certs/node-red.key:ro"]
+    depends_on: [mosquitto]
+networks:
+  edge:
+    internal: true
+volumes:
+  broker-data:
+  gateway-data:
+  aggregator-a-data:
+  aggregator-b-data:
+  controller-data:
+  actuator-data:
+  cep-data:
+  storage-data:

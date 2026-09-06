@@ -1,0 +1,37 @@
+name: Verify edge pipeline
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - run: node scripts/generate-certs.cjs 4
+      - run: docker compose config --quiet
+      - name: Build and start actual Docker containers
+        env:
+          CONTAINER_ENGINE: docker
+        run: node scripts/stack.cjs build && node scripts/stack.cjs up 2
+      - name: Real MQTT, Node-RED, failure and TLS tests
+        env:
+          CONTAINER_ENGINE: docker
+        run: sleep 4 && npm run test:integration
+      - name: Preserve test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: functional-proof
+          path: evidence/functional-tests.json
+      - name: Stop this test stack
+        if: always()
+        env:
+          CONTAINER_ENGINE: docker
+        run: node scripts/stack.cjs down

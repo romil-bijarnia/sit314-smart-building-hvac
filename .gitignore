@@ -1,0 +1,13 @@
+node_modules/
+.private/
+runtime/
+*.key
+*.pem
+*.p12
+.env
+.env.*
+.DS_Store
+*.pdf
+__pycache__/
+
+baseline/evidence/

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "design mapping; not a completed Tinkercad or physical circuit",
+  "controller": "ESP32 development board",
+  "devices": 24,
+  "zones": 4,
+  "telemetryIntervalMs": 1000,
+  "sensors": [
+    {"type":"DHT22","signals":["temperatureC","humidityPercent"],"interface":"single digital data pin","gpio":4,"physicalSampleIntervalMs":2000},
+    {"type":"PIR","signals":["motionDetected"],"interface":"digital","gpio":13,"doesNotMeasurePeopleCount":true},
+    {"type":"SCD41 NDIR CO2","signals":["co2Ppm"],"interface":"I2C","sdaGpio":21,"sclGpio":22}
+  ],
+  "actuators": [
+    {"type":"fan control","interface":"PWM through suitable driver","gpio":25},
+    {"type":"damper/relay control","interface":"digital through suitable driver","gpio":26}
+  ],
+  "syntheticFields":["occupancyCount","batteryPercent"],
+  "samplingNote":"Fleet publishes synthetic readings at1Hz. A real DHT22 cannot provide fresh readings at that rate; physical integration must cache slower samples or choose a faster sensor.",
+  "planCorrections":["DHT22 temperature and humidity do not use two analog pins.","One PIR provides motion presence, not a people count.","An MQ gas sensor is not interchangeable with a calibrated NDIR CO2 sensor."]
+}

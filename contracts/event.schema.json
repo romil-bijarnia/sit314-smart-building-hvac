@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sit314:smart-building-hvac:event:v1",
+  "title": "Smart-building HVAC event envelope, version 1",
+  "type": "object",
+  "required": ["schemaVersion", "id", "type", "timestamp", "runId", "correlationId", "payload"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "$ref": "#/$defs/derivedIdentity" },
+    "type": {
+      "enum": ["device.telemetry.raw", "sensor.reading", "zone.metrics.updated", "actuator.command.created", "actuator.command.applied", "gateway.telemetry.rejected", "cep.alert.created"]
+    },
+    "timestamp": { "$ref": "#/$defs/timestamp" },
+    "runId": { "$ref": "#/$defs/identity" },
+    "correlationId": { "$ref": "#/$defs/identity" },
+    "sourceEventId": { "$ref": "#/$defs/derivedIdentity" },
+    "payload": { "type": "object" }
+  },
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "device.telemetry.raw" } } },
+      "then": { "properties": { "id": { "maxLength": 128 }, "payload": { "$ref": "#/$defs/telemetry" } } },
+      "else": { "required": ["sourceEventId"] }
+    },
+    {
+      "if": { "properties": { "type": { "const": "sensor.reading" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/telemetry" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "zone.metrics.updated" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/metrics" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "actuator.command.created" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/command" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "actuator.command.applied" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/applied" } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "cep.alert.created" } } },
+      "then": { "properties": { "payload": { "$ref": "#/$defs/alert" } } }
+    }
+  ],
+  "$defs": {
+    "identity": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+    "derivedIdentity": { "type": "string", "minLength": 1, "maxLength": 160, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$"
+    },
+    "telemetry": {
+      "type": "object",
+      "required": ["deviceId", "zoneId", "temperatureC", "humidityPercent", "occupancyCount", "co2Ppm", "batteryPercent"],
+      "properties": {
+        "deviceId": { "$ref": "#/$defs/identity" },
+        "zoneId": { "$ref": "#/$defs/identity" },
+        "temperatureC": { "type": "number", "minimum": -20, "maximum": 80 },
+        "humidityPercent": { "type": "number", "minimum": 0, "maximum": 100 },
+        "occupancyCount": { "type": "integer", "minimum": 0, "maximum": 9007199254740991 },
+        "co2Ppm": { "type": "number", "minimum": 400, "maximum": 5000 },
+        "batteryPercent": { "type": "number", "minimum": 0, "maximum": 100 },
+        "sequence": { "type": "integer", "minimum": 0, "maximum": 9007199254740991 },
+        "sourceTimestamp": { "$ref": "#/$defs/timestamp" }
+      },
+      "additionalProperties": true
+    },
+    "metrics": {
+      "type": "object",
+      "required": ["zoneId", "sampleCount", "averageTemperatureC", "averageHumidityPercent", "averageOccupancyCount", "averageCo2Ppm", "aggregatorId", "sourceTimestamp"],
+      "properties": {
+        "zoneId": { "$ref": "#/$defs/identity" },
+        "sampleCount": { "type": "integer", "minimum": 1 },
+        "averageTemperatureC": { "type": "number", "minimum": -20, "maximum": 80 },
+        "averageHumidityPercent": { "type": "number", "minimum": 0, "maximum": 100 },
+        "averageOccupancyCount": { "type": "number", "minimum": 0, "maximum": 9007199254740991 },
+        "averageCo2Ppm": { "type": "integer", "minimum": 400, "maximum": 5000 },
+        "aggregatorId": { "$ref": "#/$defs/identity" },
+        "sourceTimestamp": { "$ref": "#/$defs/timestamp" }
+      },
+      "additionalProperties": true
+    },
+    "command": {
+      "type": "object",
+      "required": ["zoneId", "mode", "fanSpeed", "reason", "targetTemperatureC"],
+      "properties": {
+        "zoneId": { "$ref": "#/$defs/identity" },
+        "mode": { "enum": ["cool", "ventilate", "idle"] },
+        "fanSpeed": { "enum": ["high", "medium", "low"] },
+        "reason": { "type": "string", "minLength": 1 },
+        "targetTemperatureC": { "type": "number" },
+        "sourceTimestamp": { "$ref": "#/$defs/timestamp" }
+      },
+      "additionalProperties": true
+    },
+    "applied": {
+      "type": "object",
+      "required": ["zoneId", "mode", "fanSpeed", "sourceCommandId", "appliedAt", "sourceTimestamp"],
+      "properties": {
+        "zoneId": { "$ref": "#/$defs/identity" },
+        "mode": { "enum": ["cool", "ventilate", "idle"] },
+        "fanSpeed": { "enum": ["high", "medium", "low"] },
+        "sourceCommandId": { "$ref": "#/$defs/derivedIdentity" },
+        "appliedAt": { "$ref": "#/$defs/timestamp" },
+        "sourceTimestamp": { "$ref": "#/$defs/timestamp" }
+      },
+      "additionalProperties": true
+    },
+    "alert": {
+      "type": "object",
+      "required": ["kind", "runId", "deviceId", "zoneId", "sourceEventId", "correlationId", "sourceTimestamp", "detectedAt"],
+      "properties": {
+        "kind": { "enum": ["sustained_co2", "silent_device"] },
+        "runId": { "$ref": "#/$defs/identity" },
+        "deviceId": { "$ref": "#/$defs/identity" },
+        "zoneId": { "$ref": "#/$defs/identity" },
+        "sourceEventId": { "$ref": "#/$defs/derivedIdentity" },
+        "correlationId": { "$ref": "#/$defs/identity" },
+        "sourceTimestamp": { "$ref": "#/$defs/timestamp" },
+        "detectedAt": { "$ref": "#/$defs/timestamp" },
+        "co2Ppm": { "type": "number", "exclusiveMinimum": 900, "maximum": 5000 },
+        "occupancyCount": { "type": "integer", "minimum": 2, "maximum": 9007199254740991 },
+        "durationMs": { "type": "number", "minimum": 0 },
+        "thresholdCo2Ppm": { "const": 900 },
+        "silentForMs": { "type": "number", "minimum": 0 },
+        "lastSeenAt": { "$ref": "#/$defs/timestamp" }
+      },
+      "allOf": [
+        { "if": { "properties": { "kind": { "const": "sustained_co2" } } }, "then": { "required": ["co2Ppm", "occupancyCount", "durationMs", "thresholdCo2Ppm"] } },
+        { "if": { "properties": { "kind": { "const": "silent_device" } } }, "then": { "required": ["silentForMs", "lastSeenAt"] } }
+      ],
+      "additionalProperties": true
+    }
+  }
+}

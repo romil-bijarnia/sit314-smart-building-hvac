@@ -1,0 +1,23 @@
+{
+  "name": "sit314-smart-building-hvac",
+  "version": "0.8.0",
+  "private": true,
+  "description": "Measured MQTT smart-building HVAC microservices and Node-RED pipeline for SIT314",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "certs": "node scripts/generate-certs.cjs",
+    "start": "node src/service.cjs",
+    "experiment": "node scripts/experiment.cjs",
+    "verify": "node scripts/verify-experiments.cjs",
+    "stack:build": "node scripts/stack.cjs build",
+    "stack:up": "node scripts/stack.cjs up",
+    "stack:down": "node scripts/stack.cjs down",
+    "test:integration": "node scripts/functional-tests.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "mqtt": "5.14.1"
+  }
+}
