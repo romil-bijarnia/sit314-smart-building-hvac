@@ -1,0 +1,415 @@
+{
+  "ranAt": "2026-07-07T14:12:03.474Z",
+  "config": {
+    "buildingId": "building-a",
+    "deviceCount": 180,
+    "zoneCount": 12,
+    "durationSeconds": 6,
+    "intervalMs": 100,
+    "targetTemperature": 22,
+    "outputPath": "data/events.jsonl",
+    "summaryPath": "data/load-test-large.json",
+    "storageEnabled": false,
+    "label": "large"
+  },
+  "durationMs": 6103,
+  "throughputEventsPerSecond": 7078.49,
+  "counters": {
+    "actuator.command.created": 10800,
+    "zone.metrics.updated": 10800,
+    "sensor.reading": 10800,
+    "device.telemetry.raw": 10800
+  },
+  "hardware": {
+    "devices": 180,
+    "zones": 12,
+    "communication": "MQTT over Wi-Fi",
+    "sensorTypes": [
+      "temperature",
+      "humidity",
+      "occupancy",
+      "co2"
+    ],
+    "actuatorTypes": [
+      "HVAC damper and fan actuator"
+    ],
+    "manifest": [
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-001",
+        "controllerId": "edge-node-01",
+        "zoneId": "zone-1",
+        "floor": 1,
+        "room": "F1-R01",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-1/sensor-001/telemetry",
+        "commandTopic": "building-a/zone-1/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-002",
+        "controllerId": "edge-node-02",
+        "zoneId": "zone-2",
+        "floor": 1,
+        "room": "F1-R02",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-2/sensor-002/telemetry",
+        "commandTopic": "building-a/zone-2/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-003",
+        "controllerId": "edge-node-03",
+        "zoneId": "zone-3",
+        "floor": 1,
+        "room": "F1-R03",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-3/sensor-003/telemetry",
+        "commandTopic": "building-a/zone-3/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-004",
+        "controllerId": "edge-node-04",
+        "zoneId": "zone-4",
+        "floor": 1,
+        "room": "F1-R04",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-4/sensor-004/telemetry",
+        "commandTopic": "building-a/zone-4/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-005",
+        "controllerId": "edge-node-05",
+        "zoneId": "zone-5",
+        "floor": 2,
+        "room": "F2-R05",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-5/sensor-005/telemetry",
+        "commandTopic": "building-a/zone-5/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-006",
+        "controllerId": "edge-node-06",
+        "zoneId": "zone-6",
+        "floor": 2,
+        "room": "F2-R06",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-6/sensor-006/telemetry",
+        "commandTopic": "building-a/zone-6/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-007",
+        "controllerId": "edge-node-07",
+        "zoneId": "zone-7",
+        "floor": 2,
+        "room": "F2-R07",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-7/sensor-007/telemetry",
+        "commandTopic": "building-a/zone-7/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-008",
+        "controllerId": "edge-node-08",
+        "zoneId": "zone-8",
+        "floor": 2,
+        "room": "F2-R08",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-8/sensor-008/telemetry",
+        "commandTopic": "building-a/zone-8/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-009",
+        "controllerId": "edge-node-09",
+        "zoneId": "zone-9",
+        "floor": 3,
+        "room": "F3-R09",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-9/sensor-009/telemetry",
+        "commandTopic": "building-a/zone-9/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-010",
+        "controllerId": "edge-node-10",
+        "zoneId": "zone-10",
+        "floor": 3,
+        "room": "F3-R10",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-10/sensor-010/telemetry",
+        "commandTopic": "building-a/zone-10/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      }
+    ]
+  },
+  "gateway": {
+    "accepted": 10800,
+    "rejected": 0
+  },
+  "zones": [
+    {
+      "zoneId": "zone-1",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.37,
+      "averageHumidityPercent": 48.05,
+      "averageOccupancyCount": 8.2,
+      "averageCo2Ppm": 730
+    },
+    {
+      "zoneId": "zone-10",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.02,
+      "averageHumidityPercent": 47.02,
+      "averageOccupancyCount": 8.4,
+      "averageCo2Ppm": 738
+    },
+    {
+      "zoneId": "zone-11",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.02,
+      "averageHumidityPercent": 47.01,
+      "averageOccupancyCount": 8.1,
+      "averageCo2Ppm": 728
+    },
+    {
+      "zoneId": "zone-12",
+      "sampleCount": 10,
+      "averageTemperatureC": 22.93,
+      "averageHumidityPercent": 46.88,
+      "averageOccupancyCount": 8.2,
+      "averageCo2Ppm": 730
+    },
+    {
+      "zoneId": "zone-2",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.46,
+      "averageHumidityPercent": 48.06,
+      "averageOccupancyCount": 8.1,
+      "averageCo2Ppm": 729
+    },
+    {
+      "zoneId": "zone-3",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.33,
+      "averageHumidityPercent": 47.81,
+      "averageOccupancyCount": 8.4,
+      "averageCo2Ppm": 739
+    },
+    {
+      "zoneId": "zone-4",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.37,
+      "averageHumidityPercent": 47.79,
+      "averageOccupancyCount": 8.2,
+      "averageCo2Ppm": 733
+    },
+    {
+      "zoneId": "zone-5",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.28,
+      "averageHumidityPercent": 47.61,
+      "averageOccupancyCount": 8.3,
+      "averageCo2Ppm": 736
+    },
+    {
+      "zoneId": "zone-6",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.16,
+      "averageHumidityPercent": 47.4,
+      "averageOccupancyCount": 8.4,
+      "averageCo2Ppm": 738
+    },
+    {
+      "zoneId": "zone-7",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.13,
+      "averageHumidityPercent": 47.3,
+      "averageOccupancyCount": 8.3,
+      "averageCo2Ppm": 735
+    },
+    {
+      "zoneId": "zone-8",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.03,
+      "averageHumidityPercent": 47.15,
+      "averageOccupancyCount": 8.3,
+      "averageCo2Ppm": 733
+    },
+    {
+      "zoneId": "zone-9",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.13,
+      "averageHumidityPercent": 47.18,
+      "averageOccupancyCount": 8.4,
+      "averageCo2Ppm": 740
+    }
+  ],
+  "controller": {
+    "totalCommands": 10800,
+    "byMode": {
+      "cool": 4409,
+      "idle": 6391
+    },
+    "latestCommands": [
+      {
+        "zoneId": "zone-3",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      },
+      {
+        "zoneId": "zone-4",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      },
+      {
+        "zoneId": "zone-5",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      },
+      {
+        "zoneId": "zone-6",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      },
+      {
+        "zoneId": "zone-7",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      },
+      {
+        "zoneId": "zone-8",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      },
+      {
+        "zoneId": "zone-9",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      },
+      {
+        "zoneId": "zone-10",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      },
+      {
+        "zoneId": "zone-11",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      },
+      {
+        "zoneId": "zone-12",
+        "mode": "idle",
+        "fanSpeed": "low",
+        "reason": "zone is within comfort range"
+      }
+    ]
+  },
+  "storage": {
+    "enabled": false,
+    "outputPath": null,
+    "storedEvents": 0
+  }
+}

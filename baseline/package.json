@@ -1,0 +1,16 @@
+{
+  "name": "sit314-smart-building-simulator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local Node.js scaffold for SIT314 simulated IoT scalability project work.",
+  "scripts": {
+    "start": "node src/index.js",
+    "simulate": "node src/index.js --devices 24 --zones 4 --duration 20 --interval 1000",
+    "evidence:hardware": "node tools/generate_hardware_evidence.js",
+    "load:test": "node src/load-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

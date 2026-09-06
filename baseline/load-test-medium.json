@@ -1,0 +1,367 @@
+{
+  "ranAt": "2026-07-07T14:11:57.370Z",
+  "config": {
+    "buildingId": "building-a",
+    "deviceCount": 60,
+    "zoneCount": 6,
+    "durationSeconds": 6,
+    "intervalMs": 100,
+    "targetTemperature": 22,
+    "outputPath": "data/events.jsonl",
+    "summaryPath": "data/load-test-medium.json",
+    "storageEnabled": false,
+    "label": "medium"
+  },
+  "durationMs": 6103,
+  "throughputEventsPerSecond": 2359.5,
+  "counters": {
+    "actuator.command.created": 3600,
+    "zone.metrics.updated": 3600,
+    "sensor.reading": 3600,
+    "device.telemetry.raw": 3600
+  },
+  "hardware": {
+    "devices": 60,
+    "zones": 6,
+    "communication": "MQTT over Wi-Fi",
+    "sensorTypes": [
+      "temperature",
+      "humidity",
+      "occupancy",
+      "co2"
+    ],
+    "actuatorTypes": [
+      "HVAC damper and fan actuator"
+    ],
+    "manifest": [
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-001",
+        "controllerId": "edge-node-01",
+        "zoneId": "zone-1",
+        "floor": 1,
+        "room": "F1-R01",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-1/sensor-001/telemetry",
+        "commandTopic": "building-a/zone-1/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-002",
+        "controllerId": "edge-node-02",
+        "zoneId": "zone-2",
+        "floor": 1,
+        "room": "F1-R02",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-2/sensor-002/telemetry",
+        "commandTopic": "building-a/zone-2/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-003",
+        "controllerId": "edge-node-03",
+        "zoneId": "zone-3",
+        "floor": 1,
+        "room": "F1-R03",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-3/sensor-003/telemetry",
+        "commandTopic": "building-a/zone-3/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-004",
+        "controllerId": "edge-node-04",
+        "zoneId": "zone-4",
+        "floor": 1,
+        "room": "F1-R04",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-4/sensor-004/telemetry",
+        "commandTopic": "building-a/zone-4/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-005",
+        "controllerId": "edge-node-05",
+        "zoneId": "zone-5",
+        "floor": 2,
+        "room": "F2-R05",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-5/sensor-005/telemetry",
+        "commandTopic": "building-a/zone-5/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-006",
+        "controllerId": "edge-node-06",
+        "zoneId": "zone-6",
+        "floor": 2,
+        "room": "F2-R06",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-6/sensor-006/telemetry",
+        "commandTopic": "building-a/zone-6/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-007",
+        "controllerId": "edge-node-01",
+        "zoneId": "zone-1",
+        "floor": 1,
+        "room": "F1-R01",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-1/sensor-007/telemetry",
+        "commandTopic": "building-a/zone-1/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-008",
+        "controllerId": "edge-node-02",
+        "zoneId": "zone-2",
+        "floor": 1,
+        "room": "F1-R02",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-2/sensor-008/telemetry",
+        "commandTopic": "building-a/zone-2/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-009",
+        "controllerId": "edge-node-03",
+        "zoneId": "zone-3",
+        "floor": 1,
+        "room": "F1-R03",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-3/sensor-009/telemetry",
+        "commandTopic": "building-a/zone-3/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      },
+      {
+        "buildingId": "building-a",
+        "deviceId": "sensor-010",
+        "controllerId": "edge-node-04",
+        "zoneId": "zone-4",
+        "floor": 1,
+        "room": "F1-R04",
+        "board": "Simulated ESP32 development board",
+        "communication": "MQTT over Wi-Fi",
+        "telemetryTopic": "building-a/zone-4/sensor-010/telemetry",
+        "commandTopic": "building-a/zone-4/hvac/command",
+        "sensors": [
+          "temperature",
+          "humidity",
+          "occupancy",
+          "co2"
+        ],
+        "actuator": "actuator",
+        "sampleIntervalSeconds": 1
+      }
+    ]
+  },
+  "gateway": {
+    "accepted": 3600,
+    "rejected": 0
+  },
+  "zones": [
+    {
+      "zoneId": "zone-1",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.81,
+      "averageHumidityPercent": 49.2,
+      "averageOccupancyCount": 8.1,
+      "averageCo2Ppm": 727
+    },
+    {
+      "zoneId": "zone-2",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.72,
+      "averageHumidityPercent": 49.1,
+      "averageOccupancyCount": 8.2,
+      "averageCo2Ppm": 729
+    },
+    {
+      "zoneId": "zone-3",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.84,
+      "averageHumidityPercent": 49.18,
+      "averageOccupancyCount": 8.3,
+      "averageCo2Ppm": 735
+    },
+    {
+      "zoneId": "zone-4",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.86,
+      "averageHumidityPercent": 49.2,
+      "averageOccupancyCount": 8.1,
+      "averageCo2Ppm": 729
+    },
+    {
+      "zoneId": "zone-5",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.81,
+      "averageHumidityPercent": 49.1,
+      "averageOccupancyCount": 8.2,
+      "averageCo2Ppm": 732
+    },
+    {
+      "zoneId": "zone-6",
+      "sampleCount": 10,
+      "averageTemperatureC": 23.74,
+      "averageHumidityPercent": 48.96,
+      "averageOccupancyCount": 8.2,
+      "averageCo2Ppm": 731
+    }
+  ],
+  "controller": {
+    "totalCommands": 3600,
+    "byMode": {
+      "cool": 1800,
+      "idle": 1800
+    },
+    "latestCommands": [
+      {
+        "zoneId": "zone-3",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      },
+      {
+        "zoneId": "zone-4",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      },
+      {
+        "zoneId": "zone-5",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      },
+      {
+        "zoneId": "zone-6",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      },
+      {
+        "zoneId": "zone-1",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      },
+      {
+        "zoneId": "zone-2",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      },
+      {
+        "zoneId": "zone-3",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      },
+      {
+        "zoneId": "zone-4",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      },
+      {
+        "zoneId": "zone-5",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      },
+      {
+        "zoneId": "zone-6",
+        "mode": "cool",
+        "fanSpeed": "medium",
+        "reason": "temperature above target while occupied"
+      }
+    ]
+  },
+  "storage": {
+    "enabled": false,
+    "outputPath": null,
+    "storedEvents": 0
+  }
+}
