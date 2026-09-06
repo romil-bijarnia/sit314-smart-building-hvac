@@ -10,3 +10,5 @@ USER node-red
 ENV MQTT_HOST=mosquitto
 EXPOSE 1880
 CMD ["--settings", "/data/settings.cjs", "/data/flows.json"]
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 CMD node -e "require('http').get('http://127.0.0.1:1880/api/status',r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))"

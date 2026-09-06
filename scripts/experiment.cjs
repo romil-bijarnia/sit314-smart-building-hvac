@@ -34,8 +34,9 @@ async function runFleet({devices=12,zones=4,ticks=20,intervalMs=1000,shards=2,pi
   const result={runId,observedAt:new Date().toISOString(),config:{devices,zones,ticks,intervalMs,shards,pipeline,scenario,duplicate},setupMs:startedAt-setupStart,
    startedAt:new Date(startedAt).toISOString(),offeringEndedAt:new Date(offeringEndedAt).toISOString(),offeringDurationMs:offeringEndedAt-startedAt,
    nominalRawPerSecond:devices*1000/intervalMs,uniqueRawOffered:expected,mqttPublishes:publishCount,maximumSchedulingLatenessMs:Math.max(...lateness),
-   appliedAtOfferEnd:atEnd.counts['actuator.command.applied']||0,backlogAtOfferEnd:expected-(atEnd.counts['actuator.command.applied']||0),
-   completionFractionAtOfferEnd:(atEnd.counts['actuator.command.applied']||0)/expected,drainMs:Date.now()-offeringEndedAt,
+   appliedAtFirstPostOfferObservation:atEnd.counts['actuator.command.applied']||0,backlogAtFirstPostOfferObservation:expected-(atEnd.counts['actuator.command.applied']||0),
+   completionFractionAtFirstPostOfferObservation:(atEnd.counts['actuator.command.applied']||0)/expected,firstPostOfferObservationAt:atEnd.observedAt,
+   drainMs:Date.now()-offeringEndedAt,
    finalBacklog:expected-(final.counts['actuator.command.applied']||0),actualRawPerSecond:expected*1000/(offeringEndedAt-startedAt),
    final,transport:{protocol:'MQTT5',qos:1,tlsVerified:true,perDeviceCertificate:true},clock:'Host and local VM wall clocks; no cross-region clock synchronization claim'};
   fs.writeFileSync(path.join(dir,'raw-sent.jsonl'),sourceLines.join('\n')+'\n');fs.writeFileSync(path.join(dir,'summary.json'),JSON.stringify(result,null,2)+'\n');
