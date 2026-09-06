@@ -41,7 +41,7 @@ async function main(){client=await connect(identity,{},c=>{c.handleMessage=recei
 
  await client.subscribeAsync(filters[role],{qos:1});if(ledger){await drain();retryTimer=setInterval(drain,250);}
  if(role==='cep')sweepTimer=setInterval(()=>{if(processing||stopping)return;for(const a of cep.sweep(Date.now())){const event=alertEvent(a);const topic=`hvac/main/${event.runId}/alert/${a.zoneId}`;const key='main|'+event.runId+'|'+event.id;if(ledger.inputs.has(key))continue;ledger.receive(topic,Buffer.from(JSON.stringify(event)));const input=ledger.inputs.get(key);ledger.prepare(input,[{pipeline:'main',event}]);}drain();},500);
- maintenanceTimer=setInterval(()=>{if(store)store.maintenance();else if(!processing)ledger.compact();},5000);
+ maintenanceTimer=setInterval(()=>{if(store)store.maintenance();else if(!processing)ledger.compact();},60000);
  server=http.createServer((req,res)=>{if(req.method!=='GET'){res.writeHead(405);res.end();return;}const url=new URL(req.url,'http://localhost');res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');
   if(url.pathname==='/health'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify({role,identity,connected:client.connected,processed,errors,pending:ledger?ledger.pending().length:0}));return;}
   if(store&&url.pathname==='/api/status'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify(store.snapshot(url.searchParams.get('run'),url.searchParams.get('pipeline'))));return;}

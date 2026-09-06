@@ -18,7 +18,7 @@ function topicFor(event, pipeline='main') {
 }
 async function connect(identity, overrides={}, configure) {
   const certDir = process.env.CERT_DIR || path.join(__dirname,'../.private/certs');
-  const client = mqtt.connect(process.env.MQTT_URL || 'mqtts://localhost:8883',{
+  const client = mqtt.connect(process.env.MQTT_URL || 'mqtts://127.0.0.1:8883',{
     protocolVersion:5, clientId:'sit314-'+identity+(process.env.CLIENT_TAG?'-'+process.env.CLIENT_TAG:''),
     ca:fs.readFileSync(path.join(certDir,'ca.crt')),
     cert:fs.readFileSync(path.join(certDir,identity+'.crt')),
@@ -26,7 +26,7 @@ async function connect(identity, overrides={}, configure) {
     rejectUnauthorized:true, reconnectPeriod:1000,connectTimeout:15000,clean:false,properties:{sessionExpiryInterval:86400},
     ...overrides, manualConnect:true
   });
-  client.on('error',err=>process.stderr.write(JSON.stringify({component:identity,error:err.message})+'\n'));
+  client.on('error',err=>process.stderr.write(JSON.stringify({component:identity,error:err.message,code:err.code,causes:err.errors?.map(e=>({code:e.code,address:e.address,port:e.port}))})+'\n'));
   await new Promise((resolve,reject)=>{
     const timer=setTimeout(()=>{client.end(true);reject(new Error('MQTT connection timed out: '+identity));},16000);
     client.once('connect',()=>{if(client.stream.setNoDelay)client.stream.setNoDelay(true);clearTimeout(timer);resolve();});
