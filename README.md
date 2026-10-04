@@ -4,7 +4,7 @@ An executable local progression from an in-process IoT prototype to MQTT-connect
 
 ## Final evaluation — 22 September 2026
 
-Tag [`v6.3d-final`](https://gitlab.com/romil-bijarnia/sit314-smart-building-hvac/-/tree/v6.3d-final) is the revision the SIT314 6.3D project report refers to. It contains the service source measured on 22 September, the deployment configuration, every raw trial, and the scripts that re-check the reported numbers.
+Tag [`v6.3d-final`](https://gitlab.deakin.edu.au/s222528574/sit314-smart-building-hvac/-/tree/v6.3d-final) is the revision the SIT314 6.3D project report refers to. It contains the service source measured on 22 September, the deployment configuration, every raw trial, and the scripts that re-check the reported numbers.
 
 | Where | What it holds |
 |---|---|
