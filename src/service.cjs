@@ -2,12 +2,13 @@
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http');
 const {connect,publish,decodeTopic}=require('./bus.cjs');
 const {validateRaw,deriveEvent,ZoneAggregator,decideCommand,ownsZone,CepEngine}=require('./domain.cjs');
+const {aggregationFilters}=require('./routing.cjs');
 const {EventStore}=require('./store.cjs');const {StageLedger}=require('./ledger.cjs');
 const role=process.env.ROLE||'gateway',identity=process.env.IDENTITY||role;
 const dataDir=process.env.DATA_DIR||path.join(__dirname,'../runtime',identity);fs.mkdirSync(dataDir,{recursive:true});
 const agg=new ZoneAggregator(10);const cep=new CepEngine({sustainedMs:Number(process.env.SUSTAINED_MS||10000),silentMs:Number(process.env.SILENT_MS||5000)});
 const store=role==='storage'?new EventStore(dataDir):null;const ledger=store?null:new StageLedger(dataDir);
-let client,server,processing=false,stopping=false,errors=0,processed=0;let retryTimer,sweepTimer,maintenanceTimer;
+let client,server,processing=false,stopping=false,errors=0,processed=0;let retryTimer,sweepTimer,maintenanceTimer;let inboundPublishes=0,inboundPayloadBytes=0;const processStartedAt=Date.now();
 const shardIndex=Number(process.env.SHARD_INDEX||0),shardCount=Number(process.env.SHARD_COUNT||1);
 const log=(message,extra={})=>process.stdout.write(JSON.stringify({at:new Date().toISOString(),role,identity,message,...extra})+'\n');
 function alertEvent(alert){return {schemaVersion:1,id:`${alert.runId}:${alert.deviceId}:${alert.kind}:${alert.sourceEventId}`,type:'cep.alert.created',timestamp:new Date().toISOString(),runId:alert.runId,correlationId:alert.correlationId,sourceEventId:alert.sourceEventId,payload:alert};}
@@ -34,16 +35,16 @@ async function drain(){if(processing||!client?.connected)return;processing=true;
  for(const item of prepared.outputs)await publish(client,item.event,item.pipeline);
  ledger.delivered(input.key);processed++;
 }}catch(e){failed=true;errors++;log('dispatcher_retry',{error:e.message});}finally{processing=false;if(!failed&&ledger.pending().length&&!stopping)setImmediate(drain);}}
-function receivePacket(packet,done){try{const info=decodeTopic(packet.topic);if(info){if(store){let e;try{e=JSON.parse(packet.payload.toString());}catch{fs.appendFileSync(path.join(dataDir,'dead-letter.jsonl'),JSON.stringify({timestamp:new Date().toISOString(),topic:packet.topic,raw:packet.payload.toString(),reason:'malformed JSON'})+'\n');done();return;}try{store.ingest(e,info.pipeline);processed++;}catch(err){if(!(err instanceof TypeError)||store.faulted)throw err;fs.appendFileSync(path.join(dataDir,'dead-letter.jsonl'),JSON.stringify({timestamp:new Date().toISOString(),topic:packet.topic,raw:packet.payload.toString(),reason:err.message})+'\n');errors++;log('quarantined_invalid_envelope',{reason:err.message});}}else ledger.receive(packet.topic,packet.payload);}done();if(ledger)setImmediate(drain);}catch(e){errors++;log('fatal_inbox_commit',{error:e.message});done(e);setImmediate(()=>process.exit(1));}}
+function receivePacket(packet,done){inboundPublishes++;inboundPayloadBytes+=packet.payload.length;try{const info=decodeTopic(packet.topic);if(info){if(store){let e;try{e=JSON.parse(packet.payload.toString());}catch{fs.appendFileSync(path.join(dataDir,'dead-letter.jsonl'),JSON.stringify({timestamp:new Date().toISOString(),topic:packet.topic,raw:packet.payload.toString(),reason:'malformed JSON'})+'\n');done();return;}try{store.ingest(e,info.pipeline);processed++;}catch(err){if(!(err instanceof TypeError)||store.faulted)throw err;fs.appendFileSync(path.join(dataDir,'dead-letter.jsonl'),JSON.stringify({timestamp:new Date().toISOString(),topic:packet.topic,raw:packet.payload.toString(),reason:err.message})+'\n');errors++;log('quarantined_invalid_envelope',{reason:err.message});}}else ledger.receive(packet.topic,packet.payload);}done();if(ledger)setImmediate(drain);}catch(e){errors++;log('fatal_inbox_commit',{error:e.message});done(e);setImmediate(()=>process.exit(1));}}
 async function main(){client=await connect(identity,{},c=>{c.handleMessage=receivePacket;});
- const filters={gateway:['hvac/main/+/raw/+'],aggregator:['hvac/main/+/reading/+'],controller:['hvac/main/+/metrics/+'],actuator:['hvac/+/+/command/+'],storage:['hvac/#'],cep:['hvac/main/+/reading/+']};if(!filters[role])throw Error('Unknown role');
+ const filters={gateway:['hvac/main/+/raw/+'],aggregator:role==='aggregator'?aggregationFilters({mode:process.env.AGGREGATION_ROUTING||'broadcast',shardIndex,shardCount,zoneCount:Number(process.env.ZONE_COUNT||12)}):[],controller:['hvac/main/+/metrics/+'],actuator:['hvac/+/+/command/+'],storage:['hvac/#'],cep:['hvac/main/+/reading/+']};if(!filters[role])throw Error('Unknown role');
  // Persist the inbox before MQTT acknowledges delivery. Outgoing PUBACKs are handled outside this callback.
 
  await client.subscribeAsync(filters[role],{qos:1});if(ledger){await drain();retryTimer=setInterval(drain,250);}
  if(role==='cep')sweepTimer=setInterval(()=>{if(processing||stopping)return;for(const a of cep.sweep(Date.now())){const event=alertEvent(a);const topic=`hvac/main/${event.runId}/alert/${a.zoneId}`;const key='main|'+event.runId+'|'+event.id;if(ledger.inputs.has(key))continue;ledger.receive(topic,Buffer.from(JSON.stringify(event)));const input=ledger.inputs.get(key);ledger.prepare(input,[{pipeline:'main',event}]);}drain();},500);
  maintenanceTimer=setInterval(()=>{if(store)store.maintenance();else if(!processing)ledger.compact();},60000);
  server=http.createServer((req,res)=>{if(req.method!=='GET'){res.writeHead(405);res.end();return;}const url=new URL(req.url,'http://localhost');res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');
-  if(url.pathname==='/health'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify({role,identity,connected:client.connected,processed,errors,pending:ledger?ledger.pending().length:0}));return;}
+  if(url.pathname==='/health'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify({role,identity,connected:client.connected,processed,errors,pending:ledger?ledger.pending().length:0,inboundPublishes,inboundPayloadBytes,cpuUsageMicroseconds:process.cpuUsage(),memoryBytes:process.memoryUsage(),uptimeMs:Date.now()-processStartedAt,aggregationRouting:process.env.AGGREGATION_ROUTING||'broadcast'}));return;}
   if(store&&url.pathname==='/api/status'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify(store.snapshot(url.searchParams.get('run'),url.searchParams.get('pipeline'))));return;}
   if(store&&url.pathname==='/'){res.setHeader('Content-Type','text/html; charset=utf-8');res.end(fs.readFileSync(path.join(__dirname,'../public/index.html')));return;}res.writeHead(404);res.end();
  });server.listen(Number(process.env.PORT||8080),'0.0.0.0');log('ready',{transport:'mutual TLS',qos:1,persistentSession:true,shardIndex,shardCount});

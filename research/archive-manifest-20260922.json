@@ -1,0 +1,2115 @@
+{
+  "omittedRawInputMirrors": [
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r0-normal12-broadcast-1790022398148/raw-sent.jsonl",
+      "canonicalPath": "research/results/r0-normal12-broadcast/raw-sent.jsonl",
+      "bytes": 62808,
+      "sha256": "f203abcd5d499acab8e49754ad3218add88914930b000acaf4f21322e1c5dc96"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r0-normal12-selective-1790022418917/raw-sent.jsonl",
+      "canonicalPath": "research/results/r0-normal12-selective/raw-sent.jsonl",
+      "bytes": 62808,
+      "sha256": "b3963d6e311dc3b766aae07ec3314f8ec83769599af66e4aeca6d2a3d78804cf"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r0-normal180-broadcast-1790022440026/raw-sent.jsonl",
+      "canonicalPath": "research/results/r0-normal180-broadcast/raw-sent.jsonl",
+      "bytes": 947391,
+      "sha256": "4f7bb4a0e0230c4049ca02e71d51f890d724f8635e656c7f518ef1b3b9088386"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r0-normal180-selective-1790022461397/raw-sent.jsonl",
+      "canonicalPath": "research/results/r0-normal180-selective/raw-sent.jsonl",
+      "bytes": 947391,
+      "sha256": "acac1ca4a6243fb96b672a6c7a3e57c3dd0dda3536f54be5122d0e7ecdcacfa6"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r0-stress180-broadcast-1790022482670/raw-sent.jsonl",
+      "canonicalPath": "research/results/r0-stress180-broadcast/raw-sent.jsonl",
+      "bytes": 5711427,
+      "sha256": "3381c0192266626566c3b2bcb214d1794e28b9253cd8f9e9529a2325636d269f"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r0-stress180-selective-1790022519016/raw-sent.jsonl",
+      "canonicalPath": "research/results/r0-stress180-selective/raw-sent.jsonl",
+      "bytes": 5711427,
+      "sha256": "83ed58cb237cb2d3e50e757357d2e973725eaf6fea7bdcc5c51d5b4cf0bc048c"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r1-normal12-broadcast-1790022682487/raw-sent.jsonl",
+      "canonicalPath": "research/results/r1-normal12-broadcast/raw-sent.jsonl",
+      "bytes": 62808,
+      "sha256": "81375e10eb76e6bb37767b4984cde8ff9bdd49076e548f12a8e25d7ecea050e8"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r1-normal12-selective-1790022661379/raw-sent.jsonl",
+      "canonicalPath": "research/results/r1-normal12-selective/raw-sent.jsonl",
+      "bytes": 62808,
+      "sha256": "b44d45963bc74b942e65892e512c24aa1b48130a65fd7fb1da7d3f9f91baf5a5"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r1-normal180-broadcast-1790022639736/raw-sent.jsonl",
+      "canonicalPath": "research/results/r1-normal180-broadcast/raw-sent.jsonl",
+      "bytes": 947391,
+      "sha256": "62e4a7a4ec13fd47cc182661f134e070f73d860af697e4042c6908b76ec72209"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r1-normal180-selective-1790022618243/raw-sent.jsonl",
+      "canonicalPath": "research/results/r1-normal180-selective/raw-sent.jsonl",
+      "bytes": 947391,
+      "sha256": "4c68c743f8a84ee542592d50e5b808d7f1cfc09434325813e9ee4dd11a8cf7aa"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r1-stress180-broadcast-1790022584569/raw-sent.jsonl",
+      "canonicalPath": "research/results/r1-stress180-broadcast/raw-sent.jsonl",
+      "bytes": 5711427,
+      "sha256": "e25c29a8c65238a6f3205b078d86b7dd440cd653e8699326c42b966353756f59"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r1-stress180-selective-1790022552422/raw-sent.jsonl",
+      "canonicalPath": "research/results/r1-stress180-selective/raw-sent.jsonl",
+      "bytes": 5711427,
+      "sha256": "a75724fe3303c9c30bda68ef0bc1d2e8be56af4494ba5d33654073c06552f0d8"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r0-normal180-scaled-1790022742411/raw-sent.jsonl",
+      "canonicalPath": "research/scaleout-results/r0-normal180-scaled/raw-sent.jsonl",
+      "bytes": 931191,
+      "sha256": "911c511f70390efc02106fa3e638fdb92ff8b8ba013ad4c63bf7c3641039119e"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r0-normal180-single-1790022721237/raw-sent.jsonl",
+      "canonicalPath": "research/scaleout-results/r0-normal180-single/raw-sent.jsonl",
+      "bytes": 931191,
+      "sha256": "31e4455792a0dc3f34f5e25489569b4be89c826e8fee33f54b93f068895b1948"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r1-normal180-scaled-1790022763871/raw-sent.jsonl",
+      "canonicalPath": "research/scaleout-results/r1-normal180-scaled/raw-sent.jsonl",
+      "bytes": 931191,
+      "sha256": "b2696e5fd5901951cffdf611f48d68838bd5d199cf645a00a467b9d3398ee5b8"
+    },
+    {
+      "omittedPath": "smart-building-hvac/evidence/runs/research-r1-normal180-single-1790022784926/raw-sent.jsonl",
+      "canonicalPath": "research/scaleout-results/r1-normal180-single/raw-sent.jsonl",
+      "bytes": 931191,
+      "sha256": "ab925c6d840fe8ccabee385ee68df847a3418f0b9b62d81991eab4be6f5ee9f0"
+    }
+  ],
+  "createdAt": "2026-09-22T17:04:08.981780+10:00",
+  "baselineSourceRevision": "60c67e3b89a1471cee6aa6ef1548583a9ed43f9a",
+  "fileCount": 402,
+  "files": [
+    {
+      "path": "smart-building-hvac/.dockerignore",
+      "bytes": 53,
+      "sha256": "445851aac5001654caa91824585268f91c65b421f116887dc10b887a707f8a8c"
+    },
+    {
+      "path": "smart-building-hvac/.github/workflows/verify.yml",
+      "bytes": 1340,
+      "sha256": "69c53d546072f15c820f4331376a198ac17c280f2521828bf02c4a3e55caf4ee"
+    },
+    {
+      "path": "smart-building-hvac/.gitignore",
+      "bytes": 112,
+      "sha256": "dfedd075b7668ded11ed6a62219109788ffcff667078e5a76da00822eeabbd63"
+    },
+    {
+      "path": "smart-building-hvac/Dockerfile",
+      "bytes": 346,
+      "sha256": "8853fbe8a8ec88124a80d0ba000c09a18607028bb1ba54de52dfae240f437d12"
+    },
+    {
+      "path": "smart-building-hvac/README.md",
+      "bytes": 7790,
+      "sha256": "8917993d6e170321d378e6a2233497dbc0e629555678917a7baa24e826e9d766"
+    },
+    {
+      "path": "smart-building-hvac/baseline/README.md",
+      "bytes": 660,
+      "sha256": "5c7cc12961e80fb54d5459204e767394bfe331c81af4a5c5d31e77085e46f471"
+    },
+    {
+      "path": "smart-building-hvac/baseline/data/load-test-large.json",
+      "bytes": 11148,
+      "sha256": "453a8bade6e557e044147b1157e8ef3587373fcea510f620cf30d1a1647152ef"
+    },
+    {
+      "path": "smart-building-hvac/baseline/data/load-test-medium.json",
+      "bytes": 10057,
+      "sha256": "2ddd022711072fb9c103b4ec03585ea33db2611fb9f2bb085ca5f8d2c1de46db"
+    },
+    {
+      "path": "smart-building-hvac/baseline/data/load-test-small.json",
+      "bytes": 9469,
+      "sha256": "947c5018b65e480d3649b018cb796bf4b825f0f9bd4a3bdeffba65143ae3dc39"
+    },
+    {
+      "path": "smart-building-hvac/baseline/evidence/environment/container.json",
+      "bytes": 201,
+      "sha256": "73ba90cfbcd740da9de55d10fd76f98fa1686445b62f3ac82c0deb5cbe2d376c"
+    },
+    {
+      "path": "smart-building-hvac/baseline/evidence/environment/host.txt",
+      "bytes": 119,
+      "sha256": "2ced5594c87ca17ef159d42bf8778929cfb1a9cd57a185aada70594ed7a14ca3"
+    },
+    {
+      "path": "smart-building-hvac/baseline/evidence/environment/images.json",
+      "bytes": 2888,
+      "sha256": "9deaf0a54e7c73674eb5bfc5236b5da5d46f8ed47c3e52c9bfada768661f21f1"
+    },
+    {
+      "path": "smart-building-hvac/baseline/load-test-large.json",
+      "bytes": 11148,
+      "sha256": "7f927f296dd7e80343a083f2a81f27c7a8981144f2fd78473ff70f547e2e1e3a"
+    },
+    {
+      "path": "smart-building-hvac/baseline/load-test-medium.json",
+      "bytes": 10056,
+      "sha256": "9de6b8918135836bcc32c1269da270428710b1434be3a92321dbb4640f5c6816"
+    },
+    {
+      "path": "smart-building-hvac/baseline/load-test-small.json",
+      "bytes": 9469,
+      "sha256": "c39bb9f679735fc49df5b1bdfa92b63f7af9cca944ccbe45165592c4dc577c60"
+    },
+    {
+      "path": "smart-building-hvac/baseline/package.json",
+      "bytes": 496,
+      "sha256": "bf7516a41cf64cd9c84c395291e43b2c1d5833c82a470d99928e035ea57372e4"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/config.js",
+      "bytes": 1789,
+      "sha256": "5181fc497586c9d17fb760716f14d919b73903f024d6d9974a4cc19a1b9a1985"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/deviceSimulator.js",
+      "bytes": 2583,
+      "sha256": "6997d0a2da54a5651134895709c4788644be952673c72f3d8f567883ad29fdd3"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/eventBus.js",
+      "bytes": 477,
+      "sha256": "3cc772d3610ed08630d0a685e987e9791adef713a0a8266af39240ae2e48148c"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/gateway.js",
+      "bytes": 1298,
+      "sha256": "403cd21dc0566ec0616d04b6a9e0c30a819415c41b3cb28c14a8b17e7cb6c088"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/hardwareLab.js",
+      "bytes": 2766,
+      "sha256": "ba4c6afa2e6c8767bdf49832b9bb6c6b11477d8e45f848ad7e7bfd41e49d771c"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/index.js",
+      "bytes": 361,
+      "sha256": "1fffa712f876d9becbadaa1cfedf1d9d02bf19295834ee36601804b3817d53ba"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/load-test.js",
+      "bytes": 909,
+      "sha256": "2677248cf2dc7ea3824d9343902804af319981554f2dd0ee78a6646c3c65f8ff"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/services/aggregationService.js",
+      "bytes": 1763,
+      "sha256": "52ad5967a2d266cb6a1b648c64bf6ff3607e497a64324f205e29fee95ed0e4f8"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/services/hvacController.js",
+      "bytes": 1593,
+      "sha256": "db3192602ae8c9f0c423112e71fa8bc3dabdf0a9f7bb37156ef60b92b2d0bf0d"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/services/storageService.js",
+      "bytes": 1187,
+      "sha256": "05dc8b3e7913eb2492232cb3f569359652667263bc4e5ed4dad1c4e2e97c252e"
+    },
+    {
+      "path": "smart-building-hvac/baseline/src/simulation.js",
+      "bytes": 2307,
+      "sha256": "5dedfe5698f72238d20bd003209c00e9e48f87b07d84c16f897404c797e6b1f4"
+    },
+    {
+      "path": "smart-building-hvac/compose.yaml",
+      "bytes": 3755,
+      "sha256": "9d1a8d5b43dbe02fd773c9f7abeb45a8261555cd16d51a5d15bfb429e9a35666"
+    },
+    {
+      "path": "smart-building-hvac/contracts/event.schema.json",
+      "bytes": 6668,
+      "sha256": "7151852283eeacaf6fb3a2227078b0650355e9ebfcce8a3118f85f41bd6f2591"
+    },
+    {
+      "path": "smart-building-hvac/docs/architecture.md",
+      "bytes": 5082,
+      "sha256": "b388bde43884ef2d47896d165195d87db61f8446f85e6a7481933a9ee8f8a0f5"
+    },
+    {
+      "path": "smart-building-hvac/docs/domain-contract.md",
+      "bytes": 9661,
+      "sha256": "e5c0733343ee367c2ba1cf7f4b791cc3ae760efb26d14d7de778d3c05ae9cd85"
+    },
+    {
+      "path": "smart-building-hvac/docs/requirements.md",
+      "bytes": 2247,
+      "sha256": "d4062dfab9cb37a1f43be0bc5c24f514bb8c92cc4d650bd0eb64f726d2d3ecad"
+    },
+    {
+      "path": "smart-building-hvac/evidence/campaign-summary.csv",
+      "bytes": 2781,
+      "sha256": "6a4ca247a566269904ce01f425b33f58a364139ac8a62b177bdbf1603dfe4ef0"
+    },
+    {
+      "path": "smart-building-hvac/evidence/campaign-summary.json",
+      "bytes": 12224,
+      "sha256": "ef33b74bbf8ce2503fced75da7957877897667f2c1ad7d63b2b28f8070e5c381"
+    },
+    {
+      "path": "smart-building-hvac/evidence/campaign.json",
+      "bytes": 463128,
+      "sha256": "58646dc63dcb91a7a7d602420dc1f75f58e3c3e6d3ed8e8c3eb8bf1fb0654200"
+    },
+    {
+      "path": "smart-building-hvac/evidence/campaign.log",
+      "bytes": 3167,
+      "sha256": "c61d61b218f9161a95abf74274516a59b015ed782543214a0ddfa16e6b4fd9d0"
+    },
+    {
+      "path": "smart-building-hvac/evidence/container-build.log",
+      "bytes": 2878,
+      "sha256": "d1e717b1eecbecc971cbf1b1d0d96d0bd9c4119b263b6abd22c6773899c45775"
+    },
+    {
+      "path": "smart-building-hvac/evidence/container-start.log",
+      "bytes": 933,
+      "sha256": "f103376d72092caa1836dc82ee6c71b84736c4caf4e8e69e3e94cb35a0e98624"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-2gib/campaign.json",
+      "bytes": 332862,
+      "sha256": "edd0ce36fb5f26b493f3f9c04853722e47ec3aee161e3808a33463bff6f86747"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-2gib/campaign.log",
+      "bytes": 3266,
+      "sha256": "f620b3243cd1b511b43796b21c3d8f4e468f2da387b5473c6d9034b907d83491"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-2gib/container.json",
+      "bytes": 201,
+      "sha256": "73ba90cfbcd740da9de55d10fd76f98fa1686445b62f3ac82c0deb5cbe2d376c"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-2gib/final-container-stats.json",
+      "bytes": 2286,
+      "sha256": "e3443b6f99e465858aeaf98fb2eb9a7a2230e076767544bed801b51048fd82d7"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-2gib/stopped.log",
+      "bytes": 193,
+      "sha256": "fe2bad7a97b863a80fb5b11f4fc564cedff4528713112aab3b0b569fe625fb85"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-2gib/storage-failure.json",
+      "bytes": 332,
+      "sha256": "f4100bd9613e9b4bd300793403611b9cddbdb333a24330351c0b08e30dc6a793"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-4gib-pre-index/campaign-summary.csv",
+      "bytes": 2796,
+      "sha256": "c224760f5d5713174135136adb1c40bf9b3c337c03e03f983b1d11305d6b60f5"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-4gib-pre-index/campaign-summary.json",
+      "bytes": 12327,
+      "sha256": "6b914a699d14e9fbbbc4df29f1ab862c075d88403cf52028027c8e05c057b88d"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-4gib-pre-index/campaign.json",
+      "bytes": 561297,
+      "sha256": "dfcf92a49ef625ee1fef7d268988df393592645e35baf0555dafd21ff2945d21"
+    },
+    {
+      "path": "smart-building-hvac/evidence/development-4gib-pre-index/campaign.log",
+      "bytes": 3172,
+      "sha256": "822e33c8f437333be7b1a241ab60b65e247d8509abd2e65992eb97931d9c6390"
+    },
+    {
+      "path": "smart-building-hvac/evidence/environment/container.json",
+      "bytes": 201,
+      "sha256": "50e016e6077b975fe88ce6b3acea57f74293406b72dda1118acd9e0fdd3a0a96"
+    },
+    {
+      "path": "smart-building-hvac/evidence/environment/host.txt",
+      "bytes": 119,
+      "sha256": "2ced5594c87ca17ef159d42bf8778929cfb1a9cd57a185aada70594ed7a14ca3"
+    },
+    {
+      "path": "smart-building-hvac/evidence/environment/images.json",
+      "bytes": 2888,
+      "sha256": "9deaf0a54e7c73674eb5bfc5236b5da5d46f8ed47c3e52c9bfada768661f21f1"
+    },
+    {
+      "path": "smart-building-hvac/evidence/environment/last-functional-proof.json",
+      "bytes": 5974,
+      "sha256": "8f42e2b6d179fe0bb435878cf7920340448c4e40cb1e4191e4576eb32e7c4f2f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/environment/measured-source-hashes.txt",
+      "bytes": 427,
+      "sha256": "cf90fed2d2ee87a704c06fce8aa7e168479e51be2800f65ce74aa68333531f63"
+    },
+    {
+      "path": "smart-building-hvac/evidence/environment/repository-source-hashes.txt",
+      "bytes": 402,
+      "sha256": "8e09a4167a19b1460191e051a26efd993987a1a08d2fc1eb5e3555e323240df7"
+    },
+    {
+      "path": "smart-building-hvac/evidence/final-verification.log",
+      "bytes": 1633,
+      "sha256": "5eefa6aed99d59a20b80eff11ffbdcb120e6dbaaea550c37c0668afb9448587f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/functional-tests.json",
+      "bytes": 5980,
+      "sha256": "d16662ab9e1141a6d16242aa338ae39e0e62933e38a5a0c4ac53c895035d09e8"
+    },
+    {
+      "path": "smart-building-hvac/evidence/functional-tests.log",
+      "bytes": 1603,
+      "sha256": "eaea3ab0c46309f018ce9ea6685cafdc3144cca9dc8d450507bfd2c4e545c039"
+    },
+    {
+      "path": "smart-building-hvac/evidence/github-ci.json",
+      "bytes": 2963,
+      "sha256": "79995b535e710b1d41d462f08a7724b6dcc1647fcaf16112a03328da01a68172"
+    },
+    {
+      "path": "smart-building-hvac/evidence/legacy-baseline-rerun.log",
+      "bytes": 1665,
+      "sha256": "a983c63f72698c2b75f53cc9cc2bdf934f3bfd5c813ef60ef136b04119c0051c"
+    },
+    {
+      "path": "smart-building-hvac/evidence/node-red-build.log",
+      "bytes": 1490,
+      "sha256": "b8e5152fb4c73e6b528b8ef9aff2bf187056eccead322990d4e296a447889826"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1788657259719/raw-sent.jsonl",
+      "bytes": 5429,
+      "sha256": "2984dce5fc9f084c6ada6f60010b87ad9d19413c8863f451ae6944577400af0c"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1788657259719/summary.json",
+      "bytes": 10272,
+      "sha256": "1a62feaf8d4bcbb4a34f90ec8815fd66c4f304edf0d5a9784c4e16a96f523bfc"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1788658316393/raw-sent.jsonl",
+      "bytes": 5429,
+      "sha256": "533580e37dcbc0137ba4a0c47233b08cf83963f40803b407ea03b324e7c0d437"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1788658316393/summary.json",
+      "bytes": 11588,
+      "sha256": "35bb4582f813a6f32d6fc288a949012d56c948d59dd9e6df1942afe6171f0397"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1788659669293/raw-sent.jsonl",
+      "bytes": 5429,
+      "sha256": "0100bd3fb0e6aaa2b99b221ad36eab88645deb8881f512718e46c655efb7bb94"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1788659669293/summary.json",
+      "bytes": 11224,
+      "sha256": "450c21d17f98b26bd11666c77e0c674fb93acf00cb23afb24d473727af4f1464"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1790022348594/raw-sent.jsonl",
+      "bytes": 5429,
+      "sha256": "4d368b2cb3203f8684be91d7c7774d830168a3eae1d95e96b9f745ad4dad6bd3"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1790022348594/summary.json",
+      "bytes": 10270,
+      "sha256": "c98808905f3cd4b52130b137ad07025eef21248449526c09ff202bd8856ebc93"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1790022867056/raw-sent.jsonl",
+      "bytes": 5429,
+      "sha256": "0c29b6874fee0ae416bae45c597e57b88afe7d99f781bca084cf6b85911d6cec"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/cep-1-2-1790022867056/summary.json",
+      "bytes": 10276,
+      "sha256": "b998dfed6c7041a653fd9225e4696727574f61d7b1671118edc76c2d7f1d6077"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1788657256287/raw-sent.jsonl",
+      "bytes": 5711,
+      "sha256": "bcd12e62ae8c8b7ab39870078ada571c92c4fef6c68992f224815d64920efe8f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1788657256287/summary.json",
+      "bytes": 13578,
+      "sha256": "36a73057034124e04da633c4aa3dde676b90c0f30e78430e3489f0a6ea9f21ed"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1788658312275/raw-sent.jsonl",
+      "bytes": 5711,
+      "sha256": "1ac2567d95c87466b53375342e7caed36cbc511cb507d76d05984928305094e0"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1788658312275/summary.json",
+      "bytes": 14503,
+      "sha256": "ebe97fb3c54f3ac3ae52163b6bcc23c8ac4025104e3aaf5e2d9fc528420eff6d"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1788659665607/raw-sent.jsonl",
+      "bytes": 5711,
+      "sha256": "111bfbce36f146609e17554f889d5220dbff722fe245192d64de2fcabde9c01b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1788659665607/summary.json",
+      "bytes": 14630,
+      "sha256": "dfac00f8fc7cc950ce9c440fcb130587c130fa4645e882fa6dca77a5145b5399"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1790022345159/raw-sent.jsonl",
+      "bytes": 5711,
+      "sha256": "69b8c6dd7278bc0cdbbcbaaf9de3680b8ac5d494745b3a0fcdfa0bced4bb4df9"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1790022345159/summary.json",
+      "bytes": 13599,
+      "sha256": "657ae3dfd5c1cce7591e2ee5c1c3ab9e5ee55c1119d35f1f60054019e14bf3ee"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1790022863598/raw-sent.jsonl",
+      "bytes": 5711,
+      "sha256": "7278e95378ba22b8e75507992a5abb37f5bec5f9ce3802093547387b6deb969a"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/duplicates-4-2-1790022863598/summary.json",
+      "bytes": 13586,
+      "sha256": "5ce292f9f4b127d05431d3ce841c7e96b0eab5d02faf79d882e4292e4f236142"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1788657058289/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "a9239530bd5d683c4a6aadd551e4f50fedc0a52ff9aef208d529c31914453d96"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1788657058289/summary.json",
+      "bytes": 7667,
+      "sha256": "17f720ef8f74b1d8b4db58c6b9346d1bc0a91707b35b176b7ef03eef3596de88"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1788657252205/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "074d775191f84576a2ef55552353ddbecfe8697049639c8d3b795fa81d6a6c1e"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1788657252205/summary.json",
+      "bytes": 13665,
+      "sha256": "614cce836ee867dcb9f4de11376546588baae316c142c6639027a5946417b86f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1788658308156/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "411385a93fbd1c627b33de4859e69aeb2ade9b44c1d5d1a5f18869026cb80c8d"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1788658308156/summary.json",
+      "bytes": 14619,
+      "sha256": "0f7c1195062d48a152c5413e7132deb6cfad3fbe5dcb069343dad1489e22d903"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1788659661446/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "59169397682120b868da26ce80db5901499fe142bdd9ec278324684d55497565"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1788659661446/summary.json",
+      "bytes": 14737,
+      "sha256": "8cd2f6778b4bf77c534fdd4d43e1e100a09345993c6482de420204cdc0a6f5e0"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1790022341087/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "5ec81940c5dcef7696f42b9db760c72be0a73d80293c92eca0be04118f480076"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1790022341087/summary.json",
+      "bytes": 13647,
+      "sha256": "adbcee2deb4589f3747a39e78525d75c7aea1e0dc709fb12b4e8101bf373f7bf"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1790022859511/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "ea9409f0cd627200725b36a6c3bcceff705bbfb01df1fc92e48d553b09ee88d0"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-flow-4-2-1790022859511/summary.json",
+      "bytes": 13672,
+      "sha256": "dc4158862d0f730468b0a2a98dc5896f59418b28bb824d36c28873b49d0a7e87"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1788657054138/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "da0a4d74a2ab663313f31e1416f90dd6aede95d31a08763ed701cca533ca2c6b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1788657054138/summary.json",
+      "bytes": 13479,
+      "sha256": "482fbce3d0467e9c9077ca9cc4c1566dd76faa36141adb952c49f433cf9de3ff"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1788657248071/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "fd893e9d857bf1820d62242c18f3e04fbbb9f45c1ae85ca913de569554d443a9"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1788657248071/summary.json",
+      "bytes": 13541,
+      "sha256": "029ee43294d599dbd8a6f48b828f64d26f26924863009b67d6d80eeb7bb4edc4"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1788658303982/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "4e49c7afbfa5e3d054181b58aecf8de323a6fc98d1d65087b6ff39a104390182"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1788658303982/summary.json",
+      "bytes": 14546,
+      "sha256": "d308bd90ede560bb961eae61d2998d01d3e773b3597a06c17d4a85acbdb28cc6"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1788659657181/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "cb6fb61638532aa4131dcf5c1f3dde2bf33375c4ba4d9009a2c118eae3d999a3"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1788659657181/summary.json",
+      "bytes": 14640,
+      "sha256": "68d86c91addcfc8b0cadf5b2d38b27986e9cf9bc2fff5d652049cec61eaabd5b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1790022336949/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "b027d6dbbd67d7fbe8fdecb1d067a269f810e60d17e98fa250232cfa969ecae4"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1790022336949/summary.json",
+      "bytes": 13562,
+      "sha256": "caad5da109d02ed9a7c60dc015a813e4a75d863335262ae1b075d8bdb009939f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1790022855373/raw-sent.jsonl",
+      "bytes": 7803,
+      "sha256": "5ee189def73b8cc551bd7d3e8b69b1441a3ea76dd73e35477197f5dc47c0a5b5"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/functional-main-4-2-1790022855373/summary.json",
+      "bytes": 13574,
+      "sha256": "75387270cc80e668a314eae2e0513eb595c3f80380251ad698f9cc3a8d4af75d"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-12-2-1788657672253/raw-sent.jsonl",
+      "bytes": 348190,
+      "sha256": "5e758e59626448dc662d47dd4a681a9a045682ac9aca9995ab468871b4cb03ec"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-12-2-1788657672253/summary.json",
+      "bytes": 13688,
+      "sha256": "7b0966116e2d1844cee87ce239f60f3308e9c27089e8c0698515b71bfc142382"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-12-2-1788658600784/raw-sent.jsonl",
+      "bytes": 348190,
+      "sha256": "0552ed058845230913c4320f8b9a677514dac5774ae90810679a0ee055a7ed50"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-12-2-1788658600784/summary.json",
+      "bytes": 14140,
+      "sha256": "c75327323878ab262f09b92c1ce718fcb15a389aa31a9223445147a284e65c2d"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-12-2-1788659956900/raw-sent.jsonl",
+      "bytes": 348190,
+      "sha256": "f56a9cb834495f95da5b332ec3cedaee2db80cde6dc5b98292d5cb5bec5bf94f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-12-2-1788659956900/summary.json",
+      "bytes": 14260,
+      "sha256": "83ef1de2a019948c8fb459e92b419b2207174ec0539061087306c0f8161be285"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-180-2-1788657687774/raw-sent.jsonl",
+      "bytes": 5257827,
+      "sha256": "fcc4a00ea468493557210fdede18294e03abd4135b1f4381d608ea5b681ed28e"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-180-2-1788657687774/summary.json",
+      "bytes": 26208,
+      "sha256": "79586f5b354d4920f7e0e988c03dd6397ed5a215d7815b7782175f60376eda02"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-180-2-1788658618827/raw-sent.jsonl",
+      "bytes": 5257827,
+      "sha256": "d18efcd614ce05a7bc8516403d0c69d13af7e7efc5439e4727f470b864cf26bc"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-180-2-1788658618827/summary.json",
+      "bytes": 216205,
+      "sha256": "92582d32f6fe549c1b069f71506d9aaf48a6b223bc7ad972691c8d9f411d95ff"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-180-2-1788659973217/raw-sent.jsonl",
+      "bytes": 5257827,
+      "sha256": "79cc91ccd72486131ec99a58365dc39b0152db6323b0028a6d2a6702e94b2e02"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-180-2-1788659973217/summary.json",
+      "bytes": 118836,
+      "sha256": "753cd86722dae84c2c6eea8366e962a6b5ea3455bfce0cdba0f3bc629c1c1d59"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-60-2-1788657678338/raw-sent.jsonl",
+      "bytes": 1740872,
+      "sha256": "e0ec845d436bc018e0d5211ec69d00ecd8cf9f8a94483d2b6d2a0c3e3e154829"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-60-2-1788657678338/summary.json",
+      "bytes": 17930,
+      "sha256": "baa81f995b9dca7ae2ff951aff3d583a90bef83739df07e13cf4276d8eb7f4a6"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-60-2-1788658608020/raw-sent.jsonl",
+      "bytes": 1740872,
+      "sha256": "ec6683711c42e38625e33830fdcbba826d52038b5409fb58c64ad73caab213b9"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-60-2-1788658608020/summary.json",
+      "bytes": 18187,
+      "sha256": "c8c7ee92c9afae301f66d656126168fd7fec0ab61b9ed10d808b9f4f19c1fe0d"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-60-2-1788659963422/raw-sent.jsonl",
+      "bytes": 1740872,
+      "sha256": "948996c65eeebffbfa2ea555d0b75e27b7b26b282d3431e94d7079cb5d7ae1a4"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/legacy-rate-60-2-1788659963422/summary.json",
+      "bytes": 18297,
+      "sha256": "79ed3cf072e547a3fa40576f15a2e851fbf06550547a502fc946600ad1001275"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-1-1788657425934/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "4795b59f5646e31335dcf8c0b479df63294d6ae0c13b889e845f4a2562800910"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-1-1788657425934/summary.json",
+      "bytes": 13256,
+      "sha256": "b09939c3d7510440ade720b94373fd94a776c9ba7e11d601cbab9d1f53c91e93"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-1-1788658353252/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "27ca043c1f2cbb0f46337d4bdf3654ee027abf1ea577b8e04511735f2876bbe9"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-1-1788658353252/summary.json",
+      "bytes": 13969,
+      "sha256": "1ce44034be131fd0c2823afdf48b30e920770be61d261e5fc41d9fea82c592f0"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-1-1788659708443/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "6bade3eaaa353c44767fbacd269c5e8596384455cb78bd02bd94b178831e86d5"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-1-1788659708443/summary.json",
+      "bytes": 14082,
+      "sha256": "89c9ee012f87119c6ce9ed98987dc36f7a54f32a7a0e419f00b67cd366b01c73"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-2-1788657550294/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "192b2b8d163445e996fbddbb6466dd0bafaf3e06a6f9072a124086117b5dfcf7"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-2-1788657550294/summary.json",
+      "bytes": 12985,
+      "sha256": "2fcd53d95110b569ba3e87d670fa6a57286b1b3d678fad93c271c42aa72ae09b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-2-1788658478542/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "59cc8441dd81ee64c62a647fef3a85a334fe9166d4a5131077f7823d714473b3"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-2-1788658478542/summary.json",
+      "bytes": 13848,
+      "sha256": "2f67ddcd36752c66d10e09b9475cc8c9254472ed7fe3cce3e266460021270feb"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-2-1788659834225/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "903994a382a2d31dff705120b08f1dbd55dd9f3f15dc5e459b873af19e39c14f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-12-2-1788659834225/summary.json",
+      "bytes": 13634,
+      "sha256": "4daf615be760335cd5ed7f4105d30114d59a5c1ea6991b2ba9fc3e5535b9a107"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-1-1788657466336/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "0c5b201ea75fb46597b0ea6c2ff8a4624a1a6537fb0f6b42bcc55a53bfa8ae84"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-1-1788657466336/summary.json",
+      "bytes": 31765,
+      "sha256": "339ed60a9b23459d6c55b35a6ba7b0d756f38d656e95303bc8dd64a9a822322e"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-1-1788658393710/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "d58ecc84e7743a3158e9ed74d9e167d1cc1ff2e6fdb8dff8d16010453fc7b422"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-1-1788658393710/summary.json",
+      "bytes": 26105,
+      "sha256": "8bc41b396b84b10136964e86c4bd92bebc3351c44eb1126c68aa5342e27370a9"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-1-1788659748927/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "36c33d839090792012e4dcf30a7c652c5f6f8ea9bdb1b816402a8a614f49d478"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-1-1788659748927/summary.json",
+      "bytes": 32588,
+      "sha256": "b4fe22e08f5ac1cb7998ec877ea914be1dacb65f5763aba64076b2a280e40a1b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-2-1788657590628/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "385128812ec7923cb7c4a26a3945db8052da504ec43946e4ad8935050180649f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-2-1788657590628/summary.json",
+      "bytes": 32058,
+      "sha256": "bd53434f60b76048f3f59dd5f25685c1fe31be082c1201b68fe08b40a895db50"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-2-1788658518951/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "4ba7e4b366b9414c75f97ad502eee6ecc88d471ada4919e5ba70279ca2a4b471"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-2-1788658518951/summary.json",
+      "bytes": 26189,
+      "sha256": "7bf3405893af8f9a988816af83661a33617d511a7eb945559659114bf559d59f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-2-1788659874841/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "588a4d9dc514decf9f31fade9569778072392b5599140e3298f334a20506c8b4"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-180-2-1788659874841/summary.json",
+      "bytes": 32546,
+      "sha256": "d1d2d1237d7a039c8630d8b275d31a436926dac1fb0a03bba75e3fd86858f155"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-1-1788657446103/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "c17c8f36f625bd20566d2574340887aee4b7f7b10200801eaf89e05c931c0e3a"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-1-1788657446103/summary.json",
+      "bytes": 17294,
+      "sha256": "1ae110103b4e248269d7916465db7910cfc561eaaecfbcb37449fdb7c412589d"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-1-1788658373448/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "9e4c42c90d0d251a203d7742376e973d09c4d047e92f2a14333f5c8db1debfab"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-1-1788658373448/summary.json",
+      "bytes": 21088,
+      "sha256": "05e9206af9a27e0bc78be5a4034e04d4ebb6f63ff159555feaed6f6c5c546b28"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-1-1788659728659/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "97cc2ca4e79d09e5c91d1e3fa55c21133a00035dcc64a334590828fbbca7b0ce"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-1-1788659728659/summary.json",
+      "bytes": 18073,
+      "sha256": "70d7f91482489bd32464e599de4a73bd016bc6c3b8e286e209a6534086356e24"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-2-1788657570384/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "badc3288816651b8f855b8b8a364666cc73e7544304e3d3de073a94e0af6eacc"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-2-1788657570384/summary.json",
+      "bytes": 17548,
+      "sha256": "1c21240b1c4f332d2035e512c83a5186cff9a0365431e1891f1da9dc66bcd569"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-2-1788658498674/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "817c2abbc39f7c5d0402ab603adb7584056d1498958a8bd633e7e165cff5036e"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-2-1788658498674/summary.json",
+      "bytes": 21054,
+      "sha256": "660d052e7e9e6bdd9b844c055feb1b3ae3dd6ac1e63e37b249d4b99cfe32f85f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-2-1788659854543/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "ac1f257f19cc0d57fba90f0913c0df05d7161a024db909c6a490d00b46cc4b04"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r0-60-2-1788659854543/summary.json",
+      "bytes": 18133,
+      "sha256": "7cfaa16e50a9dab2af8fb2d6e8d2d41747a266cac9d2b5bf5e5a1c1c490e377e"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-1-1788657527866/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "ccd29d07fe34cb9cd9167607ea14b02955e93f0dae646deddbf2c09b13482546"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-1-1788657527866/summary.json",
+      "bytes": 15015,
+      "sha256": "6566617a1c324f5bcaf3dac0f41cbe593130560f62c8c58b0ab7d8ebcb245b7b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-1-1788658455351/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "23a7c2bd7d1ee904dd3762b1bc886f7c0594d581efd3d52f003d8629db68e306"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-1-1788658455351/summary.json",
+      "bytes": 13980,
+      "sha256": "5e12e685d48b1ae7c1fbff4557d487b47fa35cb74ce8c71e0afa4c77edb35040"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-1-1788659810872/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "3b267d8815fd77f5b051fc8d19f76a3cd2940d4df296a4fe10abe22e10cab704"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-1-1788659810872/summary.json",
+      "bytes": 15626,
+      "sha256": "1fa40fcbd075403665cc8112587717b26e7afe012ea66f435e0b5bf822e16ffa"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-2-1788657652169/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "c54bb5fee431adcb526cef3fa52473c9872f0c68c469e823987d4878e3d2a809"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-2-1788657652169/summary.json",
+      "bytes": 14861,
+      "sha256": "13a1b6887d2f4f31181db95f9ce327f0132fcdb9a63fe88b701fbbed0629b2ac"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-2-1788658580661/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "2c6694704b4d3ea23727604e6ee67851f2e7d0e8fd3a66fa1754f441e826e7dc"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-2-1788658580661/summary.json",
+      "bytes": 14012,
+      "sha256": "64a3992cb8d062e2101f957be9ec0fdd6b7b71698d3e9f83fbcbe76637c8b695"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-2-1788659936715/raw-sent.jsonl",
+      "bytes": 114377,
+      "sha256": "b96e5445f8a2db0317e47c337f315d9eaa9ecde84e20a2347197e8ed66918356"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-12-2-1788659936715/summary.json",
+      "bytes": 15599,
+      "sha256": "9beb6426125d1b507ca6c8b2cde71ccbac1e6fc26a367c7c1ccf83552f6e2950"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-1-1788657486990/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "1a315605a8d052c06aa6e3abe30d6d0d63067e62a18d840da28401412b8a5fd8"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-1-1788657486990/summary.json",
+      "bytes": 25523,
+      "sha256": "7dbcc8083353e793695c14e025e70a6e1638f7d97f67d6936e07fb8c11e7638b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-1-1788658414410/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "089d8943ae6941c70565d1b347feec9c400adc49e6b9bbf13b965e0ef91d9087"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-1-1788658414410/summary.json",
+      "bytes": 26108,
+      "sha256": "1aa1b9e32efe5b896d5fa7c06900fb8ec9cca22700c523e70eee887478f2901f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-1-1788659769621/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "fe5187d3cb9d106b0fa80dd3293217a016c15f8df4dae433249a396144d869a7"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-1-1788659769621/summary.json",
+      "bytes": 26282,
+      "sha256": "a8549ffe3f99712fbc78c1b6afc7d87dff06bd1c9c45244ccd109ccce1f1e1a6"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-2-1788657611289/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "879be19a6b2464af155c69caa5bee0c6aa09d773a4892c167d046c1179398419"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-2-1788657611289/summary.json",
+      "bytes": 25796,
+      "sha256": "02fb6c1adc4849723168025e273d35f9f35c124632bc7e4d613508e8e5be1659"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-2-1788658539693/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "b5f309a5366d19d711c0c0ef44afd0fae1d9ae048cbf4f82dc9372e6e6304cc6"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-2-1788658539693/summary.json",
+      "bytes": 26202,
+      "sha256": "020a0398cd14acd159795f0b84f5aae3da4c396d21f9672957645720128e6fc2"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-2-1788659895538/raw-sent.jsonl",
+      "bytes": 1727333,
+      "sha256": "cb1e363a2907008642d7dff9c3b4bddade3ac4d2a8621c9225b236f9dd88691d"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-180-2-1788659895538/summary.json",
+      "bytes": 26273,
+      "sha256": "f97fdd76961a5284be0f40396a391326b9fd8ae115c9c4f0ac27583160c9feab"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-1-1788657507648/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "926167e6986805e151e54b5f8085967f07ae2f9ef5a152753f61a21d6a6d50e4"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-1-1788657507648/summary.json",
+      "bytes": 17406,
+      "sha256": "3e46a4cd28f1e4f3270e0aaa7bdbb2aedc47eb4bb9ff96cfba52459e994846ab"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-1-1788658435090/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "d799094f2f465f71ccf6f1f4c572446158bce77bd6aabf32e5fc439d8c242bac"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-1-1788658435090/summary.json",
+      "bytes": 20985,
+      "sha256": "99a67aa20c2154b511415ed0994f60466ffd52a032720948812bc1d870f1e18e"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-1-1788659790567/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "ebc34aef5f7af9594ba9331c22a9f325183c56115e06dcb8d870ff2b6e727531"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-1-1788659790567/summary.json",
+      "bytes": 18101,
+      "sha256": "57bbc31d0be813643791f9f18af278f154d7c9f61beef0332cccaebbc633c4a5"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-2-1788657631931/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "c78290947fabecbebb30395e6409401228e50d66f8638c08422efd1e3a14afd9"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-2-1788657631931/summary.json",
+      "bytes": 17663,
+      "sha256": "0b4f792bfdc9e56c610695c8ee244f5dfb9b2fc778ce88fd95d011ffa31ac661"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-2-1788658560392/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "c11a58c228c2dff3850609106cb5a5748dc7727a9eaf5245199530e2e189e229"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-2-1788658560392/summary.json",
+      "bytes": 18016,
+      "sha256": "c7423461d5a35d153907e1fdece6f86a18b6a2faaf085bac0976144da003bee5"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-2-1788659916221/raw-sent.jsonl",
+      "bytes": 571841,
+      "sha256": "dd1f317e93a72ad0e1d930b2d374ce44ebe328fe6b4ecb5c69fc353dc2dbc27f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/normal-r1-60-2-1788659916221/summary.json",
+      "bytes": 18134,
+      "sha256": "2abe0e8954746ae4b93ffd8266d0e3d22ed2966b4fd8adaf9f8dec88fba49498"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1788657288597/raw-sent.jsonl",
+      "bytes": 5603,
+      "sha256": "709a6f8b89b79a18b149882cd50ed0a1bb6bdc566736b723958c92242abf0404"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1788657288597/summary.json",
+      "bytes": 13578,
+      "sha256": "a2d0597c35bd42dca6ace4e86b9bee6a820d56b92b4bf81777c146ef3e5e40cf"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1788658347256/raw-sent.jsonl",
+      "bytes": 5603,
+      "sha256": "41e11d215d6bf3e6ac71c477e1f801d84a74213e16f2bebd27930d0149f4886a"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1788658347256/summary.json",
+      "bytes": 14331,
+      "sha256": "f5f9849309d87785e82324f17912099f1d30afafbd88ffca66d02c896c972c30"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1788659702202/raw-sent.jsonl",
+      "bytes": 5603,
+      "sha256": "11c4d0dabe0e5bf5acd4f2b41ac0ac7dbbd4398e9b14518470b2b930ec9c56f2"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1788659702202/summary.json",
+      "bytes": 14459,
+      "sha256": "4ac2997e37f3ed290bc800a90795b60adb60e1f88752497aa65fa940687126ef"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1790022377197/raw-sent.jsonl",
+      "bytes": 5603,
+      "sha256": "f7ff5994d748378561f388a9ff03e04017249e5e6458a44a108c392ecba002fa"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1790022377197/summary.json",
+      "bytes": 13568,
+      "sha256": "053ce2f0a73b16767b1cd0cf2d617a86363a06ddf855985c6fdcc3b7a3ab8c9f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1790022895678/raw-sent.jsonl",
+      "bytes": 5603,
+      "sha256": "265cfe04bd751e5fbb6a4483941ac4add482bd774cc8d830b6fc6a9c654a5787"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/offline-4-2-1790022895678/summary.json",
+      "bytes": 13571,
+      "sha256": "6cebb5c036b9b097b2234ccc552ccf1c55a15aebf92323ccfbe89c4d2d15c978"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/pilot-12-2-1788656840192/raw-sent.jsonl",
+      "bytes": 55267,
+      "sha256": "375b1832de1f1c78b460bedfa9fdda2f09906e3e867a9b35271e84422d0a2bd2"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/pilot-12-2-1788656840192/summary.json",
+      "bytes": 13673,
+      "sha256": "027d10928d5191dd1396f96ae8376f4f38b791f72bd7a7194e1d4938267d2edc"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/pilot-180-2-1788656850460/raw-sent.jsonl",
+      "bytes": 838941,
+      "sha256": "3b3309c0b338af19cb2902b921920814eedae5c7c034b8c9e4f3621cd0e7fe02"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/pilot-180-2-1788656850460/summary.json",
+      "bytes": 14064,
+      "sha256": "a11369f1003b5851d3c56737482ac47178ff04ea7c21b19cd4b161a7a5b17326"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r0-normal12-broadcast-1790022398148/summary.json",
+      "bytes": 13398,
+      "sha256": "cfd3d3147a70992a348c13e0f436b9ef7258a49f4ce97af9232ddce4ecc423e7"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r0-normal12-selective-1790022418917/summary.json",
+      "bytes": 15015,
+      "sha256": "b9b83c0c9930937a1ba70e041ac016e86f87b4eda74bbbecdb60713e106ee914"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r0-normal180-broadcast-1790022440026/summary.json",
+      "bytes": 26434,
+      "sha256": "4e4c1391992f12d6dc62012c5ecb158d573f40fe9ecc2c1e29c5505eaeed54c0"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r0-normal180-scaled-1790022742411/summary.json",
+      "bytes": 26199,
+      "sha256": "1c2265c8d67e2cdc7f47094bdb6d682b1809ad95855d3105acd35140cfc907cf"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r0-normal180-selective-1790022461397/summary.json",
+      "bytes": 26428,
+      "sha256": "db5672191b378dd7c3746d2b8b463df0838a2b3d7f06bc428725f7d86f113a1f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r0-normal180-single-1790022721237/summary.json",
+      "bytes": 26120,
+      "sha256": "12322a81243699bc9078a8794e112932d247cf208010df8064d6c138b90fc694"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r0-stress180-broadcast-1790022482670/summary.json",
+      "bytes": 126724,
+      "sha256": "40d95bfd01d73a6db4ce33c903b5e72d38ad49a887285abee92fb62fcc10dade"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r0-stress180-selective-1790022519016/summary.json",
+      "bytes": 26510,
+      "sha256": "20096bbd2e07b779a02662cb468341528bf9250e1636e8baf3ecb2987a12f29d"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r1-normal12-broadcast-1790022682487/summary.json",
+      "bytes": 13080,
+      "sha256": "70c7693c864424dd3ae319d4466d4bffe8becb8eb024b4f94273167bcfbef5c7"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r1-normal12-selective-1790022661379/summary.json",
+      "bytes": 13196,
+      "sha256": "1c40144881383b8d1d3defb91c2dcd0f0cb7f74f76183ac307569c124961f91e"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r1-normal180-broadcast-1790022639736/summary.json",
+      "bytes": 26379,
+      "sha256": "b2a4863fb0c56c08c7d28eaaf23d906563f3e8b9fd04e16221db8ed37954494b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r1-normal180-scaled-1790022763871/summary.json",
+      "bytes": 26199,
+      "sha256": "38972a141283ad795f4d665147929a6c79ae7ebb443fd79b89e8b5a8ba4912d7"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r1-normal180-selective-1790022618243/summary.json",
+      "bytes": 26436,
+      "sha256": "37691203e519c8be93ac83f45ab946a3ce9256481d84fb4ff90e749c9ff3e973"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r1-normal180-single-1790022784926/summary.json",
+      "bytes": 26166,
+      "sha256": "41a2305d84fcfacee09919a4555c806ead5e57503c14d7e1c1d6be64c978422b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r1-stress180-broadcast-1790022584569/summary.json",
+      "bytes": 26522,
+      "sha256": "861bf1df704bbf6fc8ad1731e03cb1ec6677707581d8b912e9bd57be34ab4003"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/research-r1-stress180-selective-1790022552422/summary.json",
+      "bytes": 26524,
+      "sha256": "9476285d46a7566e3934c3adbdeb8754010de496247e632a31e7670f73286e64"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1788657277797/raw-sent.jsonl",
+      "bytes": 18672,
+      "sha256": "c402133ea66df1fdab4ea9579ffaf60df9c204200184890576487b817db5161e"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1788657277797/summary.json",
+      "bytes": 13605,
+      "sha256": "d2215a7744bab6260be23f81af62ddcb0f72eb7ab3f3617ca067242f6ee997e6"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1788658334539/raw-sent.jsonl",
+      "bytes": 18672,
+      "sha256": "e2c1ca33d97d50392ddd3cae044c8188097253687a6f95a33432d0041e6f9423"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1788658334539/summary.json",
+      "bytes": 14416,
+      "sha256": "87a08a497b398773b8f2e40fe56b82b53276983ce710038a57a11aa2948470e6"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1788659687490/raw-sent.jsonl",
+      "bytes": 18672,
+      "sha256": "f50ae3d30f7ab83430e3cf3bba4dee504ce24c1cbb100007f11f310f2c26dd43"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1788659687490/summary.json",
+      "bytes": 14519,
+      "sha256": "72e9b88d2343ca4371f81d994f38fa4cd15fef02f7cbaef69846be779ee30c9f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1790022366655/raw-sent.jsonl",
+      "bytes": 18672,
+      "sha256": "7066a7826dfb19b3c2eefdddedeba27dd964cb6a4cb30d3872eb172b89fdca22"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1790022366655/summary.json",
+      "bytes": 13611,
+      "sha256": "7dbdf02f5b4c63a7735eba516368382b2b64ce298a5ca6dff4705fe2aaf51cc7"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1790022885122/raw-sent.jsonl",
+      "bytes": 18672,
+      "sha256": "53f8e50e70d6d8352f7301b052ae561dc1707ae50cb92c4e5d35570859531e9b"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/restart-4-2-1790022885122/summary.json",
+      "bytes": 13615,
+      "sha256": "efa963f74ecdee923ee83d1f0ad89250ebeacd72e933023e33c4c07639cefcc0"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/smoke-4-2-1788656600073/raw-sent.jsonl",
+      "bytes": 5492,
+      "sha256": "765e71e39917e56079df6fee5015f656cba1f8a2eda265fe2f4482d692a472ba"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/smoke-4-2-1788656600073/summary.json",
+      "bytes": 12825,
+      "sha256": "fe42a0bdc080b0747ddaabe01fb70ad321be5a5796119358b9ae2ae6f2b3e654"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/smoke-4-2-1788656732988/raw-sent.jsonl",
+      "bytes": 5492,
+      "sha256": "4d460b50d124a57dc89f2c8e5569016398c9bf1e4c07c0cdbc5cb0298a8cd246"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/smoke-4-2-1788656732988/summary.json",
+      "bytes": 12979,
+      "sha256": "65cd6cf24c26dd0e39347e641fed493382b539e715598f044cfa4864ce31f042"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/soak-24-2-1788658653631/raw-sent.jsonl",
+      "bytes": 666103,
+      "sha256": "549d90016515c3aa1a86963875f236c591f506d6d47b6015f3063eb6cf98c281"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/soak-24-2-1788658653631/summary.json",
+      "bytes": 17145,
+      "sha256": "6de53b035b22a7eeb7952d505bcaa4e7524fda8abd5aac89e3452912695f706f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/soak-24-2-1788659999800/raw-sent.jsonl",
+      "bytes": 666103,
+      "sha256": "4a068d8790fea572b1ba6e98dfbec101cc8b7941c2deff3d01266a2b7274c4b2"
+    },
+    {
+      "path": "smart-building-hvac/evidence/runs/soak-24-2-1788659999800/summary.json",
+      "bytes": 17200,
+      "sha256": "79bc757428d79246f50319bfbd96bd70396ea5968b5dcbb4e02bd928d2741d33"
+    },
+    {
+      "path": "smart-building-hvac/evidence/screenshots/main-dashboard.png",
+      "bytes": 134110,
+      "sha256": "e38f8c043fb6142186a3b9eb26aff17de6867b740fd86333387d61f429f5167a"
+    },
+    {
+      "path": "smart-building-hvac/evidence/screenshots/manifest.json",
+      "bytes": 600,
+      "sha256": "4a261a0050937259559a472ef51756e730bfc47e2e96db3c94202d2d0477402f"
+    },
+    {
+      "path": "smart-building-hvac/evidence/screenshots/node-red-dashboard.png",
+      "bytes": 118274,
+      "sha256": "973d7a770755c2209caea2c523d49de924e8179c1e99774a8f849022ace9ae4c"
+    },
+    {
+      "path": "smart-building-hvac/evidence/storage-growth.json",
+      "bytes": 316,
+      "sha256": "8b997daea56373b8eb70099f4faff69d4eca11fa70a4a4a23aacf069c0e24bed"
+    },
+    {
+      "path": "smart-building-hvac/evidence/unit-tests.log",
+      "bytes": 5347,
+      "sha256": "d5d6a712f4b22f160f17287140cf4046377e86e2d9f78066d51336412958a4ab"
+    },
+    {
+      "path": "smart-building-hvac/hardware/README.md",
+      "bytes": 1537,
+      "sha256": "a206ed69274f6ef99a9a05e1ea62d682fa90483bb9d724be23acb665644a32e7"
+    },
+    {
+      "path": "smart-building-hvac/hardware/device-manifest.json",
+      "bytes": 1243,
+      "sha256": "6c263469cd120ec6fd4d925bef1b39f3f8e27660cac6b0da3f93d86e387acfca"
+    },
+    {
+      "path": "smart-building-hvac/infra/acl.conf",
+      "bytes": 10664,
+      "sha256": "b25880ce149e9fe8455ee75da59465606e72123417c26f4bd5b3a31b8ab76e11"
+    },
+    {
+      "path": "smart-building-hvac/infra/mosquitto.conf",
+      "bytes": 434,
+      "sha256": "1ab5675cb8ca688f74ecbcaf396e49d1f4235533c7f1193762e9cf280bc9e966"
+    },
+    {
+      "path": "smart-building-hvac/node-red/Dockerfile",
+      "bytes": 781,
+      "sha256": "7d8d43a3c23e3fddc3df8487e167d5209d9aaf9c260d285b00b5703bf4099912"
+    },
+    {
+      "path": "smart-building-hvac/node-red/README.md",
+      "bytes": 4751,
+      "sha256": "980d2b7dd3f3ee2c70107fb418e117eb052bc6ee85a8c2cef232812e3e02776d"
+    },
+    {
+      "path": "smart-building-hvac/node-red/build-flows.cjs",
+      "bytes": 10974,
+      "sha256": "cd9a2e0069518c68c9cc1ddd67091ba13b6ba2e5fedc12924fca5dde794a6be1"
+    },
+    {
+      "path": "smart-building-hvac/node-red/dashboard.html",
+      "bytes": 9551,
+      "sha256": "dfb359469d07d5706ea5a789b1b779dbb9d840ba14746f7673a410c103a7a258"
+    },
+    {
+      "path": "smart-building-hvac/node-red/flows.json",
+      "bytes": 25151,
+      "sha256": "b5cd927c017a168576b9144f0c19298d7573b725602f7b16a67de0a1cd486f07"
+    },
+    {
+      "path": "smart-building-hvac/node-red/settings.cjs",
+      "bytes": 1427,
+      "sha256": "9d72e5d696ea34cb4f996416e1beeef1fe8540451fe8c8750cb2686085b6eb9f"
+    },
+    {
+      "path": "smart-building-hvac/package-lock.json",
+      "bytes": 19639,
+      "sha256": "e69089da53bfe389249006968912eebec9fad0167540f8e04cc3922d076215a0"
+    },
+    {
+      "path": "smart-building-hvac/package.json",
+      "bytes": 726,
+      "sha256": "43037dde98da7a128cdf4ba8edbcfa35de371bed289e026e9bce45606893ab06"
+    },
+    {
+      "path": "smart-building-hvac/public/index.html",
+      "bytes": 5818,
+      "sha256": "340d55fd1919b11ae3df2482b47fd5141658604331118832aaa2f5a433448a45"
+    },
+    {
+      "path": "smart-building-hvac/scripts/campaign.cjs",
+      "bytes": 1519,
+      "sha256": "6e6853ac0053808b98e1900250d68c271a85e9cdf2a7483ef539a8724fbe40b8"
+    },
+    {
+      "path": "smart-building-hvac/scripts/experiment.cjs",
+      "bytes": 5616,
+      "sha256": "a1a1b3b445688ad960562e4fc50b6d2c217b761b082cf8c050e2823971d55131"
+    },
+    {
+      "path": "smart-building-hvac/scripts/functional-tests.cjs",
+      "bytes": 7166,
+      "sha256": "811c98f992a66b412935668a6d584fe46d39f190a8998d21bb7160cb695c775e"
+    },
+    {
+      "path": "smart-building-hvac/scripts/generate-certs.cjs",
+      "bytes": 2961,
+      "sha256": "6d0e8fb7aa5be633414fa5c5697de2425500e78ffb8df90fddafab8cb3c8edc7"
+    },
+    {
+      "path": "smart-building-hvac/scripts/research-campaign.cjs",
+      "bytes": 6641,
+      "sha256": "a6228f389b5a27d1f1911f378e2c5337e595ce6efba7a9b01ca8f422da53f553"
+    },
+    {
+      "path": "smart-building-hvac/scripts/research-scaleout.cjs",
+      "bytes": 6674,
+      "sha256": "c02afdbd441b4759f2c6561f383a82f97a5dfcb7d2c788f7cf41d9d5a7b9fc9c"
+    },
+    {
+      "path": "smart-building-hvac/scripts/research-stack.cjs",
+      "bytes": 5682,
+      "sha256": "29f1d73c02d0c75879e7e62c333fbdb3136162e86b0ee1ac0a121898338c45d4"
+    },
+    {
+      "path": "smart-building-hvac/scripts/stack.cjs",
+      "bytes": 5297,
+      "sha256": "2a2a0ea8f123cd150d08c0d6a3b1dfc5aba66683ce0e33f11ce4f0cc1754a6f0"
+    },
+    {
+      "path": "smart-building-hvac/scripts/verify-experiments.cjs",
+      "bytes": 4181,
+      "sha256": "0190d2a024cf6fa77a9317a4e0763117781fc1032acfab2fa3f6add5b561fd43"
+    },
+    {
+      "path": "smart-building-hvac/src/bus.cjs",
+      "bytes": 2429,
+      "sha256": "3d9ab89a6325dbe741d890af05e664214068c5b0e15f4bc8bdf55e7973d0480f"
+    },
+    {
+      "path": "smart-building-hvac/src/domain.cjs",
+      "bytes": 14676,
+      "sha256": "1559cacde1b2c633783734efd7ef120e4ad8f6e1f9b122d979f6f5d0fd262203"
+    },
+    {
+      "path": "smart-building-hvac/src/ledger.cjs",
+      "bytes": 2654,
+      "sha256": "ac99e78b224b00fcc7e2d071addc6e04f1e4775e55ffea3d5a1ef81e190e8d06"
+    },
+    {
+      "path": "smart-building-hvac/src/routing.cjs",
+      "bytes": 799,
+      "sha256": "3b16b06282f527ebf53200dfc9683ea28a9fc15021163d3e6b47fe2b62d2e3cb"
+    },
+    {
+      "path": "smart-building-hvac/src/service.cjs",
+      "bytes": 8178,
+      "sha256": "4c85cbee07c4815eeed939b9ccb3abf131f874c4351e44be367f705b9b5269ce"
+    },
+    {
+      "path": "smart-building-hvac/src/store.cjs",
+      "bytes": 19112,
+      "sha256": "2e474fab53d2ed792501cd2be5254333382cb7079dab31a22d8fc9e99f79ca01"
+    },
+    {
+      "path": "smart-building-hvac/tests/domain.test.cjs",
+      "bytes": 19510,
+      "sha256": "0865949d98e6b833ec4f9cb160b144a92dd7a1d685f35a3fabce35fcdcb67593"
+    },
+    {
+      "path": "smart-building-hvac/tests/ledger.test.cjs",
+      "bytes": 2401,
+      "sha256": "c510912be040a33672cb8976bde86b5d51a0de5c5070135fcf63200471242d2f"
+    },
+    {
+      "path": "smart-building-hvac/tests/nodered-flow.test.cjs",
+      "bytes": 10599,
+      "sha256": "39ffbde68655d0af782ccfd55c22fffc71abc432dc9bdc51c8922250c5970d42"
+    },
+    {
+      "path": "smart-building-hvac/tests/routing.test.cjs",
+      "bytes": 1594,
+      "sha256": "493ff0ad53dbca7d32d9eabe1e96f0315b3bd3e909c20dd9de812afca0f18797"
+    },
+    {
+      "path": "smart-building-hvac/tests/store.test.cjs",
+      "bytes": 21264,
+      "sha256": "de829b9eee63678f14a83141d9d2b166e4aa1f8f8903f6e7252e9fb61275d56b"
+    },
+    {
+      "path": "research/campaign.log",
+      "bytes": 11548,
+      "sha256": "e291007613385f950be0721a6223b9b95b76d0094e840464740e4d7b5a0d361c"
+    },
+    {
+      "path": "research/environment/broker-image.txt",
+      "bytes": 112,
+      "sha256": "943f8f2033efca9bb69b07500cefa4dc21ce7e14e0e33fed70fc96af968092c0"
+    },
+    {
+      "path": "research/environment/container.json",
+      "bytes": 172,
+      "sha256": "b0d19236e8957bb9f3f0a80455f65b36755a4b7d51e910c20507ae22f3224243"
+    },
+    {
+      "path": "research/environment/host.txt",
+      "bytes": 120,
+      "sha256": "73d4d8c64492fff59ea1498e996c42dbaea7cf26f06db29d73b96b554bfd2dc2"
+    },
+    {
+      "path": "research/environment/podman-info.json",
+      "bytes": 5253,
+      "sha256": "59a384778cae831b410fd3e3548ea3b79277195aa6040ef112f918d504f7ed1d"
+    },
+    {
+      "path": "research/environment/service-image.txt",
+      "bytes": 105,
+      "sha256": "bd06d36dcf1ca4b784b0b953edbb2661c08b396fb1b30890b62643bf63201c94"
+    },
+    {
+      "path": "research/environment/source-sha256.txt",
+      "bytes": 1664,
+      "sha256": "ef9c98fb8ad4dae4c7638251a090c3b670ec154cb74dd0f424cc51a47a2cd19b"
+    },
+    {
+      "path": "research/experiment-protocol.md",
+      "bytes": 3704,
+      "sha256": "1b83927f42c313b602c86a9f48a3ee114654d093db48a6e41911cfbbbe2d4ad4"
+    },
+    {
+      "path": "research/independent-verification.log",
+      "bytes": 6675,
+      "sha256": "54b5b9a950728aa575fa4c401d7cf6b5844026148f2695b29c1a0490bb706683"
+    },
+    {
+      "path": "research/results/campaign.json",
+      "bytes": 12128,
+      "sha256": "27313f55566dc6ed0fc998a134527dbf58bf0959419e124ab60eeffe8b1578df"
+    },
+    {
+      "path": "research/results/r0-normal12-broadcast/actuator-acknowledgements.jsonl",
+      "bytes": 101519,
+      "sha256": "d9aa948237201627bc77be08263cd5cfe0767900fb8425305beb06ffb274b1b2"
+    },
+    {
+      "path": "research/results/r0-normal12-broadcast/deployment.log",
+      "bytes": 1002,
+      "sha256": "11d9cd0671675eebc1c3c9ef944f974e2b72b6420299f9c191951e8724f2db21"
+    },
+    {
+      "path": "research/results/r0-normal12-broadcast/raw-sent.jsonl",
+      "bytes": 62808,
+      "sha256": "f203abcd5d499acab8e49754ad3218add88914930b000acaf4f21322e1c5dc96"
+    },
+    {
+      "path": "research/results/r0-normal12-broadcast/resource-samples.json",
+      "bytes": 9843,
+      "sha256": "a69bbb98bc9b2316cbeedd008749bbd86d81f79f39f9124c07956c7ae47a2692"
+    },
+    {
+      "path": "research/results/r0-normal12-broadcast/summary.json",
+      "bytes": 14967,
+      "sha256": "4418dde1d9a6e52ab3a49f78d3d90cfb87a8fadf549c9a394071498225099808"
+    },
+    {
+      "path": "research/results/r0-normal12-selective/actuator-acknowledgements.jsonl",
+      "bytes": 101554,
+      "sha256": "b1052e82ca28ec1ea89013bd9f7e894f5e0de32a78be403ca3e24ac80ae9285f"
+    },
+    {
+      "path": "research/results/r0-normal12-selective/deployment.log",
+      "bytes": 1002,
+      "sha256": "301999445af6ed22bf8e26404068d6799c42527789d82256c32399dfc277f5c0"
+    },
+    {
+      "path": "research/results/r0-normal12-selective/raw-sent.jsonl",
+      "bytes": 62808,
+      "sha256": "b3963d6e311dc3b766aae07ec3314f8ec83769599af66e4aeca6d2a3d78804cf"
+    },
+    {
+      "path": "research/results/r0-normal12-selective/resource-samples.json",
+      "bytes": 9834,
+      "sha256": "3ddcfac29d534959847fc0d178b3df945e72ef745b3fb90eafe716834564fcdc"
+    },
+    {
+      "path": "research/results/r0-normal12-selective/summary.json",
+      "bytes": 16668,
+      "sha256": "a1e2df2698c8503bb6dbc08080595e5eb45d2c99348fd9019fb97c6f4db03d08"
+    },
+    {
+      "path": "research/results/r0-normal180-broadcast/actuator-acknowledgements.jsonl",
+      "bytes": 1535350,
+      "sha256": "aeb6848e9f9bf6176eb8199ca62c4567ee301955d8b1abb195c9cdbdeb678cd3"
+    },
+    {
+      "path": "research/results/r0-normal180-broadcast/deployment.log",
+      "bytes": 1002,
+      "sha256": "15888a62ec5be78cd581876c348c2232cd0835cba9ef0fdb89ac9141b61e85dd"
+    },
+    {
+      "path": "research/results/r0-normal180-broadcast/raw-sent.jsonl",
+      "bytes": 947391,
+      "sha256": "4f7bb4a0e0230c4049ca02e71d51f890d724f8635e656c7f518ef1b3b9088386"
+    },
+    {
+      "path": "research/results/r0-normal180-broadcast/resource-samples.json",
+      "bytes": 9881,
+      "sha256": "abf660e506ef07c2a0f031a68d617ef7d162f9e844d55c9feb7e959684bfbce2"
+    },
+    {
+      "path": "research/results/r0-normal180-broadcast/summary.json",
+      "bytes": 28692,
+      "sha256": "f71ca6706213abba65ecad642725fed9bd4870abd3cb868b1e276b88205da91d"
+    },
+    {
+      "path": "research/results/r0-normal180-selective/actuator-acknowledgements.jsonl",
+      "bytes": 1535365,
+      "sha256": "6695bf029ce5b05e686239b227c71a296230334df7b16b1593c0450079613321"
+    },
+    {
+      "path": "research/results/r0-normal180-selective/deployment.log",
+      "bytes": 1002,
+      "sha256": "4fde37fca0e13f4979f9b1682a14267e341d58383f7324245e0662874252e15f"
+    },
+    {
+      "path": "research/results/r0-normal180-selective/raw-sent.jsonl",
+      "bytes": 947391,
+      "sha256": "acac1ca4a6243fb96b672a6c7a3e57c3dd0dda3536f54be5122d0e7ecdcacfa6"
+    },
+    {
+      "path": "research/results/r0-normal180-selective/resource-samples.json",
+      "bytes": 9877,
+      "sha256": "2f7bb0cb31c9f431b78d35107087d161b920b3a3bf129aef77763b1a6f9d4a7f"
+    },
+    {
+      "path": "research/results/r0-normal180-selective/summary.json",
+      "bytes": 28687,
+      "sha256": "c5500729b693da349f8edf0cfcfb1ae72aa31321dd2adba72b2dc935afd63a75"
+    },
+    {
+      "path": "research/results/r0-stress180-broadcast/actuator-acknowledgements.jsonl",
+      "bytes": 9251551,
+      "sha256": "362832a7c6419b46c8112d916397c73070897c8a21f4eb9bb767ef4277e24799"
+    },
+    {
+      "path": "research/results/r0-stress180-broadcast/deployment.log",
+      "bytes": 1002,
+      "sha256": "cf5ef75d5dc9f73d1f28eb985d4e6c8d6bfb76627ffd8a127ce90ceaaef0e58b"
+    },
+    {
+      "path": "research/results/r0-stress180-broadcast/raw-sent.jsonl",
+      "bytes": 5711427,
+      "sha256": "3381c0192266626566c3b2bcb214d1794e28b9253cd8f9e9529a2325636d269f"
+    },
+    {
+      "path": "research/results/r0-stress180-broadcast/resource-samples.json",
+      "bytes": 9926,
+      "sha256": "62e2b3182beef0246ff7dba73235a7d10a73f4df9882bf4895ad3402ccdc4964"
+    },
+    {
+      "path": "research/results/r0-stress180-broadcast/summary.json",
+      "bytes": 133339,
+      "sha256": "a36591ae24eb8f1f4c940a863adbd17d4478d100791853e08d862ade22b2bf20"
+    },
+    {
+      "path": "research/results/r0-stress180-selective/actuator-acknowledgements.jsonl",
+      "bytes": 9251638,
+      "sha256": "26e35ba9f5451038a97b29cc6162f40a2c70d774181403985af5bcec02d8f2c4"
+    },
+    {
+      "path": "research/results/r0-stress180-selective/deployment.log",
+      "bytes": 1002,
+      "sha256": "64ac66b19c2fbc07893d1c86689081f916c526ef1f6318211bd0d0a46e7f9ed8"
+    },
+    {
+      "path": "research/results/r0-stress180-selective/raw-sent.jsonl",
+      "bytes": 5711427,
+      "sha256": "83ed58cb237cb2d3e50e757357d2e973725eaf6fea7bdcc5c51d5b4cf0bc048c"
+    },
+    {
+      "path": "research/results/r0-stress180-selective/resource-samples.json",
+      "bytes": 9916,
+      "sha256": "61c77da70de24e331070c20726a0fe3b4273af2bd12c7334ec547a26fbfed7ad"
+    },
+    {
+      "path": "research/results/r0-stress180-selective/summary.json",
+      "bytes": 28771,
+      "sha256": "5bbffc0217b6c106e41beeb3d058cbd7a678112938e622a88d94f8c4d194ca52"
+    },
+    {
+      "path": "research/results/r1-normal12-broadcast/actuator-acknowledgements.jsonl",
+      "bytes": 101561,
+      "sha256": "e25b53546991267d612a1d133ca26b85cf651e3b4f4e99e8dee47cc7c39ed212"
+    },
+    {
+      "path": "research/results/r1-normal12-broadcast/deployment.log",
+      "bytes": 1002,
+      "sha256": "1955f3b63045cc039a5333690e6cce58796f66367581f07ecce8c8674f1acd8a"
+    },
+    {
+      "path": "research/results/r1-normal12-broadcast/raw-sent.jsonl",
+      "bytes": 62808,
+      "sha256": "81375e10eb76e6bb37767b4984cde8ff9bdd49076e548f12a8e25d7ecea050e8"
+    },
+    {
+      "path": "research/results/r1-normal12-broadcast/resource-samples.json",
+      "bytes": 9842,
+      "sha256": "fd6f5c48018e1b9ddf604068d3568f5298b5f5ccdae2ef8934a25698d21672d9"
+    },
+    {
+      "path": "research/results/r1-normal12-broadcast/summary.json",
+      "bytes": 14641,
+      "sha256": "f64c2f469b01d8d5e2d28ba44c2592ba397623c2f5a43d138713f6ecd5409300"
+    },
+    {
+      "path": "research/results/r1-normal12-selective/actuator-acknowledgements.jsonl",
+      "bytes": 101596,
+      "sha256": "474796d1ce8bddd527dc0a7f05831f99be342f7ce39c1fda5258181c734b14e7"
+    },
+    {
+      "path": "research/results/r1-normal12-selective/deployment.log",
+      "bytes": 1002,
+      "sha256": "0fa4dfffb08de7ea382b93c25966363f22bef54de369d29cd6251c3a294b2e65"
+    },
+    {
+      "path": "research/results/r1-normal12-selective/raw-sent.jsonl",
+      "bytes": 62808,
+      "sha256": "b44d45963bc74b942e65892e512c24aa1b48130a65fd7fb1da7d3f9f91baf5a5"
+    },
+    {
+      "path": "research/results/r1-normal12-selective/resource-samples.json",
+      "bytes": 9835,
+      "sha256": "84f4f0a0316d7dc3cb92731e37f1fd2301ca23730d4cc45e96171d1c725f54a0"
+    },
+    {
+      "path": "research/results/r1-normal12-selective/summary.json",
+      "bytes": 14759,
+      "sha256": "06a7259a5e223a2d75b24bcb4c27ca0a2bc37fcb02fd6824a45b562a0d7bc446"
+    },
+    {
+      "path": "research/results/r1-normal180-broadcast/actuator-acknowledgements.jsonl",
+      "bytes": 1535437,
+      "sha256": "3d25e3ba194095a85ef33c0affd9b1f10faab310cbdcf1646ea79ce4d2214ee9"
+    },
+    {
+      "path": "research/results/r1-normal180-broadcast/deployment.log",
+      "bytes": 1002,
+      "sha256": "672383b9efbf5db852aafa2213ea4d6fda432fe32cf9b673ff0dd996c95b0487"
+    },
+    {
+      "path": "research/results/r1-normal180-broadcast/raw-sent.jsonl",
+      "bytes": 947391,
+      "sha256": "62e4a7a4ec13fd47cc182661f134e070f73d860af697e4042c6908b76ec72209"
+    },
+    {
+      "path": "research/results/r1-normal180-broadcast/resource-samples.json",
+      "bytes": 9882,
+      "sha256": "44651458d3f3d773341ccc24b6434a82149ffb6f3aa255423970e74938e0a065"
+    },
+    {
+      "path": "research/results/r1-normal180-broadcast/summary.json",
+      "bytes": 28625,
+      "sha256": "870eed2ecbd24aa9415a9671fe7f4f41740b59fafe518f1a99b22ef23a4ea8ce"
+    },
+    {
+      "path": "research/results/r1-normal180-selective/actuator-acknowledgements.jsonl",
+      "bytes": 1535266,
+      "sha256": "d2750cbc2a7994a4e26c780bda46257739fe4b217d806e235aa10cfd99cacd8a"
+    },
+    {
+      "path": "research/results/r1-normal180-selective/deployment.log",
+      "bytes": 1002,
+      "sha256": "3577b3e9e1592838f8644a291b9f5e35973e5bb3804b8179ca3864d0f2fef279"
+    },
+    {
+      "path": "research/results/r1-normal180-selective/raw-sent.jsonl",
+      "bytes": 947391,
+      "sha256": "4c68c743f8a84ee542592d50e5b808d7f1cfc09434325813e9ee4dd11a8cf7aa"
+    },
+    {
+      "path": "research/results/r1-normal180-selective/resource-samples.json",
+      "bytes": 9876,
+      "sha256": "47823fdc97afbece18fd19c765ee9a5c9ce20711fee8b1135e13d0ac1c851cf7"
+    },
+    {
+      "path": "research/results/r1-normal180-selective/summary.json",
+      "bytes": 28693,
+      "sha256": "bfefa178ff9e73ccf0ce40050a4f4a098c8ad54b50dd476e590a9fe4ccf0537d"
+    },
+    {
+      "path": "research/results/r1-stress180-broadcast/actuator-acknowledgements.jsonl",
+      "bytes": 9251551,
+      "sha256": "3ce088afa8b4cb3dd23327499fb77261768de2577dc17c5372ca07ccc8fd2b3b"
+    },
+    {
+      "path": "research/results/r1-stress180-broadcast/deployment.log",
+      "bytes": 1002,
+      "sha256": "f4513d0c4dd7a887ee20548dacaf1cd9c4ea33d16293af286f27fee4bdcea4f0"
+    },
+    {
+      "path": "research/results/r1-stress180-broadcast/raw-sent.jsonl",
+      "bytes": 5711427,
+      "sha256": "e25c29a8c65238a6f3205b078d86b7dd440cd653e8699326c42b966353756f59"
+    },
+    {
+      "path": "research/results/r1-stress180-broadcast/resource-samples.json",
+      "bytes": 9924,
+      "sha256": "c0c0c41475d2b59f75f795a8326193384ddf3c33dd3b5d3970728a37c93c6f1e"
+    },
+    {
+      "path": "research/results/r1-stress180-broadcast/summary.json",
+      "bytes": 28783,
+      "sha256": "65a3d00bab63d4a871adb6d7561b009260219b66b2c93316eabdc7ce9fb04cef"
+    },
+    {
+      "path": "research/results/r1-stress180-selective/actuator-acknowledgements.jsonl",
+      "bytes": 9251504,
+      "sha256": "d43bfe8e955c55df4a88c683fa569ae52845118b2f3ce0275db4d40dcf95d960"
+    },
+    {
+      "path": "research/results/r1-stress180-selective/deployment.log",
+      "bytes": 1002,
+      "sha256": "bbcb22740e1337adbf7943a8f8b69d6b0d3ccdad5816e2f07d474d395df012d4"
+    },
+    {
+      "path": "research/results/r1-stress180-selective/raw-sent.jsonl",
+      "bytes": 5711427,
+      "sha256": "a75724fe3303c9c30bda68ef0bc1d2e8be56af4494ba5d33654073c06552f0d8"
+    },
+    {
+      "path": "research/results/r1-stress180-selective/resource-samples.json",
+      "bytes": 9919,
+      "sha256": "1fbfc3193d015e78975fa995d41523cf6d98191b206ad8f05ebdeb5b05aace92"
+    },
+    {
+      "path": "research/results/r1-stress180-selective/summary.json",
+      "bytes": 28797,
+      "sha256": "ac2c01fceb88d85d5eb3e7ecc08deb79395d763a31168337857511f998975019"
+    },
+    {
+      "path": "research/scaleout-campaign.log",
+      "bytes": 3844,
+      "sha256": "cac9b3eb7799468a2ba20d86c1cb6787aec3a218b006f79ce21f8ecccf6768da"
+    },
+    {
+      "path": "research/scaleout-independent-verification.log",
+      "bytes": 2518,
+      "sha256": "40bd1665154bee85124f8e71c1297e604687fd6947bd7aaa2a8cc81bc21dc8f3"
+    },
+    {
+      "path": "research/scaleout-protocol.md",
+      "bytes": 1891,
+      "sha256": "0f5c44d26bff87486c0415f7112b83d8fc9707b4584a977ae7e97316db0ca892"
+    },
+    {
+      "path": "research/scaleout-results/campaign.json",
+      "bytes": 4187,
+      "sha256": "a0e77c7209c6b0b2c1a1391090a9f96a0600ec2b07bdd77daadeae490ba2c53e"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-scaled/actuator-acknowledgements.jsonl",
+      "bytes": 1502986,
+      "sha256": "973879aa14a640b4c17c696613783f842eb4b95ee9f6541b588d0afa7a7048d3"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-scaled/deployment.log",
+      "bytes": 977,
+      "sha256": "6110863a982da0fce1d45d81b4595ab516c01f2bedabcbf7779112cb8d741bd1"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-scaled/raw-sent.jsonl",
+      "bytes": 931191,
+      "sha256": "911c511f70390efc02106fa3e638fdb92ff8b8ba013ad4c63bf7c3641039119e"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-scaled/resource-samples.json",
+      "bytes": 9875,
+      "sha256": "16b4497a3a0816a8d68d025a5dc3a3242fdade4dba2b13fc4752de5b5981edc3"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-scaled/summary.json",
+      "bytes": 28466,
+      "sha256": "b6b7a93b3a6bbbd27b6198d72476ad94104f97b80ba3f0de7ec2f2697cfdd172"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-single/actuator-acknowledgements.jsonl",
+      "bytes": 1502952,
+      "sha256": "6b5c57866ce04cc39d57d85bb610e8a47d03a23590acacad4362ec8af44142e8"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-single/deployment.log",
+      "bytes": 744,
+      "sha256": "8806f74404e223bca61e2faa7043ba7215b35d6451600a295c0d0cd6340c2e24"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-single/raw-sent.jsonl",
+      "bytes": 931191,
+      "sha256": "31e4455792a0dc3f34f5e25489569b4be89c826e8fee33f54b93f068895b1948"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-single/resource-samples.json",
+      "bytes": 8456,
+      "sha256": "4a409406da2b8db820afc049a16cc2bf2aba199ce6a5e67c2bfdb8cff5ca25d1"
+    },
+    {
+      "path": "research/scaleout-results/r0-normal180-single/summary.json",
+      "bytes": 28382,
+      "sha256": "6374e6bae6cd5ca495020d986a26778e36480d7e7a60d0feba2c4fe7d6f022f5"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-scaled/actuator-acknowledgements.jsonl",
+      "bytes": 1502997,
+      "sha256": "ed65bc0a695758b59ca21e0f8018717b754467e806aaffecf091e61306209c3f"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-scaled/deployment.log",
+      "bytes": 1002,
+      "sha256": "cdb46bc88c832920ae584176a58952675bafcc5fe8f05e55d692ab5d3aa6ee39"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-scaled/raw-sent.jsonl",
+      "bytes": 931191,
+      "sha256": "b2696e5fd5901951cffdf611f48d68838bd5d199cf645a00a467b9d3398ee5b8"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-scaled/resource-samples.json",
+      "bytes": 9878,
+      "sha256": "fe10b1c1ae62118a626bd92ca56c3100dc72f4c6c326fad8fe623412807e0ca8"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-scaled/summary.json",
+      "bytes": 28467,
+      "sha256": "dc5015cff686968ebcea98b8d42b21b82166e2ec19d4fa53b5ba4cd3d4b4665c"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-single/actuator-acknowledgements.jsonl",
+      "bytes": 1502944,
+      "sha256": "1c079f25809731fa20620bc1f276461ae354c596b76adc6a8a46cfe327cc8fff"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-single/deployment.log",
+      "bytes": 937,
+      "sha256": "51e0dc99c5e04eaa27fa5ff420023d8a4d990ebc8a7bc36621a57369cd095dd7"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-single/raw-sent.jsonl",
+      "bytes": 931191,
+      "sha256": "ab925c6d840fe8ccabee385ee68df847a3418f0b9b62d81991eab4be6f5ee9f0"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-single/resource-samples.json",
+      "bytes": 8455,
+      "sha256": "b1866e8d5a0339d9bb84d2900a9068b4eddf8a50faf55e0463f0275e708b2ded"
+    },
+    {
+      "path": "research/scaleout-results/r1-normal180-single/summary.json",
+      "bytes": 28416,
+      "sha256": "7f6d0d3b595377063679c04fd9218a58b9db381e1b3f1eb0a4774c8182c6e3f5"
+    },
+    {
+      "path": "research/sources.json",
+      "bytes": 1346,
+      "sha256": "52a25146dfa6883151d21f1310c1050a36bdd3489847aa4d5dcb71c49820915b"
+    },
+    {
+      "path": "research/verified-comparisons.json",
+      "bytes": 6675,
+      "sha256": "54b5b9a950728aa575fa4c401d7cf6b5844026148f2695b29c1a0490bb706683"
+    },
+    {
+      "path": "research/verified-scaleout.json",
+      "bytes": 2518,
+      "sha256": "40bd1665154bee85124f8e71c1297e604687fd6947bd7aaa2a8cc81bc21dc8f3"
+    },
+    {
+      "path": "research/verify_results.py",
+      "bytes": 3704,
+      "sha256": "f8b3584ad0d7f5f0ca11ac174d49b77749b450e02bb818a50efc6bbd95e9b87d"
+    },
+    {
+      "path": "research/verify_scaleout.py",
+      "bytes": 3646,
+      "sha256": "a19ee73ba2d93a8c47f025a60fea6c8969d630f56a668d98e35fe470d6208aed"
+    },
+    {
+      "path": "verification/archive-verification-20260922.log",
+      "bytes": 1633,
+      "sha256": "5eefa6aed99d59a20b80eff11ffbdcb120e6dbaaea550c37c0668afb9448587f"
+    },
+    {
+      "path": "verification/final-unit-tests.log",
+      "bytes": 5686,
+      "sha256": "0e7e22deb743c2268024ad352a666984555148193c1feccdb458fd0c9b2250ec"
+    },
+    {
+      "path": "verification/functional-tests-20260922.log",
+      "bytes": 1687,
+      "sha256": "75d2ca9f0d39c2067c5d3c6104a0214ebdc98d2d3f51aae16c1c3d9bb6613763"
+    },
+    {
+      "path": "verification/functional-tests-archived-20260906.json",
+      "bytes": 5979,
+      "sha256": "3e6f56746f38a9efcd02c7cb49314f555d5a5f71270f34e7f55c437defd603d6"
+    },
+    {
+      "path": "verification/functional-tests-broadcast-20260922.json",
+      "bytes": 5975,
+      "sha256": "cc18a7039bb2aba54d35e8f5336c271ee0906bd7bc6f109893ded8227b70df36"
+    },
+    {
+      "path": "verification/functional-tests-selective-20260922.json",
+      "bytes": 5980,
+      "sha256": "d16662ab9e1141a6d16242aa338ae39e0e62933e38a5a0c4ac53c895035d09e8"
+    },
+    {
+      "path": "verification/functional-tests-selective-20260922.log",
+      "bytes": 1693,
+      "sha256": "92f59cb5459add32abaa370f56e7885047563d9db364cfd23f932eaf98beac47"
+    },
+    {
+      "path": "verification/new-certificates.json",
+      "bytes": 178,
+      "sha256": "995b1b1d4714bc21066b48627e6f24bc5976f66fca10f9f610f97f5df0527296"
+    },
+    {
+      "path": "verification/npm-ci.log",
+      "bytes": 143,
+      "sha256": "3e47c5d3d145378fafebf5ad9a5c931e405b08da0c1c3937233c99ec674b01a6"
+    },
+    {
+      "path": "verification/podman-start.log",
+      "bytes": 1017,
+      "sha256": "f2289f67b63bd9899a7082ecff6779a041478d25164882c8ee4861401cb6cfb2"
+    },
+    {
+      "path": "verification/preexisting-containers.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/research-build.log",
+      "bytes": 3016,
+      "sha256": "0d3f7e7469b373cb2295f8c347747372b3041e086c63898b605b789ebb19ea51"
+    },
+    {
+      "path": "verification/research-initial-start.log",
+      "bytes": 846,
+      "sha256": "0a802939d71e2c28fce5f5e4bc8fc89158a535f5f5b70497d01815603bdf1c5c"
+    },
+    {
+      "path": "verification/runtime-teardown.log",
+      "bytes": 247,
+      "sha256": "a2496dee6ccb56baffdbea0c3186841602c65b85a2e20353f11b25e761f1aa5f"
+    },
+    {
+      "path": "verification/selective-functional-start.log",
+      "bytes": 809,
+      "sha256": "93c78c091966a4006125162d40de218594419916ee6373d4e5b59561e1287222"
+    },
+    {
+      "path": "verification/source-revisions.txt",
+      "bytes": 61,
+      "sha256": "e748fd1263d95f6a8ae8d458fc3bb23bf5c12b1ed3d8aeee30d17d657111a531"
+    },
+    {
+      "path": "verification/start-time.txt",
+      "bytes": 21,
+      "sha256": "0feb1b5330b1f3f55a6af3e325687e90902883ae28ef7314432f1b85551d69da"
+    },
+    {
+      "path": "verification/unit-tests-20260922.log",
+      "bytes": 5355,
+      "sha256": "ce288e27c6209d5ec063b7d25946d41838fdfa5a197eb7134537e5de9342c723"
+    },
+    {
+      "path": "verification/unit-tests-routing-20260922.log",
+      "bytes": 5705,
+      "sha256": "39b5b957cb7004a4a3f093da8949e188a2ff171b9c2cd6886c37781956c09cc5"
+    },
+    {
+      "path": "reports/6.3D-main-report.md",
+      "bytes": 14205,
+      "sha256": "647886593a1ea4469185ea4444186f518fb81abcb5be8d857aebf7545fafc13f"
+    },
+    {
+      "path": "reports/6.4HD-main-report.md",
+      "bytes": 12736,
+      "sha256": "eabbedcc2bfb149c9d7c9a07acddab9a1afa9446d556149b7d083c9f7746d4b5"
+    },
+    {
+      "path": "reports/implementation-evidence-appendix.md",
+      "bytes": 6270,
+      "sha256": "89b6bcd1c605f6cffe4ce9eaf205a353c63932729d37714e36a09120e07231d1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 892,
+      "sha256": "64279f77839f4f2c60ae4f7b26e21ff491151044aa910e9aa91051486e28befa"
+    }
+  ]
+}

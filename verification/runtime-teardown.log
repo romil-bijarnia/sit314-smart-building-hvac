@@ -1,0 +1,10 @@
+sit314-eval-gateway
+sit314-eval-aggregator-a
+sit314-eval-aggregator-b
+sit314-eval-controller
+sit314-eval-actuator
+sit314-eval-cep
+sit314-eval-storage
+sit314-eval-node-red
+sit314-eval-mosquitto
+Machine "podman-machine-default" stopped successfully

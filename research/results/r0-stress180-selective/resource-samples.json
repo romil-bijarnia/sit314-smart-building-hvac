@@ -1,0 +1,405 @@
+{
+  "before": {
+    "gateway": {
+      "health": {
+        "role": "gateway",
+        "identity": "gateway",
+        "connected": true,
+        "processed": 0,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 0,
+        "inboundPayloadBytes": 0,
+        "cpuUsageMicroseconds": {
+          "user": 100966,
+          "system": 33189
+        },
+        "memoryBytes": {
+          "rss": 83181568,
+          "heapTotal": 33423360,
+          "heapUsed": 15222104,
+          "external": 2802034,
+          "arrayBuffers": 543343
+        },
+        "uptimeMs": 5233,
+        "aggregationRouting": "broadcast"
+      },
+      "files": []
+    },
+    "aggregator-a": {
+      "health": {
+        "role": "aggregator",
+        "identity": "aggregator-a",
+        "connected": true,
+        "processed": 0,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 0,
+        "inboundPayloadBytes": 0,
+        "cpuUsageMicroseconds": {
+          "user": 95792,
+          "system": 41616
+        },
+        "memoryBytes": {
+          "rss": 82948096,
+          "heapTotal": 33423360,
+          "heapUsed": 15255712,
+          "external": 2802039,
+          "arrayBuffers": 543348
+        },
+        "uptimeMs": 5048,
+        "aggregationRouting": "selective"
+      },
+      "files": []
+    },
+    "aggregator-b": {
+      "health": {
+        "role": "aggregator",
+        "identity": "aggregator-b",
+        "connected": true,
+        "processed": 0,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 0,
+        "inboundPayloadBytes": 0,
+        "cpuUsageMicroseconds": {
+          "user": 97626,
+          "system": 33047
+        },
+        "memoryBytes": {
+          "rss": 83079168,
+          "heapTotal": 33423360,
+          "heapUsed": 15258208,
+          "external": 2802039,
+          "arrayBuffers": 543348
+        },
+        "uptimeMs": 4875,
+        "aggregationRouting": "selective"
+      },
+      "files": []
+    },
+    "controller": {
+      "health": {
+        "role": "controller",
+        "identity": "controller",
+        "connected": true,
+        "processed": 0,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 0,
+        "inboundPayloadBytes": 0,
+        "cpuUsageMicroseconds": {
+          "user": 106342,
+          "system": 24574
+        },
+        "memoryBytes": {
+          "rss": 82948096,
+          "heapTotal": 33685504,
+          "heapUsed": 15220096,
+          "external": 2802034,
+          "arrayBuffers": 543343
+        },
+        "uptimeMs": 4708,
+        "aggregationRouting": "broadcast"
+      },
+      "files": []
+    },
+    "actuator": {
+      "health": {
+        "role": "actuator",
+        "identity": "actuator",
+        "connected": true,
+        "processed": 0,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 0,
+        "inboundPayloadBytes": 0,
+        "cpuUsageMicroseconds": {
+          "user": 95403,
+          "system": 33146
+        },
+        "memoryBytes": {
+          "rss": 83132416,
+          "heapTotal": 33423360,
+          "heapUsed": 15225544,
+          "external": 2802034,
+          "arrayBuffers": 543343
+        },
+        "uptimeMs": 4533,
+        "aggregationRouting": "broadcast"
+      },
+      "files": []
+    },
+    "storage": {
+      "health": {
+        "role": "storage",
+        "identity": "storage",
+        "connected": true,
+        "processed": 0,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 0,
+        "inboundPayloadBytes": 0,
+        "cpuUsageMicroseconds": {
+          "user": 119048,
+          "system": 34605
+        },
+        "memoryBytes": {
+          "rss": 83292160,
+          "heapTotal": 33423360,
+          "heapUsed": 15428192,
+          "external": 2802074,
+          "arrayBuffers": 543343
+        },
+        "uptimeMs": 4025,
+        "aggregationRouting": "broadcast"
+      },
+      "files": []
+    },
+    "cep": {
+      "health": {
+        "role": "cep",
+        "identity": "cep",
+        "connected": true,
+        "processed": 0,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 0,
+        "inboundPayloadBytes": 0,
+        "cpuUsageMicroseconds": {
+          "user": 106984,
+          "system": 30480
+        },
+        "memoryBytes": {
+          "rss": 83132416,
+          "heapTotal": 33423360,
+          "heapUsed": 15240584,
+          "external": 2802034,
+          "arrayBuffers": 543343
+        },
+        "uptimeMs": 4502,
+        "aggregationRouting": "broadcast"
+      },
+      "files": []
+    }
+  },
+  "after": {
+    "gateway": {
+      "health": {
+        "role": "gateway",
+        "identity": "gateway",
+        "connected": true,
+        "processed": 10800,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 10800,
+        "inboundPayloadBytes": 5700627,
+        "cpuUsageMicroseconds": {
+          "user": 1904939,
+          "system": 1042451
+        },
+        "memoryBytes": {
+          "rss": 133033984,
+          "heapTotal": 73302016,
+          "heapUsed": 47004488,
+          "external": 2802929,
+          "arrayBuffers": 545086
+        },
+        "uptimeMs": 28916,
+        "aggregationRouting": "broadcast"
+      },
+      "files": [
+        {
+          "name": "/data/inbox-outbox.jsonl",
+          "bytes": 20811654
+        }
+      ]
+    },
+    "aggregator-a": {
+      "health": {
+        "role": "aggregator",
+        "identity": "aggregator-a",
+        "connected": true,
+        "processed": 5400,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 5400,
+        "inboundPayloadBytes": 3880377,
+        "cpuUsageMicroseconds": {
+          "user": 1481691,
+          "system": 669678
+        },
+        "memoryBytes": {
+          "rss": 90165248,
+          "heapTotal": 28925952,
+          "heapUsed": 26477744,
+          "external": 2798229,
+          "arrayBuffers": 543198
+        },
+        "uptimeMs": 28727,
+        "aggregationRouting": "selective"
+      },
+      "files": [
+        {
+          "name": "/data/inbox-outbox.jsonl",
+          "bytes": 10996984
+        }
+      ]
+    },
+    "aggregator-b": {
+      "health": {
+        "role": "aggregator",
+        "identity": "aggregator-b",
+        "connected": true,
+        "processed": 5400,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 5400,
+        "inboundPayloadBytes": 3881250,
+        "cpuUsageMicroseconds": {
+          "user": 1464326,
+          "system": 633152
+        },
+        "memoryBytes": {
+          "rss": 91480064,
+          "heapTotal": 30236672,
+          "heapUsed": 26703376,
+          "external": 2801041,
+          "arrayBuffers": 543198
+        },
+        "uptimeMs": 28558,
+        "aggregationRouting": "selective"
+      },
+      "files": [
+        {
+          "name": "/data/inbox-outbox.jsonl",
+          "bytes": 10999794
+        }
+      ]
+    },
+    "controller": {
+      "health": {
+        "role": "controller",
+        "identity": "controller",
+        "connected": true,
+        "processed": 10800,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 10800,
+        "inboundPayloadBytes": 6634651,
+        "cpuUsageMicroseconds": {
+          "user": 1985600,
+          "system": 1062208
+        },
+        "memoryBytes": {
+          "rss": 126615552,
+          "heapTotal": 71843840,
+          "heapUsed": 35976384,
+          "external": 2801221,
+          "arrayBuffers": 543378
+        },
+        "uptimeMs": 28378,
+        "aggregationRouting": "broadcast"
+      },
+      "files": [
+        {
+          "name": "/data/inbox-outbox.jsonl",
+          "bytes": 20494289
+        }
+      ]
+    },
+    "actuator": {
+      "health": {
+        "role": "actuator",
+        "identity": "actuator",
+        "connected": true,
+        "processed": 10800,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 10800,
+        "inboundPayloadBytes": 6259138,
+        "cpuUsageMicroseconds": {
+          "user": 1843836,
+          "system": 1086688
+        },
+        "memoryBytes": {
+          "rss": 127553536,
+          "heapTotal": 71294976,
+          "heapUsed": 49327016,
+          "external": 2809434,
+          "arrayBuffers": 551591
+        },
+        "uptimeMs": 28202,
+        "aggregationRouting": "broadcast"
+      },
+      "files": [
+        {
+          "name": "/data/inbox-outbox.jsonl",
+          "bytes": 21682976
+        }
+      ]
+    },
+    "storage": {
+      "health": {
+        "role": "storage",
+        "identity": "storage",
+        "connected": true,
+        "processed": 54162,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 54162,
+        "inboundPayloadBytes": 34325059,
+        "cpuUsageMicroseconds": {
+          "user": 4196964,
+          "system": 1455172
+        },
+        "memoryBytes": {
+          "rss": 176062464,
+          "heapTotal": 114176000,
+          "heapUsed": 88785552,
+          "external": 2979656,
+          "arrayBuffers": 726001
+        },
+        "uptimeMs": 27697,
+        "aggregationRouting": "broadcast"
+      },
+      "files": [
+        {
+          "name": "/data/events.jsonl",
+          "bytes": 36819584
+        }
+      ]
+    },
+    "cep": {
+      "health": {
+        "role": "cep",
+        "identity": "cep",
+        "connected": true,
+        "processed": 10980,
+        "errors": 0,
+        "pending": 0,
+        "inboundPublishes": 10800,
+        "inboundPayloadBytes": 7761627,
+        "cpuUsageMicroseconds": {
+          "user": 1334009,
+          "system": 951186
+        },
+        "memoryBytes": {
+          "rss": 131325952,
+          "heapTotal": 69386240,
+          "heapUsed": 42569248,
+          "external": 3047521,
+          "arrayBuffers": 789678
+        },
+        "uptimeMs": 28175,
+        "aggregationRouting": "broadcast"
+      },
+      "files": [
+        {
+          "name": "/data/inbox-outbox.jsonl",
+          "bytes": 15548742
+        }
+      ]
+    }
+  }
+}

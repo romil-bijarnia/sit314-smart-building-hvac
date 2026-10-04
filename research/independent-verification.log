@@ -1,0 +1,248 @@
+{
+  "verifiedAt": "2026-09-22T06:31:39.787153+10:00",
+  "trialCount": 12,
+  "complete": true,
+  "allInputOutputIdsMatched": true,
+  "allRawHashesMatch": true,
+  "allAcknowledgementHashesMatch": true,
+  "pairedSensorInputsIdentical": true,
+  "allReportedLatencyPercentilesRecomputed": true,
+  "allStageCountsBalanced": true,
+  "allFinalStageLedgersDrained": true,
+  "comparisons": [
+    {
+      "repetition": 0,
+      "workload": "normal12",
+      "p95Ms": {
+        "broadcast": 120,
+        "selective": 122,
+        "reductionPercent": -1.6666666666666667
+      },
+      "maxMs": {
+        "broadcast": 126,
+        "selective": 127,
+        "reductionPercent": -0.7936507936507936
+      },
+      "aggregatorInboundPublishes": {
+        "broadcast": 240,
+        "selective": 120,
+        "reductionPercent": 50.0
+      },
+      "aggregatorInboundPayloadBytes": {
+        "broadcast": 170736,
+        "selective": 85368,
+        "reductionPercent": 50.0
+      },
+      "aggregatorLedgerBytes": {
+        "broadcast": 406919,
+        "selective": 241629,
+        "reductionPercent": 40.61987766607113
+      },
+      "aggregatorCpuMicroseconds": {
+        "broadcast": 271584,
+        "selective": 201996,
+        "reductionPercent": 25.62301166489926
+      },
+      "aggregatorRssAfterBytes": {
+        "broadcast": 159346688,
+        "selective": 158613504,
+        "reductionPercent": 0.4601187569082076
+      }
+    },
+    {
+      "repetition": 0,
+      "workload": "normal180",
+      "p95Ms": {
+        "broadcast": 646,
+        "selective": 460,
+        "reductionPercent": 28.792569659442723
+      },
+      "maxMs": {
+        "broadcast": 752,
+        "selective": 501,
+        "reductionPercent": 33.37765957446808
+      },
+      "aggregatorInboundPublishes": {
+        "broadcast": 3600,
+        "selective": 1800,
+        "reductionPercent": 50.0
+      },
+      "aggregatorInboundPayloadBytes": {
+        "broadcast": 2575182,
+        "selective": 1287591,
+        "reductionPercent": 50.0
+      },
+      "aggregatorLedgerBytes": {
+        "broadcast": 6150388,
+        "selective": 3650971,
+        "reductionPercent": 40.63836297807553
+      },
+      "aggregatorCpuMicroseconds": {
+        "broadcast": 1505520,
+        "selective": 993016,
+        "reductionPercent": 34.04166002444338
+      },
+      "aggregatorRssAfterBytes": {
+        "broadcast": 176840704,
+        "selective": 167907328,
+        "reductionPercent": 5.051651456895354
+      }
+    },
+    {
+      "repetition": 0,
+      "workload": "stress180",
+      "p95Ms": {
+        "broadcast": 16913,
+        "selective": 13619,
+        "reductionPercent": 19.476142612191804
+      },
+      "maxMs": {
+        "broadcast": 17023,
+        "selective": 13665,
+        "reductionPercent": 19.726252716912413
+      },
+      "aggregatorInboundPublishes": {
+        "broadcast": 21600,
+        "selective": 10800,
+        "reductionPercent": 50.0
+      },
+      "aggregatorInboundPayloadBytes": {
+        "broadcast": 15523254,
+        "selective": 7761627,
+        "reductionPercent": 50.0
+      },
+      "aggregatorLedgerBytes": {
+        "broadcast": 37056482,
+        "selective": 21996778,
+        "reductionPercent": 40.6398643022832
+      },
+      "aggregatorCpuMicroseconds": {
+        "broadcast": 5552355,
+        "selective": 3980766,
+        "reductionPercent": 28.30490845776252
+      },
+      "aggregatorRssAfterBytes": {
+        "broadcast": 256471040,
+        "selective": 181645312,
+        "reductionPercent": 29.17511778327877
+      }
+    },
+    {
+      "repetition": 1,
+      "workload": "normal12",
+      "p95Ms": {
+        "broadcast": 122,
+        "selective": 215,
+        "reductionPercent": -76.22950819672131
+      },
+      "maxMs": {
+        "broadcast": 124,
+        "selective": 221,
+        "reductionPercent": -78.2258064516129
+      },
+      "aggregatorInboundPublishes": {
+        "broadcast": 240,
+        "selective": 120,
+        "reductionPercent": 50.0
+      },
+      "aggregatorInboundPayloadBytes": {
+        "broadcast": 170736,
+        "selective": 85368,
+        "reductionPercent": 50.0
+      },
+      "aggregatorLedgerBytes": {
+        "broadcast": 406919,
+        "selective": 241634,
+        "reductionPercent": 40.61864892030109
+      },
+      "aggregatorCpuMicroseconds": {
+        "broadcast": 248525,
+        "selective": 167079,
+        "reductionPercent": 32.77175334473393
+      },
+      "aggregatorRssAfterBytes": {
+        "broadcast": 159195136,
+        "selective": 158412800,
+        "reductionPercent": 0.4914321000360212
+      }
+    },
+    {
+      "repetition": 1,
+      "workload": "normal180",
+      "p95Ms": {
+        "broadcast": 549,
+        "selective": 472,
+        "reductionPercent": 14.025500910746812
+      },
+      "maxMs": {
+        "broadcast": 702,
+        "selective": 535,
+        "reductionPercent": 23.789173789173788
+      },
+      "aggregatorInboundPublishes": {
+        "broadcast": 3600,
+        "selective": 1800,
+        "reductionPercent": 50.0
+      },
+      "aggregatorInboundPayloadBytes": {
+        "broadcast": 2575182,
+        "selective": 1287591,
+        "reductionPercent": 50.0
+      },
+      "aggregatorLedgerBytes": {
+        "broadcast": 6150505,
+        "selective": 3651038,
+        "reductionPercent": 40.63840286285435
+      },
+      "aggregatorCpuMicroseconds": {
+        "broadcast": 1580667,
+        "selective": 920480,
+        "reductionPercent": 41.76635559545432
+      },
+      "aggregatorRssAfterBytes": {
+        "broadcast": 177229824,
+        "selective": 167661568,
+        "reductionPercent": 5.398784349072084
+      }
+    },
+    {
+      "repetition": 1,
+      "workload": "stress180",
+      "p95Ms": {
+        "broadcast": 14570,
+        "selective": 12672,
+        "reductionPercent": 13.026767330130404
+      },
+      "maxMs": {
+        "broadcast": 14639,
+        "selective": 12741,
+        "reductionPercent": 12.965366486781884
+      },
+      "aggregatorInboundPublishes": {
+        "broadcast": 21600,
+        "selective": 10800,
+        "reductionPercent": 50.0
+      },
+      "aggregatorInboundPayloadBytes": {
+        "broadcast": 15523254,
+        "selective": 7761627,
+        "reductionPercent": 50.0
+      },
+      "aggregatorLedgerBytes": {
+        "broadcast": 37056459,
+        "selective": 21996615,
+        "reductionPercent": 40.64026732829491
+      },
+      "aggregatorCpuMicroseconds": {
+        "broadcast": 5452619,
+        "selective": 3893942,
+        "reductionPercent": 28.58584104262557
+      },
+      "aggregatorRssAfterBytes": {
+        "broadcast": 255840256,
+        "selective": 225361920,
+        "reductionPercent": 11.913033733049422
+      }
+    }
+  ]
+}

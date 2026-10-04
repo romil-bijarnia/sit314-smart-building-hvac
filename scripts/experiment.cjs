@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path');
 const {connect,publish}=require('../src/bus.cjs');
 const root=path.resolve(__dirname,'..');
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-async function snapshot(runId,pipeline='main'){const r=await fetch(`http://127.0.0.1:3140/api/status?run=${encodeURIComponent(runId)}&pipeline=${pipeline}`);if(!r.ok)throw Error('Evidence API HTTP '+r.status);return r.json();}
+async function snapshot(runId,pipeline='main'){const r=await fetch(`${process.env.STATUS_BASE_URL||'http://127.0.0.1:3140'}/api/status?run=${encodeURIComponent(runId)}&pipeline=${pipeline}`);if(!r.ok)throw Error('Evidence API HTTP '+r.status);return r.json();}
 function makeEvent(runId,deviceIndex,tick,{zones=4,scenario='wave',timestamp=Date.now()}={}){
  const deviceId='sensor-'+String(deviceIndex+1).padStart(4,'0'),zoneId='zone-'+(deviceIndex%zones+1);
  const cycle=Math.sin((tick+1+deviceIndex+1)/8),occupancy=Math.max(0,Math.round(8+6*Math.sin((tick+1+deviceIndex+1)/5)));

@@ -1,0 +1,7 @@
+ProductName:		macOS
+ProductVersion:		27.0
+BuildVersion:		26A5421a
+Apple M3 Max
+38654705664
+v25.8.1
+podman version 6.1.0

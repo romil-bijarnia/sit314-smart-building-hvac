@@ -1,0 +1,1 @@
+"5fef2509a20f85341b1e5c4dd7864e1a4a15fba155b88afa025cbcd5b5611ce9" "docker.io/library/eclipse-mosquitto:2.0.22"

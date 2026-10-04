@@ -1,0 +1,72 @@
+
+> sit314-smart-building-hvac@0.8.0 test
+> node --test tests/*.test.cjs
+
+✔ validateRaw accepts a complete envelope and optional sequence (2.057042ms)
+✔ validateRaw handles non-object and malformed values without throwing (0.184584ms)
+✔ validateRaw requires schema version, event type, correlation and safe identities (0.242667ms)
+▶ validateRaw enforces all finite numeric sensor bounds inclusively
+  ✔ temperatureC (0.114542ms)
+  ✔ humidityPercent (0.531084ms)
+  ✔ co2Ppm (0.186625ms)
+  ✔ batteryPercent (0.1045ms)
+✔ validateRaw enforces all finite numeric sensor bounds inclusively (1.242834ms)
+✔ occupancy and optional sequence require non-negative safe integers (0.21775ms)
+✔ validateRaw rejects unparseable, timezone-free and impossible timestamps (0.1275ms)
+✔ deriveEvent produces deterministic root IDs and immediate-parent lineage (0.228417ms)
+✔ deriveEvent rejects invalid arguments and supports maximum raw identity length (0.420125ms)
+✔ ZoneAggregator ring evicts oldest readings and rounds metrics (0.796792ms)
+✔ ZoneAggregator deduplication includes run and isolates zone windows (0.132333ms)
+✔ ZoneAggregator validates inputs and has a timestamp fallback (0.238459ms)
+✔ checkpoint JSON round trip preserves ring position and deduplication (0.713084ms)
+✔ checkpoint restore handles partial and empty windows and is atomic on error (0.333458ms)
+✔ decideCommand covers temperature, occupancy and CO2 boundaries (0.217916ms)
+✔ ownsZone gives every valid zone exactly one shard and rejects invalid indices (0.669208ms)
+✔ CEP requires elapsed source duration, not just three fast readings (0.368417ms)
+✔ CEP source time controls sustained duration while receipt time controls silence (0.164917ms)
+✔ CEP low CO2 or low occupancy resets sustained episode and permits another alert (0.213292ms)
+✔ CEP silent alert occurs exactly at threshold, once per episode, then rearms (0.072125ms)
+✔ CEP ignores duplicate IDs, ID collisions, equal and older source timestamps (0.086ms)
+✔ CEP gaps and zone moves break continuity even if sweep was not called (0.126709ms)
+✔ CEP devices and runs are independent; unseen devices are not invented (0.065334ms)
+✔ CEP rejects malformed readings and invalid clocks without state changes (0.168416ms)
+✔ durable inbox and prepared outbox survive process recreation (25.640042ms)
+✔ pipeline and run namespace do not collide (19.1225ms)
+✔ truncated final journal line is quarantined and valid inputs recovered (13.462541ms)
+✔ valid last record missing a newline remains appendable after recovery (20.483959ms)
+✔ Node-RED flow contains only real core MQTT/HTTP nodes and valid wires (1.335334ms)
+✔ Node-RED gateway, metrics and command preserve schema, correlation and publish each stage (2.5125ms)
+✔ Node-RED rolling metrics and decisions match the shared domain over 15 readings (1.503625ms)
+✔ Node-RED suppresses duplicate raw delivery before all downstream work (0.137833ms)
+✔ Node-RED run/zone windows and deduplication are isolated (0.188542ms)
+✔ Node-RED rejects malformed JSON, invalid measurements and wrong source topics (1.238875ms)
+✔ Node-RED HTTP status is backed by live flow context and MQTT status (0.224667ms)
+✔ Node-RED settings default to local HTTP, allow opt-in TLS, and expose the domain (1.289584ms)
+✔ Node-RED Docker CMD supplies settings arguments to the official entrypoint (0.186459ms)
+✔ store replays synced journal and preserves namespace/run deduplication (28.087708ms)
+✔ TTL retains complete rollups when a source minute straddles emission expiry (171.11625ms)
+✔ snapshot commits before journal clearing and replay ignores committed sequences (90.248166ms)
+✔ failed snapshot write leaves memory and journal untouched (11.090167ms)
+✔ compacted journal resumes sequence and handles repeated maintenance/restarts (359.252625ms)
+✔ malformed normalized readings are rejected before journal append and cannot poison restart (13.148208ms)
+✔ raw invalid sensor payloads remain journalled for rejection evidence (21.460083ms)
+✔ envelope and downstream stage validation happens before durable append (25.939542ms)
+✔ truncated final journal append is quarantined without dropping prior records (34.983ms)
+✔ interior corruption, complete bad records, arbitrary tail garbage and semantic errors fail closed (40.184042ms)
+✔ valid final record without newline is framed before subsequent appends (26.492791ms)
+✔ journal sequence gaps, duplicates and corrupt snapshots fail closed (97.392208ms)
+✔ snapshot counts, percentiles, zones, aggregators and namespace latency correlation stay compatible (150.450167ms)
+✔ CEP alerts and gateway rejections keep their published payloads (16.331583ms)
+✔ input objects and returned snapshots cannot mutate store state (11.827417ms)
+✔ retention aligns minute boundaries, zero-retention works, and bad clocks do not commit (80.465625ms)
+✔ maintenance streams state and JSONL exports with writes bounded to 64 KiB (374.99675ms)
+✔ failure partway through streamed snapshot leaves committed state and WAL recoverable (90.1545ms)
+✔ rolling throughput uses scoped trailing ten seconds, excludes future and boundary timestamps (169.660333ms)
+ℹ tests 59
+ℹ suites 0
+ℹ pass 59
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1912.449417

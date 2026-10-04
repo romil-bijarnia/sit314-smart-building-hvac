@@ -1,0 +1,8 @@
+{
+  "accessedOn": "2026-09-22",
+  "sources": [
+    {"id": "Bonomi2012", "authors": "Flavio Bonomi, Rodolfo Milito, Jiang Zhu, Sateesh Addepalli", "title": "Fog Computing and Its Role in the Internet of Things", "year": 2012, "venue": "MCC 2012", "doi": "10.1145/2342509.2342513", "url": "https://conferences.sigcomm.org/sigcomm/2012/paper/mcc/p13.pdf", "use": "Locality and latency-sensitive IoT control architecture; not direct proof of this project's performance."},
+    {"id": "Redondi2019", "authors": "Alessandro E. C. Redondi, Andres Arcia-Moret, Pietro Manzoni", "title": "Towards a Scaled IoT Pub/Sub Architecture for 5G Networks: the Case of Multiaccess Edge Computing", "year": 2019, "venue": "IEEE 5th World Forum on Internet of Things", "doi": "10.1109/WF-IoT.2019.8767268", "url": "https://arxiv.org/html/1902.07022", "publishedRecord": "https://re.public.polimi.it/handle/11311/1118563", "use": "Sections V-A and V-B contrast flooding and topic-responsible selective event routing. Implemented adaptation is consumer subscription selection behind one broker, not the full multi-broker architecture."},
+    {"id": "OASIS2019", "title": "MQTT Version 5.0", "date": "2019-03-07", "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html", "use": "Normative topic filters, QoS 1 and persistent-session semantics."}
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "verifiedAt": "2026-09-22T06:33:44.163923+10:00",
+  "trialCount": 4,
+  "complete": true,
+  "allInputOutputIdsMatched": true,
+  "allRawHashesMatch": true,
+  "allAcknowledgementHashesMatch": true,
+  "pairedSensorInputsIdentical": true,
+  "allReportedLatencyPercentilesRecomputed": true,
+  "allStageCountsBalanced": true,
+  "allFinalStageLedgersDrained": true,
+  "comparisons": [
+    {
+      "repetition": 0,
+      "workload": "normal180",
+      "p95Ms": {
+        "singleOwner": 433,
+        "twoOwners": 430,
+        "reductionPercent": 0.6928406466512702
+      },
+      "maxMs": {
+        "singleOwner": 459,
+        "twoOwners": 458,
+        "reductionPercent": 0.2178649237472767
+      },
+      "aggregatorInboundPublishes": {
+        "singleOwner": 1800,
+        "twoOwners": 1800,
+        "reductionPercent": 0.0
+      },
+      "aggregatorInboundPayloadBytes": {
+        "singleOwner": 1265991,
+        "twoOwners": 1265991,
+        "reductionPercent": 0.0
+      },
+      "aggregatorLedgerBytes": {
+        "singleOwner": 3570062,
+        "twoOwners": 3570083,
+        "reductionPercent": -0.0005882250784440158
+      },
+      "aggregatorCpuMicroseconds": {
+        "singleOwner": 872987,
+        "twoOwners": 965629,
+        "reductionPercent": -10.612070970128993
+      },
+      "aggregatorRssAfterBytes": {
+        "singleOwner": 89956352,
+        "twoOwners": 167780352,
+        "reductionPercent": -86.51306802659138
+      }
+    },
+    {
+      "repetition": 1,
+      "workload": "normal180",
+      "p95Ms": {
+        "singleOwner": 407,
+        "twoOwners": 529,
+        "reductionPercent": -29.975429975429975
+      },
+      "maxMs": {
+        "singleOwner": 428,
+        "twoOwners": 607,
+        "reductionPercent": -41.822429906542055
+      },
+      "aggregatorInboundPublishes": {
+        "singleOwner": 1800,
+        "twoOwners": 1800,
+        "reductionPercent": 0.0
+      },
+      "aggregatorInboundPayloadBytes": {
+        "singleOwner": 1265991,
+        "twoOwners": 1265991,
+        "reductionPercent": 0.0
+      },
+      "aggregatorLedgerBytes": {
+        "singleOwner": 3569998,
+        "twoOwners": 3570022,
+        "reductionPercent": -0.0006722692841844729
+      },
+      "aggregatorCpuMicroseconds": {
+        "singleOwner": 824938,
+        "twoOwners": 1014369,
+        "reductionPercent": -22.963059042012855
+      },
+      "aggregatorRssAfterBytes": {
+        "singleOwner": 82513920,
+        "twoOwners": 167796736,
+        "reductionPercent": -103.35567138247704
+      }
+    }
+  ]
+}

@@ -2,6 +2,14 @@
 
 An executable local progression from an in-process IoT prototype to MQTT-connected services, a full Node-RED pipeline, and measured zone-partitioned processing.
 
+## 22 September evaluation extension
+
+This copy includes the zone-selective routing implementation, four topology tests and separate controlled routing and owner-count campaigns. The existing broadcast behaviour remains the default. Set `AGGREGATION_ROUTING=selective` with a complete configured `ZONE_COUNT` when starting the experimental stack. Owner and zone changes require a drained transition, not live rebalancing.
+
+The complete 12-trial routing comparison and 4-trial scale-out comparison are retained in the sibling `research/` directory. All 58,080 unique input events have independently matched simulated actuator acknowledgements. Routing reduced aggregation traffic and processing costs; the one-to-two-owner comparison did not establish consistent latency improvement. Both ten-scenario functional suites and all 63 unit/regression tests pass. See the report appendices and recorded protocols for exact operating ranges.
+
+For isolated reproduction, use `scripts/research-stack.cjs`, `scripts/research-campaign.cjs` and `scripts/research-scaleout.cjs`. Their container namespace is `sit314-eval-`, with loopback host ports 18883, 13140 and 13180. The default deployment instructions below preserve the earlier broadcast path.
+
 ## What runs
 
 Nine local containers: Mosquitto, gateway, two aggregation owners, HVAC controller, simulated actuators, complex-event processing, document storage/dashboard, and Node-RED. Each simulated device connects with its own client certificate. MQTT transport uses QoS 1 and verified mutual TLS; topic ACLs prevent a device publishing as another device.
@@ -67,11 +75,11 @@ Static owner changes are only allowed between fully drained experiments with pub
 
 The store keeps an fsynced JSON document journal, atomically checkpointed state, logical collection exports, 30-day raw retention and one-minute rollups. Its in-memory indexes and local synchronous I/O remain capacity considerations; it is not represented as a production DynamoDB deployment.
 
-## Current project scope
+## Recorded Week 8 scope
 
 This is the local Week 8 progress milestone. Sensor readings and actuator actions are simulated. A real Tinkercad/physical circuit, AWS IoT Core/Lambda/ECS/DynamoDB/CloudWatch, cloud auto-scaling, hosted authenticated HTTPS and measured building energy savings are not claimed as complete. See `hardware/README.md` for the corrected DHT22, PIR and CO2 assumptions before physical integration.
 
-AI assistance was used for implementation, tests and documentation. Results are retained from executed experiments rather than invented measurements. Personal assessment PDFs and credentials are intentionally excluded from the public repository.
+Results are retained from executed experiments. Personal assessment PDFs and credentials are excluded from the repository.
 
 ## Recorded status evidence — 6 September 2026
 

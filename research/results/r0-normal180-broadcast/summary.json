@@ -1,0 +1,726 @@
+{
+  "comparison": {
+    "id": "r0-normal180-broadcast",
+    "repetition": 0,
+    "mode": "broadcast",
+    "workload": {
+      "label": "normal180",
+      "devices": 180,
+      "zones": 12,
+      "ticks": 10,
+      "intervalMs": 1000
+    },
+    "runId": "research-r0-normal180-broadcast-1790022440026",
+    "offered": 1800,
+    "applied": 1800,
+    "inWindow": 1800,
+    "offeredRate": 179.98200179982,
+    "nominalRate": 180,
+    "offeringDurationMs": 10001,
+    "p50Ms": 428,
+    "p95Ms": 646,
+    "p99Ms": 741,
+    "maxMs": 752,
+    "aggregatorInboundPublishes": 3600,
+    "aggregatorInboundPayloadBytes": 2575182,
+    "aggregatorLedgerBytes": 6150388,
+    "aggregatorCpuMicroseconds": 1505520,
+    "aggregatorRssAfterBytes": 176840704,
+    "rawSHA256": "4f7bb4a0e0230c4049ca02e71d51f890d724f8635e656c7f518ef1b3b9088386",
+    "exactEndBacklog": 0
+  },
+  "experiment": {
+    "runId": "research-r0-normal180-broadcast-1790022440026",
+    "observedAt": "2026-09-21T20:27:30.723Z",
+    "config": {
+      "devices": 180,
+      "zones": 12,
+      "ticks": 10,
+      "intervalMs": 1000,
+      "shards": 2,
+      "pipeline": "main",
+      "scenario": "wave",
+      "duplicate": false
+    },
+    "setupMs": 662,
+    "startedAt": "2026-09-21T20:27:20.688Z",
+    "offeringEndedAt": "2026-09-21T20:27:30.689Z",
+    "offeringDurationMs": 10001,
+    "nominalRawPerSecond": 180,
+    "uniqueRawOffered": 1800,
+    "mqttPublishes": 1800,
+    "maximumSchedulingLatenessMs": 2,
+    "appliedAtFirstPostOfferObservation": 1800,
+    "backlogAtFirstPostOfferObservation": 0,
+    "completionFractionAtFirstPostOfferObservation": 1,
+    "firstPostOfferObservationAt": "2026-09-21T20:27:30.700Z",
+    "drainMs": 34,
+    "finalBacklog": 0,
+    "actualRawPerSecond": 179.98200179982,
+    "final": {
+      "observedAt": "2026-09-21T20:27:30.700Z",
+      "runId": "research-r0-normal180-broadcast-1790022440026",
+      "pipeline": "main",
+      "totalEvents": 9000,
+      "counts": {
+        "device.telemetry.raw": 1800,
+        "sensor.reading": 1800,
+        "zone.metrics.updated": 1800,
+        "actuator.command.created": 1800,
+        "actuator.command.applied": 1800
+      },
+      "zones": {
+        "zone-1": {
+          "metrics": {
+            "zoneId": "zone-1",
+            "sampleCount": 10,
+            "averageTemperatureC": 23.39,
+            "averageHumidityPercent": 48.08,
+            "averageOccupancyCount": 7.9,
+            "averageCo2Ppm": 720,
+            "aggregatorId": "aggregator-a",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-1",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0145:9:command",
+            "appliedAt": "2026-09-21T20:27:30.130Z",
+            "simulated": true
+          }
+        },
+        "zone-6": {
+          "metrics": {
+            "zoneId": "zone-6",
+            "sampleCount": 10,
+            "averageTemperatureC": 22.96,
+            "averageHumidityPercent": 46.6,
+            "averageOccupancyCount": 8.4,
+            "averageCo2Ppm": 741,
+            "aggregatorId": "aggregator-b",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-6",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0162:9:command",
+            "appliedAt": "2026-09-21T20:27:30.130Z",
+            "simulated": true
+          }
+        },
+        "zone-3": {
+          "metrics": {
+            "zoneId": "zone-3",
+            "sampleCount": 10,
+            "averageTemperatureC": 23.28,
+            "averageHumidityPercent": 47.8,
+            "averageOccupancyCount": 7.8,
+            "averageCo2Ppm": 716,
+            "aggregatorId": "aggregator-a",
+            "sourceTimestamp": "2026-09-21T20:27:29.692Z"
+          },
+          "actuator": {
+            "zoneId": "zone-3",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.692Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0123:9:command",
+            "appliedAt": "2026-09-21T20:27:30.127Z",
+            "simulated": true
+          }
+        },
+        "zone-12": {
+          "metrics": {
+            "zoneId": "zone-12",
+            "sampleCount": 10,
+            "averageTemperatureC": 23.41,
+            "averageHumidityPercent": 47.95,
+            "averageOccupancyCount": 7.9,
+            "averageCo2Ppm": 722,
+            "aggregatorId": "aggregator-b",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-12",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0156:9:command",
+            "appliedAt": "2026-09-21T20:27:30.134Z",
+            "simulated": true
+          }
+        },
+        "zone-5": {
+          "metrics": {
+            "zoneId": "zone-5",
+            "sampleCount": 10,
+            "averageTemperatureC": 22.82,
+            "averageHumidityPercent": 46.42,
+            "averageOccupancyCount": 8.8,
+            "averageCo2Ppm": 753,
+            "aggregatorId": "aggregator-a",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-5",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0161:9:command",
+            "appliedAt": "2026-09-21T20:27:30.122Z",
+            "simulated": true
+          }
+        },
+        "zone-10": {
+          "metrics": {
+            "zoneId": "zone-10",
+            "sampleCount": 10,
+            "averageTemperatureC": 23.37,
+            "averageHumidityPercent": 47.96,
+            "averageOccupancyCount": 7.8,
+            "averageCo2Ppm": 717,
+            "aggregatorId": "aggregator-b",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-10",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0154:9:command",
+            "appliedAt": "2026-09-21T20:27:30.132Z",
+            "simulated": true
+          }
+        },
+        "zone-7": {
+          "metrics": {
+            "zoneId": "zone-7",
+            "sampleCount": 10,
+            "averageTemperatureC": 22.87,
+            "averageHumidityPercent": 46.51,
+            "averageOccupancyCount": 8.5,
+            "averageCo2Ppm": 743,
+            "aggregatorId": "aggregator-a",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-7",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0151:9:command",
+            "appliedAt": "2026-09-21T20:27:30.131Z",
+            "simulated": true
+          }
+        },
+        "zone-2": {
+          "metrics": {
+            "zoneId": "zone-2",
+            "sampleCount": 10,
+            "averageTemperatureC": 23.01,
+            "averageHumidityPercent": 47.32,
+            "averageOccupancyCount": 7.4,
+            "averageCo2Ppm": 700,
+            "aggregatorId": "aggregator-b",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-2",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0158:9:command",
+            "appliedAt": "2026-09-21T20:27:30.135Z",
+            "simulated": true
+          }
+        },
+        "zone-4": {
+          "metrics": {
+            "zoneId": "zone-4",
+            "sampleCount": 10,
+            "averageTemperatureC": 23.18,
+            "averageHumidityPercent": 47.63,
+            "averageOccupancyCount": 7.8,
+            "averageCo2Ppm": 715,
+            "aggregatorId": "aggregator-b",
+            "sourceTimestamp": "2026-09-21T20:27:29.692Z"
+          },
+          "actuator": {
+            "zoneId": "zone-4",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.692Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0124:9:command",
+            "appliedAt": "2026-09-21T20:27:30.135Z",
+            "simulated": true
+          }
+        },
+        "zone-11": {
+          "metrics": {
+            "zoneId": "zone-11",
+            "sampleCount": 10,
+            "averageTemperatureC": 23.38,
+            "averageHumidityPercent": 47.92,
+            "averageOccupancyCount": 8,
+            "averageCo2Ppm": 725,
+            "aggregatorId": "aggregator-a",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-11",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0167:9:command",
+            "appliedAt": "2026-09-21T20:27:30.128Z",
+            "simulated": true
+          }
+        },
+        "zone-8": {
+          "metrics": {
+            "zoneId": "zone-8",
+            "sampleCount": 10,
+            "averageTemperatureC": 23.01,
+            "averageHumidityPercent": 47.17,
+            "averageOccupancyCount": 7.7,
+            "averageCo2Ppm": 712,
+            "aggregatorId": "aggregator-b",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-8",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0164:9:command",
+            "appliedAt": "2026-09-21T20:27:30.133Z",
+            "simulated": true
+          }
+        },
+        "zone-9": {
+          "metrics": {
+            "zoneId": "zone-9",
+            "sampleCount": 10,
+            "averageTemperatureC": 23.27,
+            "averageHumidityPercent": 47.88,
+            "averageOccupancyCount": 7.8,
+            "averageCo2Ppm": 715,
+            "aggregatorId": "aggregator-a",
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z"
+          },
+          "actuator": {
+            "zoneId": "zone-9",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0153:9:command",
+            "appliedAt": "2026-09-21T20:27:30.126Z",
+            "simulated": true
+          }
+        }
+      },
+      "aggregators": {
+        "aggregator-a": 900,
+        "aggregator-b": 900
+      },
+      "duplicateDeliveries": 0,
+      "rollingThroughput": {
+        "windowMs": 10000,
+        "rawPerSecond": 162,
+        "appliedPerSecond": 180
+      },
+      "latencyMs": {
+        "count": 1800,
+        "min": 15,
+        "p50": 428,
+        "p95": 646,
+        "p99": 741,
+        "max": 752
+      },
+      "alerts": [],
+      "rollups": [
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-1\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-1",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3549.840000000001,
+          "humiditySum": 7303.260000000002,
+          "occupancySum": 1226,
+          "co2Sum": 109631,
+          "averageTemperatureC": 23.66560000000001,
+          "averageCo2Ppm": 730.8733333333333
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-6\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-6",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3528.6600000000003,
+          "humiditySum": 7262.039999999998,
+          "occupancySum": 1188,
+          "co2Sum": 108130,
+          "averageTemperatureC": 23.524400000000004,
+          "averageCo2Ppm": 720.8666666666667
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-12\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-12",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3503.02,
+          "humiditySum": 7192.580000000005,
+          "occupancySum": 1158,
+          "co2Sum": 107115,
+          "averageTemperatureC": 23.353466666666666,
+          "averageCo2Ppm": 714.1
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-3\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-3",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3538.629999999999,
+          "humiditySum": 7286.400000000002,
+          "occupancySum": 1212,
+          "co2Sum": 108986,
+          "averageTemperatureC": 23.59086666666666,
+          "averageCo2Ppm": 726.5733333333334
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-5\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-5",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3533.0200000000004,
+          "humiditySum": 7271.74,
+          "occupancySum": 1198,
+          "co2Sum": 108498,
+          "averageTemperatureC": 23.55346666666667,
+          "averageCo2Ppm": 723.32
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-10\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-10",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3515.270000000002,
+          "humiditySum": 7221.009999999999,
+          "occupancySum": 1162,
+          "co2Sum": 107296,
+          "averageTemperatureC": 23.435133333333344,
+          "averageCo2Ppm": 715.3066666666666
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-7\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-7",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3526.6299999999997,
+          "humiditySum": 7253.670000000001,
+          "occupancySum": 1182,
+          "co2Sum": 107957,
+          "averageTemperatureC": 23.510866666666665,
+          "averageCo2Ppm": 719.7133333333334
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-2\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-2",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3545.4399999999982,
+          "humiditySum": 7296.200000000002,
+          "occupancySum": 1221,
+          "co2Sum": 109391,
+          "averageTemperatureC": 23.636266666666653,
+          "averageCo2Ppm": 729.2733333333333
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-4\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-4",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3535.6900000000005,
+          "humiditySum": 7279.229999999998,
+          "occupancySum": 1206,
+          "co2Sum": 108773,
+          "averageTemperatureC": 23.57126666666667,
+          "averageCo2Ppm": 725.1533333333333
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-11\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-11",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3501.7599999999993,
+          "humiditySum": 7199.2300000000005,
+          "occupancySum": 1161,
+          "co2Sum": 107094,
+          "averageTemperatureC": 23.34506666666666,
+          "averageCo2Ppm": 713.96
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-8\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-8",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3522.9399999999987,
+          "humiditySum": 7243.329999999999,
+          "occupancySum": 1175,
+          "co2Sum": 107727,
+          "averageTemperatureC": 23.48626666666666,
+          "averageCo2Ppm": 718.18
+        },
+        {
+          "id": "[\"main\",\"research-r0-normal180-broadcast-1790022440026\",\"zone-9\",\"2026-09-21T20:27:00.000Z\"]",
+          "pipeline": "main",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "zoneId": "zone-9",
+          "minute": "2026-09-21T20:27:00.000Z",
+          "count": 150,
+          "temperatureSum": 3512.670000000001,
+          "humiditySum": 7226.089999999999,
+          "occupancySum": 1167,
+          "co2Sum": 107333,
+          "averageTemperatureC": 23.417800000000007,
+          "averageCo2Ppm": 715.5533333333333
+        }
+      ],
+      "recent": [
+        {
+          "schemaVersion": 1,
+          "id": "research-r0-normal180-broadcast-1790022440026:sensor-0144:9:applied",
+          "type": "actuator.command.applied",
+          "timestamp": "2026-09-21T20:27:30.132Z",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "correlationId": "research-r0-normal180-broadcast-1790022440026:sensor-0144:9",
+          "sourceEventId": "research-r0-normal180-broadcast-1790022440026:sensor-0144:9:command",
+          "payload": {
+            "zoneId": "zone-12",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0144:9:command",
+            "appliedAt": "2026-09-21T20:27:30.132Z",
+            "simulated": true
+          },
+          "pipeline": "main"
+        },
+        {
+          "schemaVersion": 1,
+          "id": "research-r0-normal180-broadcast-1790022440026:sensor-0154:9:applied",
+          "type": "actuator.command.applied",
+          "timestamp": "2026-09-21T20:27:30.132Z",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "correlationId": "research-r0-normal180-broadcast-1790022440026:sensor-0154:9",
+          "sourceEventId": "research-r0-normal180-broadcast-1790022440026:sensor-0154:9:command",
+          "payload": {
+            "zoneId": "zone-10",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0154:9:command",
+            "appliedAt": "2026-09-21T20:27:30.132Z",
+            "simulated": true
+          },
+          "pipeline": "main"
+        },
+        {
+          "schemaVersion": 1,
+          "id": "research-r0-normal180-broadcast-1790022440026:sensor-0164:9:applied",
+          "type": "actuator.command.applied",
+          "timestamp": "2026-09-21T20:27:30.133Z",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "correlationId": "research-r0-normal180-broadcast-1790022440026:sensor-0164:9",
+          "sourceEventId": "research-r0-normal180-broadcast-1790022440026:sensor-0164:9:command",
+          "payload": {
+            "zoneId": "zone-8",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0164:9:command",
+            "appliedAt": "2026-09-21T20:27:30.133Z",
+            "simulated": true
+          },
+          "pipeline": "main"
+        },
+        {
+          "schemaVersion": 1,
+          "id": "research-r0-normal180-broadcast-1790022440026:sensor-0170:9:applied",
+          "type": "actuator.command.applied",
+          "timestamp": "2026-09-21T20:27:30.133Z",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "correlationId": "research-r0-normal180-broadcast-1790022440026:sensor-0170:9",
+          "sourceEventId": "research-r0-normal180-broadcast-1790022440026:sensor-0170:9:command",
+          "payload": {
+            "zoneId": "zone-2",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0170:9:command",
+            "appliedAt": "2026-09-21T20:27:30.133Z",
+            "simulated": true
+          },
+          "pipeline": "main"
+        },
+        {
+          "schemaVersion": 1,
+          "id": "research-r0-normal180-broadcast-1790022440026:sensor-0168:9:applied",
+          "type": "actuator.command.applied",
+          "timestamp": "2026-09-21T20:27:30.134Z",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "correlationId": "research-r0-normal180-broadcast-1790022440026:sensor-0168:9",
+          "sourceEventId": "research-r0-normal180-broadcast-1790022440026:sensor-0168:9:command",
+          "payload": {
+            "zoneId": "zone-12",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0168:9:command",
+            "appliedAt": "2026-09-21T20:27:30.134Z",
+            "simulated": true
+          },
+          "pipeline": "main"
+        },
+        {
+          "schemaVersion": 1,
+          "id": "research-r0-normal180-broadcast-1790022440026:sensor-0156:9:applied",
+          "type": "actuator.command.applied",
+          "timestamp": "2026-09-21T20:27:30.134Z",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "correlationId": "research-r0-normal180-broadcast-1790022440026:sensor-0156:9",
+          "sourceEventId": "research-r0-normal180-broadcast-1790022440026:sensor-0156:9:command",
+          "payload": {
+            "zoneId": "zone-12",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0156:9:command",
+            "appliedAt": "2026-09-21T20:27:30.134Z",
+            "simulated": true
+          },
+          "pipeline": "main"
+        },
+        {
+          "schemaVersion": 1,
+          "id": "research-r0-normal180-broadcast-1790022440026:sensor-0158:9:applied",
+          "type": "actuator.command.applied",
+          "timestamp": "2026-09-21T20:27:30.135Z",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "correlationId": "research-r0-normal180-broadcast-1790022440026:sensor-0158:9",
+          "sourceEventId": "research-r0-normal180-broadcast-1790022440026:sensor-0158:9:command",
+          "payload": {
+            "zoneId": "zone-2",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.693Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0158:9:command",
+            "appliedAt": "2026-09-21T20:27:30.135Z",
+            "simulated": true
+          },
+          "pipeline": "main"
+        },
+        {
+          "schemaVersion": 1,
+          "id": "research-r0-normal180-broadcast-1790022440026:sensor-0124:9:applied",
+          "type": "actuator.command.applied",
+          "timestamp": "2026-09-21T20:27:30.135Z",
+          "runId": "research-r0-normal180-broadcast-1790022440026",
+          "correlationId": "research-r0-normal180-broadcast-1790022440026:sensor-0124:9",
+          "sourceEventId": "research-r0-normal180-broadcast-1790022440026:sensor-0124:9:command",
+          "payload": {
+            "zoneId": "zone-4",
+            "mode": "idle",
+            "fanSpeed": "low",
+            "reason": "Temperature and CO2 are within control thresholds",
+            "targetTemperatureC": 22,
+            "sourceTimestamp": "2026-09-21T20:27:29.692Z",
+            "sourceCommandId": "research-r0-normal180-broadcast-1790022440026:sensor-0124:9:command",
+            "appliedAt": "2026-09-21T20:27:30.135Z",
+            "simulated": true
+          },
+          "pipeline": "main"
+        }
+      ],
+      "runs": [
+        "research-r0-normal180-broadcast-1790022440026"
+      ],
+      "retention": {
+        "days": 30,
+        "rawEventsExpire": true,
+        "rollupsExpire": false
+      }
+    },
+    "transport": {
+      "protocol": "MQTT5",
+      "qos": 1,
+      "tlsVerified": true,
+      "perDeviceCertificate": true
+    },
+    "clock": "Host and local VM wall clocks; no cross-region clock synchronization claim"
+  }
+}

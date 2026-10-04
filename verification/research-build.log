@@ -1,0 +1,64 @@
+STEP 1/12: FROM docker.io/node:22-alpine
+STEP 2/12: WORKDIR /app
+--> Using cache ee4d26ab936b6f57f0f6387060c7bf56fe6643aa9a91c3371a035d06c582ac74
+--> ee4d26ab936b
+STEP 3/12: COPY package.json package-lock.json ./
+--> Using cache 19631503daed375287ca994967dd4762bd4ca30791d3ad055be1c587dd4b5990
+--> 19631503daed
+STEP 4/12: RUN npm ci --omit=dev --ignore-scripts && npm cache clean --force
+--> Using cache 802faab097dfaee9ca296aa47eb8dbe28c882ea41f80181118a84ed16480ae4c
+--> 802faab097df
+STEP 5/12: COPY src ./src
+--> 7af3ae017038
+STEP 6/12: COPY public ./public
+--> 5693f6d539ee
+STEP 7/12: COPY scripts ./scripts
+--> 5523ce34b47a
+STEP 8/12: RUN mkdir /data && chown node:node /data
+--> 6e0ce6aaab93
+STEP 9/12: USER node
+--> 182491dce6f9
+STEP 10/12: ENV DATA_DIR=/data CERT_DIR=/certs PORT=8080
+--> f40bb92ba15c
+STEP 11/12: EXPOSE 8080
+--> 16165cd941a9
+STEP 12/12: CMD ["node","src/service.cjs"]
+COMMIT sit314-eval-service:0.8.0
+--> a17cb8729d2b
+Successfully tagged localhost/sit314-eval-service:0.8.0
+a17cb8729d2b36e98519778e1a6e59cb64a0576256ac2081ef8eb51944a0fdb3
+STEP 1/11: FROM nodered/node-red:4.1.14-22
+STEP 2/11: USER root
+--> Using cache 8582af966be639de87845a369d6e92a466319ce2454b73e3120d1a2b3486229d
+--> 8582af966be6
+STEP 3/11: RUN mkdir -p /app/src && chown -R node-red:node-red /app /data
+--> Using cache 14d90d1273f6af9e8ae2131cf1ec30f3269920d5c54dfafb85ccaaf3c4275ea7
+--> 14d90d1273f6
+STEP 4/11: COPY --chown=node-red:node-red src/domain.cjs /app/src/domain.cjs
+--> Using cache f148668ac3063ad77d3a63f9fcba47ed4133060c6ed633a20e5dd669079aad30
+--> f148668ac306
+STEP 5/11: COPY --chown=node-red:node-red node-red/settings.cjs /data/settings.cjs
+--> Using cache 1bd3a948acb154ef92de83abb94847f47fb66d2bb388193836c46a42a541cff8
+--> 1bd3a948acb1
+STEP 6/11: COPY --chown=node-red:node-red node-red/flows.json /data/flows.json
+--> Using cache 97e62087e0c71a2917ede48d6560892554430bb0141c46d4dd9cd1249eebf2fc
+--> 97e62087e0c7
+STEP 7/11: USER node-red
+--> Using cache 73c61d10eddb3ccd0d36c37fa7596408df73a42ef817af8e6d855b2ddc8f9b57
+--> 73c61d10eddb
+STEP 8/11: ENV MQTT_HOST=mosquitto
+--> Using cache 80388f84027994437639711d8ee03a907f3f77694a3488179505bb877a5ab0a4
+--> 80388f840279
+STEP 9/11: EXPOSE 1880
+--> Using cache c490743fea07f40492c6162a7ce86cdf1a130fa333cbebae9d5dcaa360fdea8e
+--> c490743fea07
+STEP 10/11: CMD ["--settings", "/data/settings.cjs", "/data/flows.json"]
+--> Using cache 814cd5538c2703f6e169a41f1952653a9306de611aedd2fdda5051740d633427
+--> 814cd5538c27
+STEP 11/11: HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 CMD node -e "require('http').get('http://127.0.0.1:1880/api/status',r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))"
+--> Using cache c97daf557e6ed4f170e26e340d55181972787e62340c97b037869c91c971377c
+COMMIT sit314-eval-node-red:0.8.0
+--> c97daf557e6e
+Successfully tagged localhost/sit314-eval-node-red:0.8.0
+Successfully tagged localhost/sit314-hvac-node-red:0.8.0
+c97daf557e6ed4f170e26e340d55181972787e62340c97b037869c91c971377c

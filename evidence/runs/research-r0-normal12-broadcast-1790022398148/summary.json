@@ -1,0 +1,355 @@
+{
+  "runId": "research-r0-normal12-broadcast-1790022398148",
+  "observedAt": "2026-09-21T20:26:48.259Z",
+  "config": {
+    "devices": 12,
+    "zones": 3,
+    "ticks": 10,
+    "intervalMs": 1000,
+    "shards": 2,
+    "pipeline": "main",
+    "scenario": "wave",
+    "duplicate": false
+  },
+  "setupMs": 58,
+  "startedAt": "2026-09-21T20:26:38.206Z",
+  "offeringEndedAt": "2026-09-21T20:26:48.208Z",
+  "offeringDurationMs": 10002,
+  "nominalRawPerSecond": 12,
+  "uniqueRawOffered": 120,
+  "mqttPublishes": 120,
+  "maximumSchedulingLatenessMs": 2,
+  "appliedAtFirstPostOfferObservation": 120,
+  "backlogAtFirstPostOfferObservation": 0,
+  "completionFractionAtFirstPostOfferObservation": 1,
+  "firstPostOfferObservationAt": "2026-09-21T20:26:48.250Z",
+  "drainMs": 51,
+  "finalBacklog": 0,
+  "actualRawPerSecond": 11.997600479904019,
+  "final": {
+    "observedAt": "2026-09-21T20:26:48.250Z",
+    "runId": "research-r0-normal12-broadcast-1790022398148",
+    "pipeline": "main",
+    "totalEvents": 600,
+    "counts": {
+      "device.telemetry.raw": 120,
+      "sensor.reading": 120,
+      "zone.metrics.updated": 120,
+      "actuator.command.created": 120,
+      "actuator.command.applied": 120
+    },
+    "zones": {
+      "zone-1": {
+        "metrics": {
+          "zoneId": "zone-1",
+          "sampleCount": 10,
+          "averageTemperatureC": 25.96,
+          "averageHumidityPercent": 54.9,
+          "averageOccupancyCount": 8.5,
+          "averageCo2Ppm": 741,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z"
+        },
+        "actuator": {
+          "zoneId": "zone-1",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z",
+          "sourceCommandId": "research-r0-normal12-broadcast-1790022398148:sensor-0010:9:command",
+          "appliedAt": "2026-09-21T20:26:47.321Z",
+          "simulated": true
+        }
+      },
+      "zone-2": {
+        "metrics": {
+          "zoneId": "zone-2",
+          "sampleCount": 10,
+          "averageTemperatureC": 26.06,
+          "averageHumidityPercent": 54.92,
+          "averageOccupancyCount": 8.5,
+          "averageCo2Ppm": 744,
+          "aggregatorId": "aggregator-b",
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z"
+        },
+        "actuator": {
+          "zoneId": "zone-2",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z",
+          "sourceCommandId": "research-r0-normal12-broadcast-1790022398148:sensor-0008:9:command",
+          "appliedAt": "2026-09-21T20:26:47.324Z",
+          "simulated": true
+        }
+      },
+      "zone-3": {
+        "metrics": {
+          "zoneId": "zone-3",
+          "sampleCount": 10,
+          "averageTemperatureC": 25.86,
+          "averageHumidityPercent": 54.6,
+          "averageOccupancyCount": 7.7,
+          "averageCo2Ppm": 714,
+          "aggregatorId": "aggregator-a",
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z"
+        },
+        "actuator": {
+          "zoneId": "zone-3",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z",
+          "sourceCommandId": "research-r0-normal12-broadcast-1790022398148:sensor-0003:9:command",
+          "appliedAt": "2026-09-21T20:26:47.320Z",
+          "simulated": true
+        }
+      }
+    },
+    "aggregators": {
+      "aggregator-a": 80,
+      "aggregator-b": 40
+    },
+    "duplicateDeliveries": 0,
+    "rollingThroughput": {
+      "windowMs": 10000,
+      "rawPerSecond": 10.8,
+      "appliedPerSecond": 11.9
+    },
+    "latencyMs": {
+      "count": 120,
+      "min": 9,
+      "p50": 79,
+      "p95": 120,
+      "p99": 125,
+      "max": 126
+    },
+    "alerts": [],
+    "rollups": [
+      {
+        "id": "[\"main\",\"research-r0-normal12-broadcast-1790022398148\",\"zone-1\",\"2026-09-21T20:26:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "zoneId": "zone-1",
+        "minute": "2026-09-21T20:26:00.000Z",
+        "count": 40,
+        "temperatureSum": 1051.6499999999996,
+        "humiditySum": 2190.4800000000005,
+        "occupancySum": 447,
+        "co2Sum": 33817,
+        "averageTemperatureC": 26.29124999999999,
+        "averageCo2Ppm": 845.425
+      },
+      {
+        "id": "[\"main\",\"research-r0-normal12-broadcast-1790022398148\",\"zone-3\",\"2026-09-21T20:26:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "zoneId": "zone-3",
+        "minute": "2026-09-21T20:26:00.000Z",
+        "count": 40,
+        "temperatureSum": 1047.68,
+        "humiditySum": 2194.71,
+        "occupancySum": 400,
+        "co2Sum": 32021,
+        "averageTemperatureC": 26.192,
+        "averageCo2Ppm": 800.525
+      },
+      {
+        "id": "[\"main\",\"research-r0-normal12-broadcast-1790022398148\",\"zone-2\",\"2026-09-21T20:26:00.000Z\"]",
+        "pipeline": "main",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "zoneId": "zone-2",
+        "minute": "2026-09-21T20:26:00.000Z",
+        "count": 40,
+        "temperatureSum": 1049.5299999999997,
+        "humiditySum": 2193.499999999999,
+        "occupancySum": 426,
+        "co2Sum": 32992,
+        "averageTemperatureC": 26.238249999999994,
+        "averageCo2Ppm": 824.8
+      }
+    ],
+    "recent": [
+      {
+        "schemaVersion": 1,
+        "id": "research-r0-normal12-broadcast-1790022398148:sensor-0005:9:command",
+        "type": "actuator.command.created",
+        "timestamp": "2026-09-21T20:26:47.317Z",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "correlationId": "research-r0-normal12-broadcast-1790022398148:sensor-0005:9",
+        "sourceEventId": "research-r0-normal12-broadcast-1790022398148:sensor-0005:9:metrics",
+        "payload": {
+          "zoneId": "zone-2",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z"
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "research-r0-normal12-broadcast-1790022398148:sensor-0008:9:command",
+        "type": "actuator.command.created",
+        "timestamp": "2026-09-21T20:26:47.318Z",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "correlationId": "research-r0-normal12-broadcast-1790022398148:sensor-0008:9",
+        "sourceEventId": "research-r0-normal12-broadcast-1790022398148:sensor-0008:9:metrics",
+        "payload": {
+          "zoneId": "zone-2",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z"
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "research-r0-normal12-broadcast-1790022398148:sensor-0009:9:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-21T20:26:47.318Z",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "correlationId": "research-r0-normal12-broadcast-1790022398148:sensor-0009:9",
+        "sourceEventId": "research-r0-normal12-broadcast-1790022398148:sensor-0009:9:command",
+        "payload": {
+          "zoneId": "zone-3",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z",
+          "sourceCommandId": "research-r0-normal12-broadcast-1790022398148:sensor-0009:9:command",
+          "appliedAt": "2026-09-21T20:26:47.318Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "research-r0-normal12-broadcast-1790022398148:sensor-0003:9:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-21T20:26:47.320Z",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "correlationId": "research-r0-normal12-broadcast-1790022398148:sensor-0003:9",
+        "sourceEventId": "research-r0-normal12-broadcast-1790022398148:sensor-0003:9:command",
+        "payload": {
+          "zoneId": "zone-3",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z",
+          "sourceCommandId": "research-r0-normal12-broadcast-1790022398148:sensor-0003:9:command",
+          "appliedAt": "2026-09-21T20:26:47.320Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "research-r0-normal12-broadcast-1790022398148:sensor-0010:9:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-21T20:26:47.321Z",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "correlationId": "research-r0-normal12-broadcast-1790022398148:sensor-0010:9",
+        "sourceEventId": "research-r0-normal12-broadcast-1790022398148:sensor-0010:9:command",
+        "payload": {
+          "zoneId": "zone-1",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z",
+          "sourceCommandId": "research-r0-normal12-broadcast-1790022398148:sensor-0010:9:command",
+          "appliedAt": "2026-09-21T20:26:47.321Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "research-r0-normal12-broadcast-1790022398148:sensor-0002:9:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-21T20:26:47.323Z",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "correlationId": "research-r0-normal12-broadcast-1790022398148:sensor-0002:9",
+        "sourceEventId": "research-r0-normal12-broadcast-1790022398148:sensor-0002:9:command",
+        "payload": {
+          "zoneId": "zone-2",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z",
+          "sourceCommandId": "research-r0-normal12-broadcast-1790022398148:sensor-0002:9:command",
+          "appliedAt": "2026-09-21T20:26:47.323Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "research-r0-normal12-broadcast-1790022398148:sensor-0005:9:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-21T20:26:47.323Z",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "correlationId": "research-r0-normal12-broadcast-1790022398148:sensor-0005:9",
+        "sourceEventId": "research-r0-normal12-broadcast-1790022398148:sensor-0005:9:command",
+        "payload": {
+          "zoneId": "zone-2",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z",
+          "sourceCommandId": "research-r0-normal12-broadcast-1790022398148:sensor-0005:9:command",
+          "appliedAt": "2026-09-21T20:26:47.323Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      },
+      {
+        "schemaVersion": 1,
+        "id": "research-r0-normal12-broadcast-1790022398148:sensor-0008:9:applied",
+        "type": "actuator.command.applied",
+        "timestamp": "2026-09-21T20:26:47.324Z",
+        "runId": "research-r0-normal12-broadcast-1790022398148",
+        "correlationId": "research-r0-normal12-broadcast-1790022398148:sensor-0008:9",
+        "sourceEventId": "research-r0-normal12-broadcast-1790022398148:sensor-0008:9:command",
+        "payload": {
+          "zoneId": "zone-2",
+          "mode": "cool",
+          "fanSpeed": "medium",
+          "reason": "Occupied zone exceeds temperature threshold",
+          "targetTemperatureC": 22,
+          "sourceTimestamp": "2026-09-21T20:26:47.207Z",
+          "sourceCommandId": "research-r0-normal12-broadcast-1790022398148:sensor-0008:9:command",
+          "appliedAt": "2026-09-21T20:26:47.324Z",
+          "simulated": true
+        },
+        "pipeline": "main"
+      }
+    ],
+    "runs": [
+      "research-r0-normal12-broadcast-1790022398148"
+    ],
+    "retention": {
+      "days": 30,
+      "rawEventsExpire": true,
+      "rollupsExpire": false
+    }
+  },
+  "transport": {
+    "protocol": "MQTT5",
+    "qos": 1,
+    "tlsVerified": true,
+    "perDeviceCertificate": true
+  },
+  "clock": "Host and local VM wall clocks; no cross-region clock synchronization claim"
+}
