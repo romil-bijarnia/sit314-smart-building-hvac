@@ -1,0 +1,21 @@
+
+> sit314-smart-building-hvac@0.8.0 test:integration
+> node scripts/functional-tests.cjs
+
+{"runId":"functional-main-4-2-1791088300860","devices":4,"shards":2,"pipeline":"main","offered":16,"applied":16,"backlog":0,"p95Ms":107,"maxMs":107,"lateMs":2}
+PASS main pipeline reaches all three control modes and both aggregation shards
+{"runId":"functional-flow-4-2-1791088305002","devices":4,"shards":2,"pipeline":"flow","offered":16,"applied":16,"backlog":0,"p95Ms":61,"maxMs":61,"lateMs":2}
+PASS independent Node-RED MQTT pipeline matches main control outputs
+{"runId":"duplicates-4-2-1791088309076","devices":4,"shards":2,"pipeline":"main","offered":12,"applied":12,"backlog":0,"p95Ms":62,"maxMs":62,"lateMs":1}
+PASS duplicate MQTT deliveries do not duplicate logical outputs
+PASS gateway rejects bad sensor data and topic identity mismatch
+PASS MQTT mutual TLS rejects a client without a certificate
+PASS certificate-bound ACL denies another device topic
+{"runId":"cep-1-2-1791088312507","devices":1,"shards":2,"pipeline":"main","offered":12,"applied":12,"backlog":0,"p95Ms":20,"maxMs":20,"lateMs":2}
+PASS CEP detects sustained high CO2 and subsequent silence
+{"runId":"restart-4-2-1791088330579","devices":4,"shards":2,"pipeline":"main","offered":40,"applied":40,"backlog":0,"p95Ms":3120,"maxMs":3122,"lateMs":2}
+PASS controller restart drains persistent MQTT backlog without missing commands
+PASS storage restart preserves accepted event and rollup state
+{"runId":"offline-4-2-1791088341140","devices":4,"shards":2,"pipeline":"main","offered":12,"applied":12,"backlog":0,"p95Ms":94,"maxMs":94,"lateMs":1}
+PASS local control operates with no container WAN egress
+FUNCTIONAL_TESTS_COMPLETE 10

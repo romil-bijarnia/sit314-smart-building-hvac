@@ -2,13 +2,52 @@
 
 An executable local progression from an in-process IoT prototype to MQTT-connected services, a full Node-RED pipeline, and measured zone-partitioned processing.
 
-## 22 September evaluation extension
+## Final evaluation — 22 September 2026
 
-This copy includes the zone-selective routing implementation, four topology tests and separate controlled routing and owner-count campaigns. The existing broadcast behaviour remains the default. Set `AGGREGATION_ROUTING=selective` with a complete configured `ZONE_COUNT` when starting the experimental stack. Owner and zone changes require a drained transition, not live rebalancing.
+Tag [`v6.3d-final`](https://github.com/romil-bijarnia/sit314-smart-building-hvac/tree/v6.3d-final) is the revision the SIT314 6.3D project report refers to. It contains the service source measured on 22 September, the deployment configuration, every raw trial, and the scripts that re-check the reported numbers.
 
-The complete 12-trial routing comparison and 4-trial scale-out comparison are retained in the sibling `research/` directory. All 58,080 unique input events have independently matched simulated actuator acknowledgements. Routing reduced aggregation traffic and processing costs; the one-to-two-owner comparison did not establish consistent latency improvement. Both ten-scenario functional suites and all 63 unit/regression tests pass. See the report appendices and recorded protocols for exact operating ranges.
+| Where | What it holds |
+|---|---|
+| [`src/`](src) | Gateway, aggregation owner, controller, actuator, CEP and storage services; MQTT transport; domain rules; durable inbox/outbox and document store |
+| [`src/routing.cjs`](src/routing.cjs) | Zone-selective subscription routing, the change evaluated in the report |
+| [`tests/`](tests) | 63 unit and regression tests |
+| [`compose.yaml`](compose.yaml), [`Dockerfile`](Dockerfile), [`infra/`](infra), [`node-red/`](node-red) | Container deployment, broker configuration and the independent Node-RED flow |
+| [`scripts/`](scripts) | Certificate generation, stack control, functional tests and experiment campaigns |
+| [`research/`](research) | Twelve routing trials and four owner-count trials with raw inputs, actuator acknowledgements, resource samples, protocols and independent verifiers |
+| [`verification/`](verification) | Unit and functional test records from 22 September, and a [clean-clone check](verification/clean-clone-20261004) on 4 October |
+| [`evidence/`](evidence) | The 6 September broker-based baseline campaign |
+| [`baseline/`](baseline) | The July in-process prototype kept for comparison |
 
-For isolated reproduction, use `scripts/research-stack.cjs`, `scripts/research-campaign.cjs` and `scripts/research-scaleout.cjs`. Their container namespace is `sit314-eval-`, with loopback host ports 18883, 13140 and 13180. The default deployment instructions below preserve the earlier broadcast path.
+### Result summary
+
+Zone-selective routing gives each aggregation owner only the readings for the zones it owns. Against the earlier broadcast design, with two owners in both cases, it halved aggregation PUBLISH deliveries and payload bytes in every pair, cut aggregator journal growth by about 40.6% and aggregator CPU time by 25.6–41.8%. At 180 devices and 1 Hz, p95 latency improved from 646 / 549 ms to 460 / 472 ms. At 12 devices it was no faster, and at 180 devices and 10 Hz the system still missed the two-second target in both modes.
+
+A separate comparison of one owner against two selective owners at 180 devices and 1 Hz did not show a consistent latency benefit from the second owner. All 58,080 offered readings across the sixteen trials have a matched simulated-actuator acknowledgement.
+
+### Re-check the reported numbers
+
+```sh
+python3 research/verify_results.py     # twelve routing trials
+python3 research/verify_scaleout.py    # four owner-count trials
+```
+
+Both scripts recompute latency percentiles, deadline counts, hashes and stage balances from the raw files under `research/`, and need only Python 3. The GitHub workflow runs them on every push, together with the unit tests and the ten functional scenarios on Docker.
+
+### Re-run the experiments
+
+```sh
+podman machine start
+npm ci --ignore-scripts
+npm test
+node scripts/generate-certs.cjs 180
+node scripts/research-stack.cjs build
+node scripts/research-campaign.cjs
+node scripts/research-scaleout.cjs
+```
+
+The research stack uses the container prefix `sit314-eval-` and loopback ports 18883, 13140 and 13180, so it does not collide with the default deployment below. The campaigns rewrite the files under `research/`; use a separate clone to keep the recorded results. Broadcast remains the default routing mode. Set `AGGREGATION_ROUTING=selective` with the full `ZONE_COUNT` to start the selective stack by hand. Owner and zone changes require a drained transition, not live rebalancing.
+
+The service source at this tag is byte-identical to the measured build; `research/environment/source-sha256.txt` lists the hashes. `research/archive-manifest-20260922.json` lists every file of the 22 September evidence set, with paths under `smart-building-hvac/` corresponding to the root of this repository.
 
 ## What runs
 

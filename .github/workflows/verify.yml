@@ -14,6 +14,8 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - run: npm test
+      - name: Re-verify recorded research evidence from raw trial files
+        run: python3 research/verify_results.py && python3 research/verify_scaleout.py
       - run: node scripts/generate-certs.cjs 4
       - run: docker compose config --quiet
       - name: Build and start actual Docker containers
