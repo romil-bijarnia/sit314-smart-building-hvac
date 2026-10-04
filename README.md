@@ -4,7 +4,7 @@ An executable local progression from an in-process IoT prototype to MQTT-connect
 
 ## Final evaluation — 22 September 2026
 
-Tag [`v6.3d-final`](https://github.com/romil-bijarnia/sit314-smart-building-hvac/tree/v6.3d-final) is the revision the SIT314 6.3D project report refers to. It contains the service source measured on 22 September, the deployment configuration, every raw trial, and the scripts that re-check the reported numbers.
+Tag [`v6.3d-final`](https://gitlab.com/romil-bijarnia/sit314-smart-building-hvac/-/tree/v6.3d-final) is the revision the SIT314 6.3D project report refers to. It contains the service source measured on 22 September, the deployment configuration, every raw trial, and the scripts that re-check the reported numbers.
 
 | Where | What it holds |
 |---|---|
@@ -31,7 +31,7 @@ python3 research/verify_results.py     # twelve routing trials
 python3 research/verify_scaleout.py    # four owner-count trials
 ```
 
-Both scripts recompute latency percentiles, deadline counts, hashes and stage balances from the raw files under `research/`, and need only Python 3. The GitHub workflow runs them on every push, together with the unit tests and the ten functional scenarios on Docker.
+Both scripts recompute latency percentiles, deadline counts, hashes and stage balances from the raw files under `research/`, and need only Python 3. The GitLab pipeline in `.gitlab-ci.yml` runs them on every push, together with the unit tests.
 
 ### Re-run the experiments
 
@@ -122,10 +122,10 @@ Results are retained from executed experiments. Personal assessment PDFs and cre
 
 ## Recorded status evidence — 6 September 2026
 
-- **59 unit/regression tests and 10 real functional scenarios passed.** The public workflow also built and tested the stack on Docker Engine in Ubuntu.
+- **59 unit/regression tests and 10 real functional scenarios passed.** A hosted CI run also built and tested the stack on Docker Engine in Ubuntu; its record is `evidence/github-ci.json`.
 - **12 normal trials:** 12, 60 and 180 devices at 1 Hz, one/two aggregation owners, two 20-second repetitions. All 20,160 readings reached simulated actuator application within the offering window. Worst latency was 505 ms.
 - **60-second soak:** 24 devices, 1,440 readings, maximum 146 ms.
 - **Accelerated 10 Hz follow-up:** the 180-device case exposed a limit, with 14.344 s maximum latency. It is not presented as meeting the 2 s target.
 - Backlog in these results means missing control acknowledgements. Broker queue depth and pending durable writes were not directly instrumented; post-offer journal observations can lag application.
 
-See [verified measurements](evidence/campaign-summary.json), [CSV](evidence/campaign-summary.csv), [functional proof](evidence/functional-tests.json), [unit log](evidence/unit-tests.log), [storage arithmetic](evidence/storage-growth.json), and [verified Docker CI](https://github.com/romil-bijarnia/sit314-smart-building-hvac/actions/runs/34005255874). Earlier OOM and latency failures are separately retained as development evidence, not mixed into the final statistics.
+See [verified measurements](evidence/campaign-summary.json), [CSV](evidence/campaign-summary.csv), [functional proof](evidence/functional-tests.json), [unit log](evidence/unit-tests.log), [storage arithmetic](evidence/storage-growth.json), and [recorded Docker CI run](evidence/github-ci.json). Earlier OOM and latency failures are separately retained as development evidence, not mixed into the final statistics.

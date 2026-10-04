@@ -1,0 +1,20 @@
+stages: [verify]
+
+verify:
+  stage: verify
+  image: node:22
+  cache:
+    key:
+      files: [package-lock.json]
+    paths: [.npm/]
+  script:
+    - npm ci --ignore-scripts --cache .npm --prefer-offline
+    - npm test
+    - python3 research/verify_results.py > /dev/null
+    - python3 research/verify_scaleout.py > /dev/null
+    - node scripts/generate-certs.cjs 4
+  artifacts:
+    when: always
+    paths:
+      - research/verified-comparisons.json
+      - research/verified-scaleout.json
